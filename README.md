@@ -1,2 +1,2 @@
-# RISC-V-Creative-board
-RISC-V-Creative-board
+# RISC-V-Creative-Board
+RISC-V-Creative-Board
