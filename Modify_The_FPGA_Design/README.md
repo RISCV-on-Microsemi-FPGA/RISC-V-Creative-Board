@@ -20,8 +20,8 @@ The memory map for each design is available within each Libero project.
    Contains a simple RISCV design which allows users to use basic peripherals such as GPIO, UART and Timers. Uses legacy CoreRISCV_AXI4 soft processor. 
 * IGL2_CoreRISCV_AXI4_TickTackToe:
 
-   Contains design which enables Adafruit touch screen interface using CoreSPI. To use this deisgn a daughter board is needed from Adafruit, more information on this can be found [here](https://www.adafruit.com/product/1651).
-   The design used along side of the TickTackToe example software found [here](https://github.com/RISCV-on-Microsemi-FPGA/M2GL025-Creative-Board/tree/master/Example_Software_Projects). This design uses legacy CoreRISCV_AXI4 soft processor.
+   Contains design which enables Adafruit touch screen interface using CoreSPI. To use this design a daughter board is needed from Adafruit, more information on this can be found [here](https://www.adafruit.com/product/1651).
+   The design used along side of the TickTackToe example software found [here](https://github.com/RISCV-on-Microsemi-FPGA/RISC-V-Creative-Board/tree/master/Example_Software_Projects). This design uses legacy CoreRISCV_AXI4 soft processor.
 * IGL2_MiV_RISCV_Systick_Blinky
 
    Uses MIV_RV32IMA_L1_AHB soft processor. Contains a simple RISCV design which allows users to use basic peripherals such as GPIO, UART and Timers.
@@ -30,4 +30,4 @@ The memory map for each design is available within each Libero project.
 The RISC-V Creative Development Board includes a IGLOO2 M2GL025 FPGA preprogrammed with a Mi-V processor design. Details of the features available for this development board are available [here](https://www.microsemi.com/products/fpga-soc/design-resources/dev-kits/smartfusion2/future-creative-board) .
 
 ### Target Mi-V CPU
-Details of the features of Mi-V CPUs are available [here](https://github.com/RISCV-on-Microsemi-FPGA/Mi-V-CPUs).
+Details of the features of Mi-V CPUs are available [here](https://github.com/RISCV-on-Microsemi-FPGA/CPUs).

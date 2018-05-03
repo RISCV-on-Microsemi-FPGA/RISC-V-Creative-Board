@@ -3,7 +3,7 @@ Sample Mi-V Libero project for FPGA designs for RISC-V Creative board.
 
 This repository contains Libero projects containing an FPGA design including a RISC-V soft processor. 
 The Programming bitstream(s) are also included so that you do not need to run through the full FPGA design flow 
-in order to start developping software for RISC-V.
+in order to start developing software for RISC-V.
 
 ### Modify The FPGA Design 
 The Modify_The_FPGA_Design folder contains Libero example designs. Libero is Microsemi's FPGA design tool. 
@@ -26,4 +26,4 @@ The RISC-V Creative Development Board includes a IGLOO2 M2GL025 FPGA. Details of
 The TickTackToe example uses a [TFT Touch Shield for Arduino, with Resistive Touch Screen](https://www.adafruit.com/product/1651)
 
 ### Target Mi-V CPU
-Details of the features of Mi-V CPUs are available [here](https://github.com/RISCV-on-Microsemi-FPGA/Mi-V-CPUs).
+Details of the features of Mi-V CPUs are available [here](https://github.com/RISCV-on-Microsemi-FPGA/CPUs).

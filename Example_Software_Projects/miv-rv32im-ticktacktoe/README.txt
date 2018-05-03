@@ -24,7 +24,7 @@ The CoreRISCV_AXI4 firmware projects needs the riscv_hal and the hal firmware
 (RISC-V HAL).
 
 The RISC-V HAL is available through Firmware catalog as well as the link below:
-    https://github.com/RISCV-on-Microsemi-FPGA/riscv-hal
+    https://github.com/RISCV-on-Microsemi-FPGA/Mi-V-Firmware
 
 --------------------------------------------------------------------------------
                             How to use this example
