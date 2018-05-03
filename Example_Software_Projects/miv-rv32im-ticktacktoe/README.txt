@@ -29,6 +29,6 @@ The RISC-V HAL is available through Firmware catalog as well as the link below:
 --------------------------------------------------------------------------------
                             How to use this example
 --------------------------------------------------------------------------------
-The TickTackToe example uses a [TFT Touch Shield for Arduino, with Resistive Touch Screen](https://www.adafruit.com/product/1651).
+The TickTackToe example uses a [TFT Touch Shield for Arduino, with Resistive Touch screen](https://www.adafruit.com/product/1651).
 Use the touch screen to navigate and play the TickTackToe.
 
