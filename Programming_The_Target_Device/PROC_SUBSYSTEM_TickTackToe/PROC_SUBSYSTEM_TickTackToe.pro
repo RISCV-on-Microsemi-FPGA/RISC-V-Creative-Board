@@ -1,6 +1,6 @@
 <project name="PROC_SUBSYSTEM_TickTackToe" version="1.1">
     <ProjectDirectory>
-        C:\Users\nitin.deshpande\Desktop\newrepo\RISC-V-Creative-board\Programming_The_Target_Device\PROC_SUBSYSTEM_TickTackToe
+        C:\Users\ciaran.lappin\Downloads\RISC-V-Creative-Board-master\Modify_The_FPGA_Design\PROC_SUBSYSTEM_TickTackToe
     </ProjectDirectory>
     <View>
         ChainView
@@ -9,7 +9,7 @@
         
     </LiberoTargetDevice>
     <LogFile>
-        C:\Users\nitin.deshpande\Desktop\newrepo\RISC-V-Creative-board\Programming_The_Target_Device\PROC_SUBSYSTEM_TickTackToe\PROC_SUBSYSTEM_TickTackToe.log
+        C:\Users\ciaran.lappin\Downloads\RISC-V-Creative-Board-master\Modify_The_FPGA_Design\PROC_SUBSYSTEM_TickTackToe\PROC_SUBSYSTEM_TickTackToe.log
     </LogFile>
     <SerializationOption>
         Skip
@@ -81,10 +81,10 @@
             </Custom>
             <Algo type="STAPL">
                 <filename>
-                    C:\Users\nitin.deshpande\Desktop\newrepo\RISC-V-Creative-board\Programming_The_Target_Device\PROC_SUBSYSTEM_TickTackToe\projectData\PROC_SUBSYSTEM.stp
+                    C:\Users\ciaran.lappin\Downloads\RISC-V-Creative-Board-master\Modify_The_FPGA_Design\PROC_SUBSYSTEM_TickTackToe\M2GL025_1.stp
                 </filename>
                 <local>
-                    projectData\PROC_SUBSYSTEM.stp
+                    projectData\M2GL025_1.stp
                 </local>
                 <SelectedAction>
                     PROGRAM
