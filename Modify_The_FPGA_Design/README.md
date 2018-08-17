@@ -29,3 +29,9 @@ The RISC-V Creative Development Board includes a IGLOO2 M2GL025 FPGA preprogramm
 
 ### Target Mi-V CPU
 Details of the features of Mi-V CPUs are available [here](https://github.com/RISCV-on-Microsemi-FPGA/CPUs).
+
+
+### Modifying the Libero projects
+Some of the Libero projects use IP packages not directly available from the Microsemi IP Catalog. These IP packages were created to speed up design creation by wrapping simple logic into reusable user IP packages.
+These user IP packages are available [here](https://github.com/RISCV-on-Microsemi-FPGA/riscv-junk-drawer/tree/master/IP-packages).
+
