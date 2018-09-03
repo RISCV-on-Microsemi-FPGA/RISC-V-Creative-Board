@@ -1,27 +1,19 @@
 <project name="PROC_SUBSYSTEM_TickTackToe" version="1.1">
     <ProjectDirectory>
-        C:\Users\nitin.deshpande\Desktop\newrepo\RISC-V-Creative-board\Programming_The_Target_Device\PROC_SUBSYSTEM_TickTackToe
+        E:\Someshd7_Github\RISC-V-Creative-Board\Programming_The_Target_Device\PROC_SUBSYSTEM_TickTackToe
     </ProjectDirectory>
     <View>
-        ChainView
+        SingleSTAPLView
     </View>
     <LiberoTargetDevice>
         
     </LiberoTargetDevice>
     <LogFile>
-        C:\Users\nitin.deshpande\Desktop\newrepo\RISC-V-Creative-board\Programming_The_Target_Device\PROC_SUBSYSTEM_TickTackToe\PROC_SUBSYSTEM_TickTackToe.log
+        E:\Someshd7_Github\RISC-V-Creative-Board\Programming_The_Target_Device\PROC_SUBSYSTEM_TickTackToe\PROC_SUBSYSTEM_TickTackToe.log
     </LogFile>
     <SerializationOption>
         Skip
     </SerializationOption>
-    <programmer status="enable" type="FlashPro5" revision="UndefRev" connection="usb2.0">
-        <name>
-            E200108CTE
-        </name>
-        <id>
-            E200108CTE
-        </id>
-    </programmer>
     <configuration>
         <Hardware>
             <FlashPro>
@@ -72,35 +64,19 @@
                 </ProgrammingMode>
             </FlashPro5>
         </Hardware>
-        <Device type="ACTEL">
-            <Name>
-                M2GL025
-            </Name>
-            <Custom>
-                M2GL025
-            </Custom>
-            <Algo type="STAPL">
-                <filename>
-                    C:\Users\nitin.deshpande\Desktop\newrepo\RISC-V-Creative-board\Programming_The_Target_Device\PROC_SUBSYSTEM_TickTackToe\projectData\PROC_SUBSYSTEM.stp
-                </filename>
-                <local>
-                    projectData\PROC_SUBSYSTEM.stp
-                </local>
-                <SelectedAction>
-                    PROGRAM
-                </SelectedAction>
-                <DeselectedProcedure>
-                    DO_VERIFY
-                </DeselectedProcedure>
-            </Algo>
-        </Device>
-        <Algo type="unknown">
-            <irlength>
-                0
-            </irlength>
-            <MaxTCK>
-                0
-            </MaxTCK>
+        <Algo type="STAPL">
+            <filename>
+                E:\Someshd7_Github\RISC-V-Creative-Board\Programming_The_Target_Device\PROC_SUBSYSTEM_TickTackToe\projectData\PROC_SUBSYSTEM.stp
+            </filename>
+            <local>
+                projectData\PROC_SUBSYSTEM.stp
+            </local>
+            <SelectedAction>
+                PROGRAM
+            </SelectedAction>
+            <DeselectedProcedure>
+                DO_VERIFY
+            </DeselectedProcedure>
         </Algo>
     </configuration>
 </project>

@@ -15,14 +15,12 @@ The FPGA designs include the following features:
 The memory map for each design is available within each Libero project.
 
 ### Libero Projects
-* IGL2_RISCV_Systick_Blinky
-
-   Contains a simple RISCV design which allows users to use basic peripherals such as GPIO, UART and Timers. Uses legacy CoreRISCV_AXI4 soft processor. 
-* IGL2_CoreRISCV_AXI4_TickTackToe:
+* IGL2_MIV_RV32IMA_L1_AHB_TickTacToe:
 
    Contains design which enables Adafruit touch screen interface using CoreSPI. To use this design a daughter board is needed from Adafruit, more information on this can be found [here](https://www.adafruit.com/product/1651).
-   The design used along side of the TickTackToe example software found [here](https://github.com/RISCV-on-Microsemi-FPGA/RISC-V-Creative-Board/tree/master/Example_Software_Projects). This design uses legacy CoreRISCV_AXI4 soft processor.
-* IGL2_MiV_RISCV_Systick_Blinky
+   The design used along side of the TickTackToe example software found [here](https://github.com/RISCV-on-Microsemi-FPGA/RISC-V-Creative-Board/tree/master/Example_Software_Projects). This design uses legacy MIV_RV32IMA_L1_AHB soft processor.
+
+* IGL2_MIV_RV32IMA_BaseDesign
 
    Uses MIV_RV32IMA_L1_AHB soft processor. Contains a simple RISCV design which allows users to use basic peripherals such as GPIO, UART and Timers.
 
@@ -31,3 +29,9 @@ The RISC-V Creative Development Board includes a IGLOO2 M2GL025 FPGA preprogramm
 
 ### Target Mi-V CPU
 Details of the features of Mi-V CPUs are available [here](https://github.com/RISCV-on-Microsemi-FPGA/CPUs).
+
+
+### Modifying the Libero projects
+Some of the Libero projects use IP packages not directly available from the Microsemi IP Catalog. These IP packages were created to speed up design creation by wrapping simple logic into reusable user IP packages.
+These user IP packages are available [here](https://github.com/RISCV-on-Microsemi-FPGA/riscv-junk-drawer/tree/master/Supporting-IPs).
+
