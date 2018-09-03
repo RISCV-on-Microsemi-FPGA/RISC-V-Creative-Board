@@ -33,5 +33,5 @@ Details of the features of Mi-V CPUs are available [here](https://github.com/RIS
 
 ### Modifying the Libero projects
 Some of the Libero projects use IP packages not directly available from the Microsemi IP Catalog. These IP packages were created to speed up design creation by wrapping simple logic into reusable user IP packages.
-These user IP packages are available [here](https://github.com/RISCV-on-Microsemi-FPGA/riscv-junk-drawer/tree/master/Supporting-IPs).
+These user IP packages are available [here](https://github.com/RISCV-on-Microsemi-FPGA/CPUs/tree/master/Supporting-IPs).
 
