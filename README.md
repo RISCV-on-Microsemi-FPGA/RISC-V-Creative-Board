@@ -1,29 +1,50 @@
-# RISC-V Creative Development Board Designs
-Sample Mi-V Libero project for FPGA designs for RISC-V Creative board.
+## RISC-V Creative Development Board Designs for Libero v12.1
 
-This repository contains Libero projects containing an FPGA design including a RISC-V soft processor. 
-The Programming bitstream(s) are also included so that you do not need to run through the full FPGA design flow 
-in order to start developing software for RISC-V.
+Sample Mi-V Libero project for FPGA designs for RISC-V Creative board. The RISC-V Creative Development Board includes a IGLOO2 M2GL025 FPGA.
 
-### Modify The FPGA Design 
-The Modify_The_FPGA_Design folder contains Libero example designs. Libero is Microsemi's FPGA design tool. 
-You will need this tool if you wish to modify the example FPGA designs. Libero is available from [here](https://www.microsemi.com/products/fpga-soc/design-resources/design-software/libero-soc#downloads).
+To get your design download or clone this repository. The files consist of .tcl file that is the main script that builds the design and support files that are called by it to provide constraints and components for the design. Follow the instructions below to build your own design or alternatively use the pre-generated Programming Files in this repository.
 
-### Programming The Target Device
-The Programming_The_Target_Device folder includes FlashPro Express projects that can be used to program the 
-development boards FPGA. A standalone installer for FlashPro Express is available [here](http://www.microsemi.com/products/fpga-soc/design-resources/programming/flashpro#software). 
-Please note that you only need to install this standalone version of FlashPro Express if you do not have Libero tools installed.
+#### Follow these steps
 
-A programming file resulting from the corresponding Libero design in "Modify_The_FPGA_Design" folder is available in "Programming The Target Device" for easy access.
+- Launch Libero v12.1 on your computer. Wait for Libero to start. (Design will only work for Libero v12.1)
+- Make sure you have __Downloaded the latest Libero Cores__. Select Catalog tab from the left hand side toolbar and click __"Download Latest Cores"__ option by a yellow marked area, this option will only be visible if you don't have the latest Cores.
+- Press "CTRL+U" to display the "Execute Script" menu. Alternatively, click Project from the top left hand corner of Libero Suite and select "Execute Script" from there.
+- Examine the image below, the purpose of the marked fields is listed.
 
-### Example Software Projects
-The Example_Software_Projects folder contains example projects specifically targeted at the RISC-V Creative Development Board. The TickTackToe and riscv-systic-blinky example firmware can be found in this directory.
-A set of more generic RISC-V example software projects are also available for these designs from the SoftConsole [page](https://github.com/RISCV-on-Microsemi-FPGA/SoftConsole).
+ ![Execute_Script](images/libero_execute.PNG)
 
-### Target Hardware
-The RISC-V Creative Development Board includes a IGLOO2 M2GL025 FPGA. Details of the features available for this development board are available [here](https://www.microsemi.com/products/fpga-soc/design-resources/dev-kits/risc-v-creative-board).
+1. Click the "..." button and enter the directory in which the main .tcl file is that you have downloaded with your sample project. This file
+is what Libero executes to build your design.
+2. Click Run to execute the script and build the design. Wait for Libero to finish building, a window should appear once the script execution is finished.
 
-The TickTackToe example uses a [TFT Touch Shield for Arduino, with Resistive Touch Screen](https://www.adafruit.com/product/1651)
+###### Optional Step
 
-### Target Mi-V CPU
-Details of the features of Mi-V CPUs are available [here](https://github.com/RISCV-on-Microsemi-FPGA/CPUs).
+3. Arguments field is optional and can be left blank. An argument can take the user further in Libero's design flow, examine the image below and try entering an argument in before clicking 'Run'. One of the following arguments can be entered:
+      - Synthesize
+      - Place_and_Route
+      - Generate_Bitstream
+      - Generate_Programming_File
+
+
+![Script's_Arguments](images/libero_execute_optional.png)
+
+#### Programming the Device using FPExpress
+
+The projects contain Programming Files on the same level as the .tcl script. These programming files can be used to program your target device using the standalone installer for FlashPro Express which can be found [here](https://www.microsemi.com/product-directory/programming/4977-flashpro#software).
+Please note that you only need to install this standalone version of FlashPro Express if you do not have Libero tools installed. The programming procedure is simple:
+1. Launch FPExpress and wait for it to load.
+2. Click into Project from the top left bar and select "New Job Project from FlashPro Express Job"
+3. Navigate to your Job Programming File located inside your project folder beside your .tcl script.
+4. For your directory, select the directory in which the Job file was located in and click OK.
+5. On the next screen, from the bottom left drop-down menu select the PROGRAM option and clikc RUN. Wait for device to be programmed.
+
+
+#### Notes
+
+- Currently the designs support MiV_RV32IMA_L1_AHB Core only, Core MiV_RV32IMA_L1_AXI will be implemented in the next update
+- The project is built in the same folder as the script.
+- If you stop the execution of a the script halfway the project can get corrupted. If this happens, delete the project folder created by Libero and execute the script again, otherwise just try running the script again.
+- The arguments serve the purpose to take the user further down the design flow, they use the most optimal settings for design build.
+- Use the argument "Place_and_Route" or any argument after; The design will be built using an optimal place and route seed so, that the design's signal data path doesn't cause timing violations.
+- If you don't feel like building a design to program the board, you can find the exported bitstream files in the project's folder.
+- Only one argument can be entered and no spaces are allowed. The arguments are not case sensitive, if no argument is entered the sample design will be fully built to pre-synthesis stage.
