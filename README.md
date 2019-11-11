@@ -6,8 +6,18 @@ This repository containts Libero projects containing an FPGA design including a 
 The Programming bitstream(s) are also included so that you do not need to run through the full FPGA design flow in order to start developing software for RISC-V. There are also, example software projects provided with this design.
 
 ### Libero Projects
+---------------------
 The Libero_Projects folder contains the .tcl scripts that build the Libero design projects. Libero i Microsemi's FPGA design tool. You will need this tool if you wish to modify the sample Libero FPGA designs. Libero is available 
 [here](https://www.microsemi.com/products/fpga-soc/design-resources/design-software/libero-soc#downloads).
+
+#### Design Features
+The FPGA designs include the following features:
+* Uses MIV_RV32IMA_L1_AHB or MIV_RV32IMA_L1_AXI processor
+* RISC-V debug block allowing on-target debug using openocd/GDB
+* LSRAM for code/data
+* User peripherals such as GPIO, Timers, UART
+* Adafruit touch screen display
+* Designs created with Libero v12.1
 
 ### FlashPro Express Projects
 The FlashPro_Express_Projects folder includes the FlashPro Express programming files that can be used to program the development board's FPGA. A standalone installer for FlashPro Express is available [here](http://www.microsemi.com/products/fpga-soc/design-resources/programming/flashpro#software). 
