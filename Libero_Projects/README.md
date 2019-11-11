@@ -23,7 +23,7 @@ a sufficient file path for the project will result in errors**.
 #### Simple Build
 ------------------------
 
-![Execute_Script](./support_files/images/execute_script_1.jpg)
+![Execute_Script](../support_files/images/execute_script_1.jpg)
 
 1. Click the "..." button and enter the directory in which the main .tcl file is that you have downloaded with your sample project. This file
 is what Libero executes to build your design it should match the name of the part on your hardware device device.
