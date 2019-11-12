@@ -23,7 +23,7 @@ a sufficient file path for the project will result in errors**.
 #### Simple Build
 ------------------------
 
-![Execute_Script](../support_files/images/execute_script_1.jpg)
+![Execute_Script](support_files/images/execute_script_1.jpg)
 
 1. Click the "..." button and enter the directory in which the main .tcl file is that you have downloaded with your sample project. This file
 is what Libero executes to build your design it should match the name of the part on your hardware device device.
@@ -34,7 +34,7 @@ is what Libero executes to build your design it should match the name of the par
 
 The design can also be built using a MiV_RV32IMA_L1_AXI Core by passing an argument and it's also possible to be taken further in the design flow by passing an argument after that. Please refer to the image below and text underneath to learn how to build an AXI based design
 
-![Script's_Arguments](../support_files/images/execute_script_2.jpg)
+![Script's_Arguments](support_files/images/execute_script_2.jpg)
 
 1. Select the .tcl file that matches the part on your hardware.
 2. Type in an argument as shown in the image to build an AXI based design. The arguments are not case sensitive, you can also type in AHB to build a standard AHB based design.
@@ -45,7 +45,7 @@ The design can also be built using a MiV_RV32IMA_L1_AXI Core by passing an argum
 
 There is also an optional 2nd argument that can be entered after the first one to be taken further in the design flow and have the design built to a certain stage. Examine the image below and refer to the text undeneath.
 
-![Design_Flow](../support_files/images/execute_script_3.jpg)
+![Design_Flow](support_files/images/execute_script_3.jpg)
 
 1. Select the .tcl file that matches the part on your hardware.
 2. Type in an argument for an "AXI" or "AHB" MiV Core based design depending on which you want to use. **This argument is required.**

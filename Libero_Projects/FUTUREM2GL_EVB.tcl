@@ -108,11 +108,7 @@ if {"$design_flow_stage" == "SYNTHESIZE"} then {
     puts "--------------------------PLACE AND ROUTE--------------------------------"
     puts "-------------------------------------------------------------------------"
 	
-	configure_tool -name {PLACEROUTE} -params {TDPR:true} -params {IOREG_COMBINING:true} -params {INCRPLACEANDROUTE:false} -params {REPAIR_MIN_DELAY:true} -params {EFFORT_LEVEL:true}
-	get_tool_state -name {COMPILE} 
-	get_tool_state -name {SYNTHESIZE} 
-	get_flow_state 
-	configure_tool -name {PLACEROUTE} -params {START_SEED_INDEX:7} -params {RANDOM_SEED:82287664}
+	configure_tool -name {PLACEROUTE} -params {TDPR:true} -params {IOREG_COMBINING:true} -params {INCRPLACEANDROUTE:false} -params {REPAIR_MIN_DELAY:true} -params {EFFORT_LEVEL:true} -params {START_SEED_INDEX:7} -params {RANDOM_SEED:82287664}
 	run_tool -name {VERIFYTIMING}
 	save_project
 
@@ -123,12 +119,7 @@ if {"$design_flow_stage" == "SYNTHESIZE"} then {
     puts "-------------------------------------------------------------------------"
 
 
-	configure_tool -name {PLACEROUTE} -params {TDPR:true} -params {IOREG_COMBINING:true} -params {INCRPLACEANDROUTE:false} -params {REPAIR_MIN_DELAY:true} -params {EFFORT_LEVEL:true}
-	get_tool_state -name {COMPILE} 
-	get_tool_state -name {SYNTHESIZE} 
-	get_flow_state 
-	configure_tool -name {PLACEROUTE} -params {START_SEED_INDEX:7} -params {RANDOM_SEED:82287664} 
-	run_tool -name {VERIFYTIMING}
+	configure_tool -name {PLACEROUTE} -params {TDPR:true} -params {IOREG_COMBINING:true} -params {INCRPLACEANDROUTE:false} -params {REPAIR_MIN_DELAY:true} -params {EFFORT_LEVEL:true} -params {START_SEED_INDEX:7} -params {RANDOM_SEED:82287664}
     run_tool -name {GENERATEPROGRAMMINGDATA}
     run_tool -name {GENERATEPROGRAMMINGFILE}
     save_project
@@ -138,18 +129,15 @@ if {"$design_flow_stage" == "SYNTHESIZE"} then {
     puts "----------------------EXPORT PROGRAMMING FILES---------------------------"
     puts "-------------------------------------------------------------------------"
 
-	configure_tool -name {PLACEROUTE} -params {TDPR:true} -params {IOREG_COMBINING:true} -params {INCRPLACEANDROUTE:false} -params {REPAIR_MIN_DELAY:true} -params {EFFORT_LEVEL:true}
-	get_tool_state -name {COMPILE} 
-	get_tool_state -name {SYNTHESIZE} 
-	get_flow_state 
-	configure_tool -name {PLACEROUTE} -params {START_SEED_INDEX:7} -params {RANDOM_SEED:82287664} 
-	run_tool -name {VERIFYTIMING}
+	configure_tool -name {PLACEROUTE} -params {TDPR:true} -params {IOREG_COMBINING:true} -params {INCRPLACEANDROUTE:false} -params {REPAIR_MIN_DELAY:true} -params {EFFORT_LEVEL:true} -params {START_SEED_INDEX:7} -params {RANDOM_SEED:82287664}
+    run_tool -name {GENERATEPROGRAMMINGDATA}
+    run_tool -name {GENERATEPROGRAMMINGFILE}
 
 	
 	if {"$target" == "AHB"} then {
 		export_prog_job \
 			-job_file_name {BaseDesign_FUTUREM2GL-AHB-ProgramFile} \
-			-export_dir {./FlashPro_Express_Projects} \
+			-export_dir {./../FlashPro_Express_Projects/Programming_Files} \
 			-bitstream_file_type {TRUSTED_FACILITY} \
 			-bitstream_file_components {FABRIC ENVM} \
 			-bitstream_file_components {}
@@ -158,7 +146,7 @@ if {"$design_flow_stage" == "SYNTHESIZE"} then {
 	} else {	
 		export_prog_job \
 			-job_file_name {BaseDesign_FUTUREM2GL-AXI-ProgramFile} \
-			-export_dir {./FlashPro_Express_Projects} \
+			-export_dir {./../FlashPro_Express_Projects/Programming_Files} \
 			-bitstream_file_type {TRUSTED_FACILITY} \
 			-bitstream_file_components {FABRIC ENVM} \
 			-bitstream_file_components {}
