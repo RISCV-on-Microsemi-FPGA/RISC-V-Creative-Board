@@ -735,7 +735,7 @@ sd_mark_pins_unused -sd_name ${sd_name} -pin_names {HPMS_0_sb_0:HPMS_INT_M2F}
 # ###############
 create_and_configure_core -core_vlnv {Actel:DirectCore:COREAXITOAHBL:3.4.100} -component_name {COREAXITOAHBL_0} -params {\
 "ASYNC_CLOCKS:false" \
-"AXI_SEL_MM_S:0" \
+"AXI_SEL_MM_S:1" \
 "EXPOSE_WID:false" \
 "ID_WIDTH:5" \
 "NO_BURST_TRANS:false" \
@@ -747,7 +747,7 @@ sd_instantiate_component -sd_name ${sd_name} -component_name {COREAXITOAHBL_0} -
 # ###################
 create_and_configure_core -core_vlnv {Actel:DirectCore:COREAXITOAHBL:3.4.100} -component_name {COREAXITOAHBL_1} -params {\
 "ASYNC_CLOCKS:false" \
-"AXI_SEL_MM_S:0" \
+"AXI_SEL_MM_S:1" \
 "EXPOSE_WID:false" \
 "ID_WIDTH:5" \
 "NO_BURST_TRANS:false" \
@@ -755,22 +755,11 @@ create_and_configure_core -core_vlnv {Actel:DirectCore:COREAXITOAHBL:3.4.100} -c
 sd_instantiate_component -sd_name ${sd_name} -component_name {COREAXITOAHBL_1} -instance_name {COREAXITOAHBL_1} 
 # ##################
 
-# AXI_GLUE_LOGIC
-# ##################
-create_and_configure_core -core_vlnv {User:GlueLogic:AXI_GLUE_LOGIC:1.0.7} -component_name {AXI_GLUE_LOGIC_0} -params {} 
-sd_instantiate_component -sd_name ${sd_name} -component_name {AXI_GLUE_LOGIC_0} -instance_name {AXI_GLUE_LOGIC_0} 
-sd_create_pin_slices -sd_name ${sd_name} -pin_name {AXI_GLUE_LOGIC_0:AXI_MIRROR_MST_MEM_WID} -pin_slices {"[3:0]"} 
-sd_create_pin_slices -sd_name ${sd_name} -pin_name {AXI_GLUE_LOGIC_0:AXI_MIRROR_MST_MEM_WID} -pin_slices {"[4:4]"} 
-sd_connect_pins_to_constant -sd_name ${sd_name} -pin_names {AXI_GLUE_LOGIC_0:AXI_MIRROR_MST_MEM_WID[4]} -value {GND} 
-sd_create_pin_slices -sd_name ${sd_name} -pin_name {AXI_GLUE_LOGIC_0:AXI_MIRROR_MST_MMIO_WID} -pin_slices {"[3:0]"} 
-sd_create_pin_slices -sd_name ${sd_name} -pin_name {AXI_GLUE_LOGIC_0:AXI_MIRROR_MST_MMIO_WID} -pin_slices {"[4:4]"} 
-sd_connect_pins_to_constant -sd_name ${sd_name} -pin_names {AXI_GLUE_LOGIC_0:AXI_MIRROR_MST_MMIO_WID[4]} -value {GND} 
-# ##################
 
 # Add MiV_RV32IMA_AXI_0 instance
 # ############################
 create_and_configure_core -core_vlnv {Microsemi:MiV:MIV_RV32IMA_L1_AXI:2.1.100} -component_name {MIV_RV32IMA_L1_AXI_0} -params {\
-"MASTER_TYPE:1" \
+"MASTER_TYPE:0" \
 "MEM_WID:5" \
 "MMIO_WID:5" \
 "RESET_VECTOR_ADDR_0:0x0" \
@@ -781,6 +770,7 @@ sd_connect_pins_to_constant -sd_name ${sd_name} -pin_names {MIV_RV32IMA_L1_AXI_0
 sd_create_pin_slices -sd_name ${sd_name} -pin_name {MIV_RV32IMA_L1_AXI_0:IRQ} -pin_slices {[29]}
 sd_create_pin_slices -sd_name ${sd_name} -pin_name {MIV_RV32IMA_L1_AXI_0:IRQ} -pin_slices {[30]}
 sd_mark_pins_unused -sd_name ${sd_name} -pin_names {MIV_RV32IMA_L1_AXI_0:DRV_TDO}
+sd_mark_pins_unused -sd_name ${sd_name} -pin_names {MIV_RV32IMA_L1_AXI_0:EXT_RESETN} 
 # ############################
 
 
@@ -806,8 +796,8 @@ sd_connect_pins -sd_name ${sd_name} -pin_names {"MIV_RV32IMA_L1_AXI_0:TRST" "COR
 sd_connect_pins -sd_name ${sd_name} -pin_names {"CoreTimer_0:TIMINT" "MIV_RV32IMA_L1_AXI_0:IRQ[29]" }
 sd_connect_pins -sd_name ${sd_name} -pin_names {"CoreTimer_1:TIMINT" "MIV_RV32IMA_L1_AXI_0:IRQ[30]" }
 sd_connect_pins -sd_name ${sd_name} -pin_names {"MIV_RV32IMA_L1_AXI_0:TDO" "COREJTAGDEBUG_0:TGT_TDO_0" }
-sd_connect_pins -sd_name ${sd_name} -pin_names {"AXI_GLUE_LOGIC_0:CLK" "COREAXITOAHBL_0:ACLK" "COREAXITOAHBL_1:ACLK" "COREAXITOAHBL_0:HCLK" "COREAXITOAHBL_1:HCLK" "HPMS_0_sb_0:FIC_0_CLK" "CoreAHBLite_0:HCLK" "CoreAHBLite_1:HCLK" "CoreGPIO_OUT:PCLK" "CoreTimer_0:PCLK" "CoreTimer_1:PCLK" "CoreGPIO_IN:PCLK" "CoreUARTapb_0:PCLK" "COREAHBTOAPB3_0:HCLK" "MIV_RV32IMA_L1_AXI_0:CLK" }
-sd_connect_pins -sd_name ${sd_name} -pin_names {"AXI_GLUE_LOGIC_0:RESET" "COREAXITOAHBL_0:ARESETN" "COREAXITOAHBL_1:ARESETN" "COREAXITOAHBL_0:HRESETN" "COREAXITOAHBL_1:HRESETN" "HPMS_0_sb_0:INIT_DONE" "CoreAHBLite_0:HRESETN" "CoreAHBLite_1:HRESETN" "CoreGPIO_OUT:PRESETN" "CoreTimer_0:PRESETn" "CoreTimer_1:PRESETn" "CoreGPIO_IN:PRESETN" "CoreUARTapb_0:PRESETN" "COREAHBTOAPB3_0:HRESETN" "MIV_RV32IMA_L1_AXI_0:RESETN" }
+sd_connect_pins -sd_name ${sd_name} -pin_names {"COREAXITOAHBL_0:ACLK" "COREAXITOAHBL_1:ACLK" "COREAXITOAHBL_0:HCLK" "COREAXITOAHBL_1:HCLK" "HPMS_0_sb_0:FIC_0_CLK" "CoreAHBLite_0:HCLK" "CoreAHBLite_1:HCLK" "CoreGPIO_OUT:PCLK" "CoreTimer_0:PCLK" "CoreTimer_1:PCLK" "CoreGPIO_IN:PCLK" "CoreUARTapb_0:PCLK" "COREAHBTOAPB3_0:HCLK" "MIV_RV32IMA_L1_AXI_0:CLK" }
+sd_connect_pins -sd_name ${sd_name} -pin_names {"COREAXITOAHBL_0:ARESETN" "COREAXITOAHBL_1:ARESETN" "COREAXITOAHBL_0:HRESETN" "COREAXITOAHBL_1:HRESETN" "HPMS_0_sb_0:INIT_DONE" "CoreAHBLite_0:HRESETN" "CoreAHBLite_1:HRESETN" "CoreGPIO_OUT:PRESETN" "CoreTimer_0:PRESETn" "CoreTimer_1:PRESETn" "CoreGPIO_IN:PRESETN" "CoreUARTapb_0:PRESETN" "COREAHBTOAPB3_0:HRESETN" "MIV_RV32IMA_L1_AXI_0:RESETN" }
 sd_connect_pins -sd_name ${sd_name} -pin_names {"RX" "CoreUARTapb_0:RX" }
 sd_connect_pins -sd_name ${sd_name} -pin_names {"TCK" "COREJTAGDEBUG_0:TCK" }
 sd_connect_pins -sd_name ${sd_name} -pin_names {"TDI" "COREJTAGDEBUG_0:TDI" }
@@ -840,13 +830,9 @@ sd_connect_pins -sd_name ${sd_name} -pin_names {"CoreGPIO_OUT:APB_bif" "CoreAPB3
 sd_connect_pins -sd_name ${sd_name} -pin_names {"HPMS_0_sb_0:HPMS_FIC_0_USER_MASTER" "CoreAHBLite_0:AHBMaster6"} 
 
 sd_connect_pins -sd_name ${sd_name} -pin_names {"COREAXITOAHBL_0:AHBMasterIF" "CoreAHBLite_0:AHBmmaster0"}
-sd_connect_pins -sd_name ${sd_name} -pin_names {"COREAXITOAHBL_1:AHBMasterIF" "CoreAHBLite_1:AHBmmaster0"}
-sd_connect_pins -sd_name ${sd_name} -pin_names {"MIV_RV32IMA_L1_AXI_0:MEM_AXI_WID" "AXI_GLUE_LOGIC_0:AXI_MIRROR_MST_MEM_WID[3:0]"}
-sd_connect_pins -sd_name ${sd_name} -pin_names {"MIV_RV32IMA_L1_AXI_0:MMIO_AXI_WID" "AXI_GLUE_LOGIC_0:AXI_MIRROR_MST_MMIO_WID[3:0]"}
-sd_connect_pins -sd_name ${sd_name} -pin_names {"MIV_RV32IMA_L1_AXI_0:MEM_MST_AXI4" "AXI_GLUE_LOGIC_0:RISCV_MEMORY"} 
-sd_connect_pins -sd_name ${sd_name} -pin_names {"MIV_RV32IMA_L1_AXI_0:MMIO_MST_AXI4" "AXI_GLUE_LOGIC_0:RISCV_MMIO"} 
-sd_connect_pins -sd_name ${sd_name} -pin_names {"AXI_GLUE_LOGIC_0:UNCORE_MMIO" "COREAXITOAHBL_0:AXISlaveIF"} 
-sd_connect_pins -sd_name ${sd_name} -pin_names {"AXI_GLUE_LOGIC_0:UNCORE_MEMORY" "COREAXITOAHBL_1:AXISlaveIF"} 
+sd_connect_pins -sd_name ${sd_name} -pin_names {"COREAXITOAHBL_1:AHBMasterIF" "CoreAHBLite_1:AHBmmaster0"} 
+sd_connect_pins -sd_name ${sd_name} -pin_names {"MIV_RV32IMA_L1_AXI_0:MEM_MST_AXI" "COREAXITOAHBL_1:AXI_MM_IF"} 
+sd_connect_pins -sd_name ${sd_name} -pin_names {"MIV_RV32IMA_L1_AXI_0:MMIO_MST_AXI" "COREAXITOAHBL_0:AXI_MM_IF"}
 
 
 # Re-enable auto promotion of pins of type 'pad'
