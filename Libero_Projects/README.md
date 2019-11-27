@@ -9,7 +9,7 @@ To get your design download or clone this repository. The files consist of .tcl 
 a lengthy file path and some OS systems have limits. **Not providing
 a sufficient file path for the project will result in errors**.
 * Make sure you have the latest Libero Cores in your vault. Select Catalog tab from the left hand side toolbar and check if the "Download Latest Cores" option is available by a yellow marked area then click it. This option will only be visible if you don't have the lates cores in the vault. If the vault hasn't been updated in a while this could take some time. Not having the library of cores required for the design to be built will cause errors.
-Two .tcl files are provided to build a Libero design from. A BaseDesign for general purposes and a TickTackToe design supporting the TFT Touch Screen
+* Two .tcl files are provided to build a Libero design from. A BaseDesign for general purposes and a TickTackToe design supporting the TFT Touch Screen
 
 ### Instructions for Building the Design
 -------------
