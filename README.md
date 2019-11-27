@@ -7,7 +7,7 @@ The Programming bitstream(s) are also included so that you do not need to run th
 
 ### Libero
 ---------------------
-The Libero_Projects folder contains the .tcl scripts that build the Libero design projects. Libero i Microsemi's FPGA design tool. You will need this tool if you wish to modify the sample Libero FPGA designs. Libero is available 
+The Libero_Projects folder contains the .tcl scripts that build the Libero design projects. Libero is Microsemi's FPGA design tool. You will need this tool if you wish to modify the sample Libero FPGA designs. Libero is available 
 [here](https://www.microsemi.com/products/fpga-soc/design-resources/design-software/libero-soc#downloads).
 
 #### Design Features
