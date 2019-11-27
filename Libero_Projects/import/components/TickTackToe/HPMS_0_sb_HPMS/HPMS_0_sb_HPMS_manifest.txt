@@ -1,28 +1,28 @@
 Microsemi Corporation - Microsemi Libero Software Release v12.1 (Version 12.600.0.14)
 
-Date      :  Mon Nov 25 16:19:34 2019
-Project   :  C:\del-me\RISC-V-Creative-Board-1\Libero_Projects\MiV_RV32IMA_L1_AHB_BaseDesign_FUTUREM2GL_EVB
+Date      :  Wed Nov 27 16:54:16 2019
+Project   :  C:\del-me\RISC-V-Creative-Board-1-12-2\Libero_Projects\MiV_RV32IMA_L1_AHB_TickTackToe_FUTUREM2GL_EVB
 Component :  HPMS_0_sb_HPMS
 Family    :  IGLOO2
 
 
 HDL source files for all Synthesis and Simulation tools:
-    C:/del-me/RISC-V-Creative-Board-1/Libero_Projects/MiV_RV32IMA_L1_AHB_BaseDesign_FUTUREM2GL_EVB/component/work/HPMS_0_sb_HPMS/HPMS_0_sb_HPMS.v
+    C:/del-me/RISC-V-Creative-Board-1-12-2/Libero_Projects/MiV_RV32IMA_L1_AHB_TickTackToe_FUTUREM2GL_EVB/component/work/HPMS_0_sb_HPMS/HPMS_0_sb_HPMS.v
 
 HDL source files for Synopsys SynplifyPro Synthesis tool:
-    C:/del-me/RISC-V-Creative-Board-1/Libero_Projects/MiV_RV32IMA_L1_AHB_BaseDesign_FUTUREM2GL_EVB/component/work/HPMS_0_sb_HPMS/HPMS_0_sb_HPMS_syn.v
+    C:/del-me/RISC-V-Creative-Board-1-12-2/Libero_Projects/MiV_RV32IMA_L1_AHB_TickTackToe_FUTUREM2GL_EVB/component/work/HPMS_0_sb_HPMS/HPMS_0_sb_HPMS_syn.v
 
 HDL source files for Mentor Precision Synthesis tool:
-    C:/del-me/RISC-V-Creative-Board-1/Libero_Projects/MiV_RV32IMA_L1_AHB_BaseDesign_FUTUREM2GL_EVB/component/work/HPMS_0_sb_HPMS/HPMS_0_sb_HPMS_pre.v
+    C:/del-me/RISC-V-Creative-Board-1-12-2/Libero_Projects/MiV_RV32IMA_L1_AHB_TickTackToe_FUTUREM2GL_EVB/component/work/HPMS_0_sb_HPMS/HPMS_0_sb_HPMS_pre.v
 
 Configuration files to be used for Programming:
-    C:/del-me/RISC-V-Creative-Board-1/Libero_Projects/MiV_RV32IMA_L1_AHB_BaseDesign_FUTUREM2GL_EVB/component/work/HPMS_0_sb_HPMS/ENVM.cfg
-    C:/del-me/RISC-V-Creative-Board-1/Libero_Projects/MiV_RV32IMA_L1_AHB_BaseDesign_FUTUREM2GL_EVB/component/work/HPMS_0_sb_HPMS/MDDR_init.reg
+    C:/del-me/RISC-V-Creative-Board-1-12-2/Libero_Projects/MiV_RV32IMA_L1_AHB_TickTackToe_FUTUREM2GL_EVB/component/work/HPMS_0_sb_HPMS/ENVM.cfg
+    C:/del-me/RISC-V-Creative-Board-1-12-2/Libero_Projects/MiV_RV32IMA_L1_AHB_TickTackToe_FUTUREM2GL_EVB/component/work/HPMS_0_sb_HPMS/MDDR_init.reg
 
 Configuration files to be used for all Simulation tools:
-    C:/del-me/RISC-V-Creative-Board-1/Libero_Projects/MiV_RV32IMA_L1_AHB_BaseDesign_FUTUREM2GL_EVB/component/work/HPMS_0_sb_HPMS/ENVM.cfg
-    C:/del-me/RISC-V-Creative-Board-1/Libero_Projects/MiV_RV32IMA_L1_AHB_BaseDesign_FUTUREM2GL_EVB/component/work/HPMS_0_sb_HPMS/MDDR_init.reg
+    C:/del-me/RISC-V-Creative-Board-1-12-2/Libero_Projects/MiV_RV32IMA_L1_AHB_TickTackToe_FUTUREM2GL_EVB/component/work/HPMS_0_sb_HPMS/ENVM.cfg
+    C:/del-me/RISC-V-Creative-Board-1-12-2/Libero_Projects/MiV_RV32IMA_L1_AHB_TickTackToe_FUTUREM2GL_EVB/component/work/HPMS_0_sb_HPMS/MDDR_init.reg
 
 Configuration files to be used for Power Analysis:
-    C:/del-me/RISC-V-Creative-Board-1/Libero_Projects/MiV_RV32IMA_L1_AHB_BaseDesign_FUTUREM2GL_EVB/component/work/HPMS_0_sb_HPMS/MDDR_init.reg
+    C:/del-me/RISC-V-Creative-Board-1-12-2/Libero_Projects/MiV_RV32IMA_L1_AHB_TickTackToe_FUTUREM2GL_EVB/component/work/HPMS_0_sb_HPMS/MDDR_init.reg
 
