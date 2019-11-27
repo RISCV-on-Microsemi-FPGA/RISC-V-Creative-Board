@@ -1,11 +1,11 @@
 /*******************************************************************************
- * (c) Copyright 2007-2017 Microsemi SoC Products Group. All rights reserved.
+ * (c) Copyright 2007-2018 Microsemi SoC Products Group. All rights reserved.
  * 
  * CoreUARTapb driver implementation. See file "core_uart_apb.h" for a
  * description of the functions implemented in this file.
  * 
- * SVN $Revision: 9082 $
- * SVN $Date: 2017-04-28 11:51:36 +0530 (Fri, 28 Apr 2017) $
+ * SVN $Revision: 9746 $
+ * SVN $Date: 2018-02-12 17:59:59 +0530 (Mon, 12 Feb 2018) $
  */
 #include "hal.h"
 #include "coreuartapb_regs.h"

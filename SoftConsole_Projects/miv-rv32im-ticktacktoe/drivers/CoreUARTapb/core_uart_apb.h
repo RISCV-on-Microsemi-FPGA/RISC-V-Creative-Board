@@ -1,20 +1,20 @@
 /*******************************************************************************
- * (c) Copyright 2007-2015 Microsemi SoC Products Group. All rights reserved.
+ * (c) Copyright 2007-2018 Microsemi SoC Products Group. All rights reserved.
  * 
  * This file contains the application programming interface for the CoreUARTapb
  * bare metal driver.
  * 
- * SVN $Revision: 7996 $
- * SVN $Date: 2015-10-12 13:53:58 +0530 (Mon, 12 Oct 2015) $
+ * SVN $Revision: 9746 $
+ * SVN $Date: 2018-02-12 17:59:59 +0530 (Mon, 12 Feb 2018) $
  */
 /*=========================================================================*//**
   @mainpage CoreUARTapb Bare Metal Driver.
 
   @section intro_sec Introduction
   CoreUARTapb is an implementation of the Universal Asynchronous 
-  Receiver/Transmitter aimed at a minimal FPGA tile usage within an Actel FPGA. 
-  The CoreUARTapb bare metal software driver is designed for use in systems 
-  with no operating system.
+  Receiver/Transmitter aimed at a minimal FPGA tile usage within an Microsemi
+  FPGA. The CoreUARTapb bare metal software driver is designed for use in 
+  systems with no operating system.
 
   The CoreUARTapb driver provides functions for basic polled transmitting and 
   receiving operations. It also provides functions allowing use of the 
@@ -88,7 +88,6 @@
 extern "C" {
 #endif
 
-
 /***************************************************************************//**
  * Data bits length defines:
  */
@@ -110,7 +109,6 @@ extern "C" {
 #define UART_APB_FRAMING_ERROR   0x04u
 #define UART_APB_NO_ERROR        0x00u
 #define UART_APB_INVALID_PARAM   0xFFu
-
 
 /***************************************************************************//**
  * UART_instance_t

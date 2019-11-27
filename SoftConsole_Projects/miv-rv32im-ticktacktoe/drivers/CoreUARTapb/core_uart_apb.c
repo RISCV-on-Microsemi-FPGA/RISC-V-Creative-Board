@@ -1,11 +1,11 @@
 /*******************************************************************************
- * (c) Copyright 2007-2015 Microsemi SoC Products Group. All rights reserved.
+ * (c) Copyright 2007-2018 Microsemi SoC Products Group. All rights reserved.
  * 
  * CoreUARTapb driver implementation. See file "core_uart_apb.h" for a
  * description of the functions implemented in this file.
  * 
- * SVN $Revision: 7996 $
- * SVN $Date: 2015-10-12 13:53:58 +0530 (Mon, 12 Oct 2015) $
+ * SVN $Revision: 9746 $
+ * SVN $Date: 2018-02-12 17:59:59 +0530 (Mon, 12 Feb 2018) $
  */
 #include "hal.h"
 #include "coreuartapb_regs.h"
@@ -94,8 +94,7 @@ UART_init
                                                     STATUS_RXFULL_MASK;
         while ( rx_full )
         {
-            volatile uint8_t rx_byte;
-            rx_byte = HAL_get_8bit_reg( this_uart->base_address, RXDATA );
+            HAL_get_8bit_reg( this_uart->base_address, RXDATA );
             rx_full = HAL_get_8bit_reg( this_uart->base_address, STATUS ) &
                                                         STATUS_RXFULL_MASK;
         }
@@ -210,7 +209,7 @@ UART_get_rx
         (buff_size > 0u) )
     {
         rx_idx = 0u;
-       new_status = HAL_get_8bit_reg( this_uart->base_address, STATUS );
+        new_status = HAL_get_8bit_reg( this_uart->base_address, STATUS );
         this_uart->status |= new_status;
         rx_full = new_status & STATUS_RXFULL_MASK;
         while ( ( rx_full ) && ( rx_idx < buff_size ) )

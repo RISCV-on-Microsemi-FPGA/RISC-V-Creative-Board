@@ -7,10 +7,10 @@ puts "-------------------------------------------------------------------------"
 puts "-----------------------IMPORTING COMPONENTS------------------------------"
 puts "-------------------------------------------------------------------------" 
 
-import_files -cxf {./import/components/HPMS_0_sb_HPMS/HPMS_0_sb_HPMS.cxf} 
-source ./import/components/AHB/hpms_subsystem_futurem2gl_ahb.tcl
+import_files -cxf {./import/components/BaseDesign/HPMS_0_sb_HPMS/HPMS_0_sb_HPMS.cxf} 
+source ./import/components/BaseDesign/AHB/hpms_subsystem_futurem2gl_ahb.tcl
 
-source ./import/components/AHB/top_level_futurem2gl_ahb.tcl
+source ./import/components/BaseDesign/AHB/top_level_futurem2gl_ahb.tcl
 
 new_hdl_stimulus_file_for_design -path {basedesign_tb.v} \
 	-instantiateroot 1 \
@@ -28,8 +28,8 @@ puts "-------------------------------------------------------------------------"
 puts "--------------------APPLYING DESING CONSTRAINTS--------------------------"
 puts "-------------------------------------------------------------------------"
 
-import_files -io_pdc ./import/constraints/io/io_constraints.pdc
-import_files -sdc    ./import/constraints/io_jtag_constraints.sdc
+import_files -io_pdc ./import/constraints/BaseDesign/io/io_constraints.pdc
+import_files -sdc    ./import/constraints/BaseDesign/io_jtag_constraints.sdc
 
 run_tool -name {CONSTRAINT_MANAGEMENT}
 # #Associate SDC constraint file to Place and Route tool

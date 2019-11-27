@@ -1,8 +1,8 @@
 /*******************************************************************************
- * (c) Copyright 2007-2017 Microsemi SoC Products Group. All rights reserved.
+ * (c) Copyright 2007-2018 Microsemi SoC Products Group. All rights reserved.
  * 
- * SVN $Revision: 9082 $
- * SVN $Date: 2017-04-28 11:51:36 +0530 (Fri, 28 Apr 2017) $
+ * SVN $Revision: 9746 $
+ * SVN $Date: 2018-02-12 17:59:59 +0530 (Mon, 12 Feb 2018) $
  */
 
 #ifndef __CORE_UART_APB_REGISTERS

@@ -1,5 +1,5 @@
 /*******************************************************************************
- * (c) Copyright 2013 Microsemi Corporation.  All rights reserved.
+ * (c) Copyright 2013-2018 Microsemi SoC Products Group. All rights reserved.
  *
  * CoreSPI bare metal driver implementation for CoreSPI.
  *
@@ -7,8 +7,8 @@
  * SPI slave operations with the CoreSPI version 4.2.xxx It is not compatible
  * with CoreSPI version 3.0.xxx.
  *
- * SVN $Revision: 6076 $
- * SVN $Date: 2014-01-06 12:23:55 +0000 (Mon, 06 Jan 2014) $
+ * SVN $Revision: 9667 $
+ * SVN $Date: 2018-01-16 16:43:50 +0530 (Tue, 16 Jan 2018) $
  */
 
 #include "core_spi.h"
@@ -59,19 +59,18 @@ static void recover_from_rx_overflow( const spi_instance_t * this_spi );
  */
 void SPI_init
 (
-	spi_instance_t * this_spi,
-	addr_t base_addr,
-	uint16_t fifo_depth
+    spi_instance_t * this_spi,
+    addr_t base_addr,
+    uint16_t fifo_depth
 )
 {
-	uint8_t test;
     HAL_ASSERT( NULL_INSTANCE != this_spi );
     HAL_ASSERT( NULL_ADDR != base_addr );
     HAL_ASSERT( SPI_MAX_FIFO_DEPTH  >= fifo_depth );
     HAL_ASSERT( SPI_MIN_FIFO_DEPTH  <= fifo_depth );
 
-	if( ( NULL_INSTANCE != this_spi ) && ( base_addr != NULL_ADDR ) )
-	{
+    if( ( NULL_INSTANCE != this_spi ) && ( base_addr != NULL_ADDR ) )
+    {
         /*
          * Initialize all transmit / receive buffers and handlers
          *
@@ -80,27 +79,21 @@ void SPI_init
          */
 
         /* First fill struct with 0s */
-//#if 0
         memset( this_spi, 0, sizeof(spi_instance_t) );
-/*#else
-        for (uint8_t *p = (uint8_t *) this_spi, i=0;i<sizeof(spi_instance_t);i++)
-        {
-        	*(p+i)=0;
-        }
-#endif*/
+
         /* Configure CoreSPI instance attributes */
         this_spi->base_addr = (addr_t)base_addr;
 
         /* Store FIFO depth or fall back to minimum if out of range */
         if( ( SPI_MAX_FIFO_DEPTH  >= fifo_depth ) && ( SPI_MIN_FIFO_DEPTH  <= fifo_depth ) )
         {
-        	this_spi->fifo_depth = fifo_depth;
+            this_spi->fifo_depth = fifo_depth;
         }
         else
         {
-        	this_spi->fifo_depth = SPI_MIN_FIFO_DEPTH;
+            this_spi->fifo_depth = SPI_MIN_FIFO_DEPTH;
         }
-		/* Make sure the CoreSPI is disabled while we configure it */
+        /* Make sure the CoreSPI is disabled while we configure it */
         HAL_set_8bit_reg_field( this_spi->base_addr, CTRL1_ENABLE, DISABLE );
 
         /* Ensure all slaves are deselected */
@@ -119,11 +112,8 @@ void SPI_init
          * with TXUNDERRUN, RXOVFLOW and TXDONE interrupts disabled.
          * The driver does not currently use interrupts in master mode.
          */
-		HAL_set_8bit_reg( this_spi->base_addr, CTRL1,  ENABLE | CTRL1_MASTER_MASK );
-	}
-	HAL_set_8bit_reg( this_spi->base_addr, SSEL, 0x01 );  // ml fixme debug
-	test = HAL_get_8bit_reg( this_spi->base_addr, SSEL ); // ml fixme debug
-	test = HAL_get_8bit_reg( this_spi->base_addr, STATUS ); // ml fixme debug
+        HAL_set_8bit_reg( this_spi->base_addr, CTRL1,  ENABLE | CTRL1_MASTER_MASK );
+    }
 }
 
 /***************************************************************************//**
@@ -132,17 +122,17 @@ void SPI_init
  */
 void SPI_configure_slave_mode
 (
-	spi_instance_t * this_spi
+    spi_instance_t * this_spi
 )
 {
     HAL_ASSERT( NULL_INSTANCE != this_spi );
 
-	if( NULL_INSTANCE != this_spi )
+    if( NULL_INSTANCE != this_spi )
         {
         /* Don't yet know what slave transfer mode will be used */
         this_spi->slave_xfer_mode = SPI_SLAVE_XFER_NONE;
 
-		/* Make sure the CoreSPI is disabled while we configure it */
+        /* Make sure the CoreSPI is disabled while we configure it */
         HAL_set_8bit_reg_field( this_spi->base_addr, CTRL1_ENABLE, DISABLE );
 
         /* Flush the receive and transmit FIFOs*/
@@ -158,7 +148,7 @@ void SPI_configure_slave_mode
          * interrupts disabled. The appropriate interrupts will be enabled later
          * on when the transfer mode is configured.
          */
-		HAL_set_8bit_reg( this_spi->base_addr, CTRL1, ENABLE );
+        HAL_set_8bit_reg( this_spi->base_addr, CTRL1, ENABLE );
     }
 }
 
@@ -168,20 +158,20 @@ void SPI_configure_slave_mode
  */
 void SPI_configure_master_mode
 (
-	spi_instance_t * this_spi
+    spi_instance_t * this_spi
 )
 {
     HAL_ASSERT( NULL_INSTANCE != this_spi );
     
     if( NULL_INSTANCE != this_spi )
     {
-		/* Disable the CoreSPI for a little while, while we configure the CoreSPI */
+        /* Disable the CoreSPI for a little while, while we configure the CoreSPI */
         HAL_set_8bit_reg_field(this_spi->base_addr, CTRL1_ENABLE, DISABLE);
 
         /* Reset slave transfer mode to unknown in case it has been set previously */
         this_spi->slave_xfer_mode = SPI_SLAVE_XFER_NONE;
 
-		/* Flush the receive and transmit FIFOs*/
+        /* Flush the receive and transmit FIFOs*/
         HAL_set_8bit_reg( this_spi->base_addr, CMD, CMD_TXFIFORST_MASK | CMD_RXFIFORST_MASK );
 
         /* Clear all interrupts */
@@ -191,7 +181,7 @@ void SPI_configure_master_mode
         HAL_set_8bit_reg( this_spi->base_addr, CTRL2, 0u );
 
         /* Enable the CoreSPI in master mode with TXUNDERRUN, RXOVFLOW and TXDONE interrupts disabled */
-		HAL_set_8bit_reg( this_spi->base_addr, CTRL1, ENABLE | CTRL1_MASTER_MASK );
+        HAL_set_8bit_reg( this_spi->base_addr, CTRL1, ENABLE | CTRL1_MASTER_MASK );
     }
 }
 
@@ -201,8 +191,8 @@ void SPI_configure_master_mode
  */
 void SPI_set_slave_select
 (
-	spi_instance_t * this_spi,
-	spi_slave_t slave
+    spi_instance_t * this_spi,
+    spi_slave_t slave
 )
 {
     spi_slave_t temp = (spi_slave_t)(0x00u) ;
@@ -233,8 +223,8 @@ void SPI_set_slave_select
  */
 void SPI_clear_slave_select
 (
-	spi_instance_t * this_spi,
-	spi_slave_t slave
+    spi_instance_t * this_spi,
+    spi_slave_t slave
 )
 {
     spi_slave_t temp = (spi_slave_t) (0x00u) ;
@@ -275,24 +265,24 @@ uint32_t SPI_transfer_frame
 
     if( NULL_INSTANCE != this_spi )
     {
-		/* This function is only intended to be used with an SPI master. */
-		if( DISABLE != HAL_get_8bit_reg_field(this_spi->base_addr, CTRL1_MASTER ) )
-		{
-			/* Flush the receive and transmit FIFOs by resetting both */
-			HAL_set_8bit_reg(this_spi->base_addr, CMD, CMD_TXFIFORST_MASK | CMD_RXFIFORST_MASK);
+        /* This function is only intended to be used with an SPI master. */
+        if( DISABLE != HAL_get_8bit_reg_field(this_spi->base_addr, CTRL1_MASTER ) )
+        {
+            /* Flush the receive and transmit FIFOs by resetting both */
+            HAL_set_8bit_reg(this_spi->base_addr, CMD, CMD_TXFIFORST_MASK | CMD_RXFIFORST_MASK);
 
-			/* Send frame. */
-			HAL_set_32bit_reg( this_spi->base_addr, TXLAST, tx_bits );
+            /* Send frame. */
+            HAL_set_32bit_reg( this_spi->base_addr, TXLAST, tx_bits );
 
-			/* Wait for frame Tx to complete. */
-			while ( ENABLE != HAL_get_8bit_reg_field(this_spi->base_addr, STATUS_DONE ) )
-			{
-				;
-			}
+            /* Wait for frame Tx to complete. */
+            while ( ENABLE != HAL_get_8bit_reg_field(this_spi->base_addr, STATUS_DONE ) )
+            {
+                ;
+            }
 
-			/* Read received frame. */
-			rx_data = HAL_get_32bit_reg( this_spi->base_addr, RXDATA );
-		}
+            /* Read received frame. */
+            rx_data = HAL_get_32bit_reg( this_spi->base_addr, RXDATA );
+        }
     }
 
     /* Finally, return the frame we received from the slave or 0 */
@@ -325,7 +315,7 @@ void SPI_transfer_block
     {
         /* This function is only intended to be used with an SPI master. */
         if( ( DISABLE != HAL_get_8bit_reg_field(this_spi->base_addr, CTRL1_MASTER ) ) &&
-        	/* Check for empty transfer as well */
+            /* Check for empty transfer as well */
             ( 0u != ( (uint32_t)cmd_byte_size + (uint32_t)rx_byte_size ) ) )
         {
             /*
@@ -338,165 +328,165 @@ void SPI_transfer_block
             HAL_set_8bit_reg(this_spi->base_addr, CMD, (uint32_t)(CMD_TXFIFORST_MASK | CMD_RXFIFORST_MASK ));
 
             /* Recover from receiver overflow because of previous slave */
-			if( ENABLE == HAL_get_8bit_reg_field(this_spi->base_addr, STATUS_RXOVFLOW) )
-			{
-				 recover_from_rx_overflow( this_spi );
-			}
+            if( ENABLE == HAL_get_8bit_reg_field(this_spi->base_addr, STATUS_RXOVFLOW) )
+            {
+                 recover_from_rx_overflow( this_spi );
+            }
 
-			/* Disable the Core SPI for a little bit, while we load the TX FIFO */
-	        HAL_set_8bit_reg_field( this_spi->base_addr, CTRL1_ENABLE, DISABLE );
+            /* Disable the Core SPI for a little bit, while we load the TX FIFO */
+            HAL_set_8bit_reg_field( this_spi->base_addr, CTRL1_ENABLE, DISABLE );
 
-	        while( ( tx_idx < transfer_size ) && ( tx_idx < this_spi->fifo_depth ) )
-	        {
-	            if( tx_idx < cmd_byte_size )
-	            {
-	            	/* Push out valid data */
-					HAL_set_32bit_reg( this_spi->base_addr, TXDATA, (uint32_t)cmd_buffer[tx_idx] );
-	            }
-	            else
-	            {
-					/* Push out 0s to get data back from slave */
-	            	HAL_set_32bit_reg( this_spi->base_addr, TXDATA, 0U );
-	            }
-	            ++transit;
-	            ++tx_idx;
-	        }
+            while( ( tx_idx < transfer_size ) && ( tx_idx < this_spi->fifo_depth ) )
+            {
+                if( tx_idx < cmd_byte_size )
+                {
+                    /* Push out valid data */
+                    HAL_set_32bit_reg( this_spi->base_addr, TXDATA, (uint32_t)cmd_buffer[tx_idx] );
+                }
+                else
+                {
+                    /* Push out 0s to get data back from slave */
+                    HAL_set_32bit_reg( this_spi->base_addr, TXDATA, 0U );
+                }
+                ++transit;
+                ++tx_idx;
+            }
 
-	        /* If room left to put last frame in before the off, then do it */
-	        if( ( tx_idx == transfer_size ) && ( tx_idx < this_spi->fifo_depth ) )
-	        {
-	            if( tx_idx < cmd_byte_size )
-	            {
-	            	/* Push out valid data, not expecting any reply this time */
-					HAL_set_32bit_reg( this_spi->base_addr, TXLAST, (uint32_t)cmd_buffer[tx_idx] );
-	            }
-	            else
-	            {
-					/* Push out last 0 to get data back from slave */
-					HAL_set_32bit_reg( this_spi->base_addr, TXLAST, 0U );
-	            }
+            /* If room left to put last frame in before the off, then do it */
+            if( ( tx_idx == transfer_size ) && ( tx_idx < this_spi->fifo_depth ) )
+            {
+                if( tx_idx < cmd_byte_size )
+                {
+                    /* Push out valid data, not expecting any reply this time */
+                    HAL_set_32bit_reg( this_spi->base_addr, TXLAST, (uint32_t)cmd_buffer[tx_idx] );
+                }
+                else
+                {
+                    /* Push out last 0 to get data back from slave */
+                    HAL_set_32bit_reg( this_spi->base_addr, TXLAST, 0U );
+                }
 
-		        ++transit;
-		        ++tx_idx;
-	        }
+                ++transit;
+                ++tx_idx;
+            }
 
-			/* FIFO is all loaded up so enable Core SPI to start transfer */
-	        HAL_set_8bit_reg_field( this_spi->base_addr, CTRL1_ENABLE, ENABLE );
+            /* FIFO is all loaded up so enable Core SPI to start transfer */
+            HAL_set_8bit_reg_field( this_spi->base_addr, CTRL1_ENABLE, ENABLE );
 
             /* Perform the remainder of the transfer by sending a byte every time a byte
              * has been received. This should ensure that no Rx overflow can happen in
              * case of an interrupt occurring during this function.
-		     *
-		     * We break the transfer down into stages to minimise the processing in
-		     * each loop as the SPI interface is very demanding at higher clock rates.
-		     * This works well with FIFOs but might be less efficient if there is only
-		     * a single frame buffer.
-		     *
-		     * First stage transfers remaining command bytes (if any).
-		     * At this stage anything in the RX FIFO can be discarded as it is
-		     * not part of a valid response.
-		     */
-		    while( tx_idx < cmd_byte_size )
-		    {
-		        if( transit < this_spi->fifo_depth )
-		        {
-		            /* Send another byte. */
-		        	if( tx_idx == transfer_size ) /* Last frame is special... */
-		        	{
-			        	HAL_set_32bit_reg( this_spi->base_addr, TXLAST, (uint32_t)cmd_buffer[tx_idx] );
-		        	}
-		        	else
-		        	{
-		        		HAL_set_32bit_reg( this_spi->base_addr, TXDATA, (uint32_t)cmd_buffer[tx_idx] );
-		        	}
-		        	++tx_idx;
-		            ++transit;
-		        }
-				if( !HAL_get_8bit_reg_field( this_spi->base_addr, STATUS_RXEMPTY ) )
-		        {
-		            /* Read and discard. */
-		        	HAL_get_32bit_reg( this_spi->base_addr, RXDATA );
-		        	++transfer_idx;
-		            --transit;
-		        }
-		    }
-		    /*
-		     * Now, we are writing dummy bytes to push through the response from
-		     * the slave but we still have to keep discarding any read data that
-		     * corresponds with one of our command bytes.
-		     */
-		    while( transfer_idx < cmd_byte_size )
-		    {
-		        if( transit < this_spi->fifo_depth )
-		        {
-		            if( tx_idx < transfer_size )
-		            {
-						HAL_set_32bit_reg( this_spi->base_addr, TXDATA, 0U );
-						++tx_idx;
-						++transit;
-		            }
-		        }
-				if( !HAL_get_8bit_reg_field(this_spi->base_addr, STATUS_RXEMPTY ) )
-		        {
-		            /* Read and discard. */
-		        	HAL_get_32bit_reg( this_spi->base_addr, RXDATA );
-		        	++transfer_idx;
-		            --transit;
-		        }
-		    }
-		    /*
-		     * Now we are now only sending dummy data to push through the
-		     * valid response data which we store in the response buffer.
-		     */
-		    while( tx_idx < transfer_size )
-		    {
-		        if( transit < this_spi->fifo_depth )
-		        {
-					HAL_set_32bit_reg( this_spi->base_addr, TXDATA, 0U );
-					++tx_idx;
-					++transit;
-		        }
-				if( !HAL_get_8bit_reg_field(this_spi->base_addr, STATUS_RXEMPTY ) )
-		        {
-		            /* Process received byte. */
-					rx_buffer[rx_idx] = (uint8_t)HAL_get_32bit_reg( this_spi->base_addr, RXDATA );
-					++rx_idx;
-		            ++transfer_idx;
-		            --transit;
-		        }
-		    }
-		    /* If we still need to send the last frame */
-	        while( tx_idx == transfer_size )
-	        {
-		        if( transit < this_spi->fifo_depth )
-		        {
-					HAL_set_32bit_reg( this_spi->base_addr, TXLAST, 0U );
-					++tx_idx;
-					++transit;
-		        }
-				if( !HAL_get_8bit_reg_field( this_spi->base_addr, STATUS_RXEMPTY ) )
-		        {
-		            /* Process received byte. */
-					rx_buffer[rx_idx] = (uint8_t)HAL_get_32bit_reg( this_spi->base_addr, RXDATA );
-					++rx_idx;
-		            ++transfer_idx;
-		            --transit;
-		        }
-	        }
-		    /*
-		     * Finally, we are now finished sending data and are only reading
-		     * valid response data which we store in the response buffer.
-		     */
-		    while( transfer_idx <= transfer_size )
-		    {
-				if( !HAL_get_8bit_reg_field(this_spi->base_addr, STATUS_RXEMPTY ) )
-		        {
-		            /* Process received byte. */
-					rx_buffer[rx_idx] = (uint8_t)HAL_get_32bit_reg( this_spi->base_addr, RXDATA );
-					++rx_idx;
-		            ++transfer_idx;
-		        }
-		    }
+             *
+             * We break the transfer down into stages to minimise the processing in
+             * each loop as the SPI interface is very demanding at higher clock rates.
+             * This works well with FIFOs but might be less efficient if there is only
+             * a single frame buffer.
+             *
+             * First stage transfers remaining command bytes (if any).
+             * At this stage anything in the RX FIFO can be discarded as it is
+             * not part of a valid response.
+             */
+            while( tx_idx < cmd_byte_size )
+            {
+                if( transit < this_spi->fifo_depth )
+                {
+                    /* Send another byte. */
+                    if( tx_idx == transfer_size ) /* Last frame is special... */
+                    {
+                        HAL_set_32bit_reg( this_spi->base_addr, TXLAST, (uint32_t)cmd_buffer[tx_idx] );
+                    }
+                    else
+                    {
+                        HAL_set_32bit_reg( this_spi->base_addr, TXDATA, (uint32_t)cmd_buffer[tx_idx] );
+                    }
+                    ++tx_idx;
+                    ++transit;
+                }
+                if( !HAL_get_8bit_reg_field( this_spi->base_addr, STATUS_RXEMPTY ) )
+                {
+                    /* Read and discard. */
+                    HAL_get_32bit_reg( this_spi->base_addr, RXDATA );
+                    ++transfer_idx;
+                    --transit;
+                }
+            }
+            /*
+             * Now, we are writing dummy bytes to push through the response from
+             * the slave but we still have to keep discarding any read data that
+             * corresponds with one of our command bytes.
+             */
+            while( transfer_idx < cmd_byte_size )
+            {
+                if( transit < this_spi->fifo_depth )
+                {
+                    if( tx_idx < transfer_size )
+                    {
+                        HAL_set_32bit_reg( this_spi->base_addr, TXDATA, 0U );
+                        ++tx_idx;
+                        ++transit;
+                    }
+                }
+                if( !HAL_get_8bit_reg_field(this_spi->base_addr, STATUS_RXEMPTY ) )
+                {
+                    /* Read and discard. */
+                    HAL_get_32bit_reg( this_spi->base_addr, RXDATA );
+                    ++transfer_idx;
+                    --transit;
+                }
+            }
+            /*
+             * Now we are now only sending dummy data to push through the
+             * valid response data which we store in the response buffer.
+             */
+            while( tx_idx < transfer_size )
+            {
+                if( transit < this_spi->fifo_depth )
+                {
+                    HAL_set_32bit_reg( this_spi->base_addr, TXDATA, 0U );
+                    ++tx_idx;
+                    ++transit;
+                }
+                if( !HAL_get_8bit_reg_field(this_spi->base_addr, STATUS_RXEMPTY ) )
+                {
+                    /* Process received byte. */
+                    rx_buffer[rx_idx] = (uint8_t)HAL_get_32bit_reg( this_spi->base_addr, RXDATA );
+                    ++rx_idx;
+                    ++transfer_idx;
+                    --transit;
+                }
+            }
+            /* If we still need to send the last frame */
+            while( tx_idx == transfer_size )
+            {
+                if( transit < this_spi->fifo_depth )
+                {
+                    HAL_set_32bit_reg( this_spi->base_addr, TXLAST, 0U );
+                    ++tx_idx;
+                    ++transit;
+                }
+                if( !HAL_get_8bit_reg_field( this_spi->base_addr, STATUS_RXEMPTY ) )
+                {
+                    /* Process received byte. */
+                    rx_buffer[rx_idx] = (uint8_t)HAL_get_32bit_reg( this_spi->base_addr, RXDATA );
+                    ++rx_idx;
+                    ++transfer_idx;
+                    --transit;
+                }
+            }
+            /*
+             * Finally, we are now finished sending data and are only reading
+             * valid response data which we store in the response buffer.
+             */
+            while( transfer_idx <= transfer_size )
+            {
+                if( !HAL_get_8bit_reg_field(this_spi->base_addr, STATUS_RXEMPTY ) )
+                {
+                    /* Process received byte. */
+                    rx_buffer[rx_idx] = (uint8_t)HAL_get_32bit_reg( this_spi->base_addr, RXDATA );
+                    ++rx_idx;
+                    ++transfer_idx;
+                }
+            }
         }
     }
 }
@@ -518,17 +508,17 @@ void SPI_set_frame_rx_handler
         /* This function is only intended to be used with an SPI slave. */
         if(DISABLE == HAL_get_8bit_reg_field(this_spi->base_addr, CTRL1_MASTER))
         {
-			/* Disable the Core SPI while we configure */
-	        HAL_set_8bit_reg_field( this_spi->base_addr, CTRL1_ENABLE, DISABLE );
+            /* Disable the Core SPI while we configure */
+            HAL_set_8bit_reg_field( this_spi->base_addr, CTRL1_ENABLE, DISABLE );
 
-	        /* Clear all interrupts */
+            /* Clear all interrupts */
             HAL_set_8bit_reg( this_spi->base_addr, INTCLR, SPI_ALL_INTS );
 
             /* Disable SSEND and CMD interrupts as we are not doing block transfers */
             HAL_set_8bit_reg_field( this_spi->base_addr, CTRL2_INTSSEND, DISABLE );
             HAL_set_8bit_reg_field( this_spi->base_addr, CTRL2_INTCMD,   DISABLE );
 
-        	/* Disable block Rx handler as they are mutually exclusive. */
+            /* Disable block Rx handler as they are mutually exclusive. */
             this_spi->block_rx_handler = 0U;
 
             /* Keep a copy of the pointer to the Rx handler function. */
@@ -536,16 +526,16 @@ void SPI_set_frame_rx_handler
 
             if( SPI_SLAVE_XFER_FRAME != this_spi->slave_xfer_mode )
             {
-            	/*
-            	 * Either just coming from init or were previously in block mode
-            	 * so no tx frame handler is set at this point in time...
-            	 *
-            	 * Don't allow TXDONE interrupts.
-            	 */
+                /*
+                 * Either just coming from init or were previously in block mode
+                 * so no tx frame handler is set at this point in time...
+                 *
+                 * Don't allow TXDONE interrupts.
+                 */
                 HAL_set_8bit_reg_field( this_spi->base_addr, CTRL1_INTTXDONE, DISABLE );
             }
 
-    		/* Flush the receive and transmit FIFOs*/
+            /* Flush the receive and transmit FIFOs*/
             HAL_set_8bit_reg(this_spi->base_addr, CMD, CMD_TXFIFORST_MASK | CMD_RXFIFORST_MASK);
 
             /* Enable Rx and FIFO error interrupts */
@@ -556,8 +546,8 @@ void SPI_set_frame_rx_handler
             /* Make sure correct mode is selected */
             this_spi->slave_xfer_mode = SPI_SLAVE_XFER_FRAME;
 
-			/* Finally re-enable the CoreSPI */
-	        HAL_set_8bit_reg_field( this_spi->base_addr, CTRL1_ENABLE, ENABLE );
+            /* Finally re-enable the CoreSPI */
+            HAL_set_8bit_reg_field( this_spi->base_addr, CTRL1_ENABLE, ENABLE );
         }
     }
 }
@@ -580,8 +570,8 @@ void SPI_set_slave_tx_frame
         /* This function is only intended to be used with an SPI slave. */
         if( DISABLE == HAL_get_8bit_reg_field(this_spi->base_addr, CTRL1_MASTER ) )
         {
-			/* Disable the Core SPI while we configure */
-	        HAL_set_8bit_reg_field( this_spi->base_addr, CTRL1_ENABLE, DISABLE );
+            /* Disable the Core SPI while we configure */
+            HAL_set_8bit_reg_field( this_spi->base_addr, CTRL1_ENABLE, DISABLE );
 
             /* Clear all interrupts */
             HAL_set_8bit_reg( this_spi->base_addr, INTCLR, SPI_ALL_INTS );
@@ -592,12 +582,12 @@ void SPI_set_slave_tx_frame
 
             if( SPI_SLAVE_XFER_FRAME != this_spi->slave_xfer_mode )
             {
-            	/*
-            	 * Either just coming from init or were previously in block mode
-            	 * so no rx frame handler is set at this point in time...
-            	 *
-            	 * Don't allow RXDATA interrupts.
-            	 */
+                /*
+                 * Either just coming from init or were previously in block mode
+                 * so no rx frame handler is set at this point in time...
+                 *
+                 * Don't allow RXDATA interrupts.
+                 */
                 HAL_set_8bit_reg_field( this_spi->base_addr, CTRL2_INTRXDATA, DISABLE );
             }
 
@@ -607,7 +597,7 @@ void SPI_set_slave_tx_frame
             this_spi->slave_tx_size = 0U;
             this_spi->slave_tx_idx = 0U;
 
-    		/* Flush the receive and transmit FIFOs*/
+            /* Flush the receive and transmit FIFOs*/
             HAL_set_8bit_reg(this_spi->base_addr, CMD, CMD_TXFIFORST_MASK | CMD_RXFIFORST_MASK);
 
             /* Assign the slave frame update handler - NULL_SLAVE_TX_UPDATE_HANDLER for none */
@@ -627,7 +617,7 @@ void SPI_set_slave_tx_frame
             this_spi->slave_xfer_mode = SPI_SLAVE_XFER_FRAME;
 
             /* Ready to go so enable CoreSPI */
-	        HAL_set_8bit_reg_field( this_spi->base_addr, CTRL1_ENABLE, ENABLE );
+            HAL_set_8bit_reg_field( this_spi->base_addr, CTRL1_ENABLE, ENABLE );
         }
     }
 }
@@ -653,10 +643,10 @@ void SPI_set_slave_block_buffers
         /* This function is only intended to be used with an SPI slave. */
         if( DISABLE == HAL_get_8bit_reg_field(this_spi->base_addr, CTRL1_MASTER ) )
         {
-			/* Disable the Core SPI while we configure */
-	        HAL_set_8bit_reg_field( this_spi->base_addr, CTRL1_ENABLE, DISABLE );
+            /* Disable the Core SPI while we configure */
+            HAL_set_8bit_reg_field( this_spi->base_addr, CTRL1_ENABLE, DISABLE );
 
-	        /* Make sure correct mode is selected */
+            /* Make sure correct mode is selected */
             this_spi->slave_xfer_mode = SPI_SLAVE_XFER_BLOCK;
             /*
              * No command handler should be setup at this stage so fake this
@@ -681,7 +671,7 @@ void SPI_set_slave_block_buffers
             this_spi->slave_tx_size = tx_buff_size;
             this_spi->slave_tx_idx = 0U;
 
-    		/* Flush the receive and transmit FIFOs */
+            /* Flush the receive and transmit FIFOs */
             HAL_set_8bit_reg( this_spi->base_addr, CMD, CMD_TXFIFORST_MASK | CMD_RXFIFORST_MASK );
 
             /* Clear all interrupts */
@@ -710,7 +700,7 @@ void SPI_set_slave_block_buffers
             HAL_set_8bit_reg_field( this_spi->base_addr, CTRL2_INTCMD,      DISABLE );
 
             /* Now enable the CoreSPI */
-	        HAL_set_8bit_reg_field( this_spi->base_addr, CTRL1_ENABLE, ENABLE );
+            HAL_set_8bit_reg_field( this_spi->base_addr, CTRL1_ENABLE, ENABLE );
         }
     }
 }
@@ -735,7 +725,7 @@ void SPI_set_cmd_handler
     if( ( NULL_INSTANCE != this_spi ) && ( 0u < cmd_size ) &&
         ( NULL_SLAVE_CMD_HANDLER != cmd_handler ) )
     {
-		/* Disable the Core SPI while we configure */
+        /* Disable the Core SPI while we configure */
         HAL_set_8bit_reg_field( this_spi->base_addr, CTRL1_ENABLE, DISABLE );
         /*
          * Note we don't flush the FIFOs as this has been done already when
@@ -802,8 +792,8 @@ void SPI_enable
 
     if( NULL_INSTANCE != this_spi )
     {
-		/* Disable the Core SPI while we configure */
-		HAL_set_8bit_reg_field( this_spi->base_addr, CTRL1_ENABLE, ENABLE );
+        /* Disable the Core SPI while we configure */
+        HAL_set_8bit_reg_field( this_spi->base_addr, CTRL1_ENABLE, ENABLE );
     }
 }
 
@@ -821,8 +811,8 @@ void SPI_disable
 
     if( NULL_INSTANCE != this_spi )
     {
-		/* Disable the Core SPI while we configure */
-		HAL_set_8bit_reg_field( this_spi->base_addr, CTRL1_ENABLE, DISABLE );
+        /* Disable the Core SPI while we configure */
+        HAL_set_8bit_reg_field( this_spi->base_addr, CTRL1_ENABLE, DISABLE );
     }
 }
 
@@ -835,8 +825,8 @@ void SPI_isr
     spi_instance_t * this_spi
 )
 {
-	uint32_t rx_frame;
-	int32_t  guard;
+    uint32_t rx_frame;
+    int32_t  guard;
 
 /*
  * The assert and the NULL check here can be commented out to reduce the interrupt
@@ -862,69 +852,69 @@ void SPI_isr
             {
                 while( 0u == HAL_get_8bit_reg_field( this_spi->base_addr, STATUS_RXEMPTY ) )
                 {
-                	/* Read irrespective to clear the RX IRQ */
-                	rx_frame = HAL_get_32bit_reg( this_spi->base_addr, RXDATA );
-                	if( this_spi->slave_rx_idx < this_spi->slave_rx_size )
-        			{
-        				this_spi->slave_rx_buffer[this_spi->slave_rx_idx] = (uint8_t)rx_frame;
-        			}
-        			++this_spi->slave_rx_idx;
+                    /* Read irrespective to clear the RX IRQ */
+                    rx_frame = HAL_get_32bit_reg( this_spi->base_addr, RXDATA );
+                    if( this_spi->slave_rx_idx < this_spi->slave_rx_size )
+                    {
+                        this_spi->slave_rx_buffer[this_spi->slave_rx_idx] = (uint8_t)rx_frame;
+                    }
+                    ++this_spi->slave_rx_idx;
                 }
                 /*
                  * Now handle updating of tx FIFO to keep the data flowing.
                  * First see if there is anything in slave_tx_buffer to send.
                  */
-            	while( ( this_spi->slave_tx_idx < this_spi->slave_tx_size )
-            	    && ( 0u == HAL_get_8bit_reg_field( this_spi->base_addr, STATUS_TXFULL ) ) )
-            	{
-           			HAL_set_32bit_reg( this_spi->base_addr, TXDATA, (uint32_t)this_spi->slave_tx_buffer[this_spi->slave_tx_idx] );
-           			++this_spi->slave_tx_idx;
-           		}
-            	/*
-            	 * Next see if there is anything in resp_tx_buffer to send.
-            	 */
-            	if( this_spi->slave_tx_idx >= this_spi->slave_tx_size )
-            	{
-                	while( ( this_spi->resp_buff_tx_idx < this_spi->resp_buff_size )
-                	    && ( 0u == HAL_get_8bit_reg_field( this_spi->base_addr, STATUS_TXFULL ) ) )
-                	{
-               			HAL_set_32bit_reg( this_spi->base_addr, TXDATA, (uint32_t)this_spi->resp_tx_buffer[this_spi->resp_buff_tx_idx] );
-               			++this_spi->resp_buff_tx_idx;
-                	}
-				}
-				/*
-				 * Lastly, see if we are ready to pad with 0s .
-				 */
-				if( this_spi->cmd_done && ( this_spi->slave_tx_idx >= this_spi->slave_tx_size ) &&
-				  ( this_spi->resp_buff_tx_idx >= this_spi->resp_buff_size ) )
-				{
-	                guard = 1 + ((int32_t)this_spi->fifo_depth / 4);
-	            	while( ( 0u == HAL_get_8bit_reg_field( this_spi->base_addr, STATUS_TXFULL ) )
-	            	    && ( 0 != guard ) )
-	            	{
-						/*
-						 * Pad TX FIFO with 0s for consistent behaviour if the master
-						 * tries to transfer more than we expected.
-						 */
-						HAL_set_32bit_reg(this_spi->base_addr, TXDATA, 0x00u);
-						/*
-						 * We use the guard count to cover the event that we are never
-						 * seeing the TX FIFO full because the data is being pulled
-						 * out as fast as we can stuff it in. In this case we never spend
-						 * more than our allocated time spinning here.
-						 */
-						guard--;
-            		}
-				}
-			}
+                while( ( this_spi->slave_tx_idx < this_spi->slave_tx_size )
+                    && ( 0u == HAL_get_8bit_reg_field( this_spi->base_addr, STATUS_TXFULL ) ) )
+                {
+                       HAL_set_32bit_reg( this_spi->base_addr, TXDATA, (uint32_t)this_spi->slave_tx_buffer[this_spi->slave_tx_idx] );
+                       ++this_spi->slave_tx_idx;
+                   }
+                /*
+                 * Next see if there is anything in resp_tx_buffer to send.
+                 */
+                if( this_spi->slave_tx_idx >= this_spi->slave_tx_size )
+                {
+                    while( ( this_spi->resp_buff_tx_idx < this_spi->resp_buff_size )
+                        && ( 0u == HAL_get_8bit_reg_field( this_spi->base_addr, STATUS_TXFULL ) ) )
+                    {
+                           HAL_set_32bit_reg( this_spi->base_addr, TXDATA, (uint32_t)this_spi->resp_tx_buffer[this_spi->resp_buff_tx_idx] );
+                           ++this_spi->resp_buff_tx_idx;
+                    }
+                }
+                /*
+                 * Lastly, see if we are ready to pad with 0s .
+                 */
+                if( this_spi->cmd_done && ( this_spi->slave_tx_idx >= this_spi->slave_tx_size ) &&
+                  ( this_spi->resp_buff_tx_idx >= this_spi->resp_buff_size ) )
+                {
+                    guard = 1 + ((int32_t)this_spi->fifo_depth / 4);
+                    while( ( 0u == HAL_get_8bit_reg_field( this_spi->base_addr, STATUS_TXFULL ) )
+                        && ( 0 != guard ) )
+                    {
+                        /*
+                         * Pad TX FIFO with 0s for consistent behaviour if the master
+                         * tries to transfer more than we expected.
+                         */
+                        HAL_set_32bit_reg(this_spi->base_addr, TXDATA, 0x00u);
+                        /*
+                         * We use the guard count to cover the event that we are never
+                         * seeing the TX FIFO full because the data is being pulled
+                         * out as fast as we can stuff it in. In this case we never spend
+                         * more than our allocated time spinning here.
+                         */
+                        guard--;
+                    }
+                }
+            }
             else if( SPI_SLAVE_XFER_FRAME == this_spi->slave_xfer_mode ) /* Single frame handling mode. */
             {
                 while( 0u == HAL_get_8bit_reg_field( this_spi->base_addr, STATUS_RXEMPTY ) )
                 {
-                	rx_frame = HAL_get_32bit_reg( this_spi->base_addr, RXDATA );
+                    rx_frame = HAL_get_32bit_reg( this_spi->base_addr, RXDATA );
                     if( NULL_FRAME_HANDLER != this_spi->frame_rx_handler )
                     {
-                    	this_spi->frame_rx_handler( rx_frame );
+                        this_spi->frame_rx_handler( rx_frame );
                     }
                 }
             }
@@ -939,18 +929,18 @@ void SPI_isr
         /* Handle transmit. */
         if( ENABLE == HAL_get_8bit_reg_field( this_spi->base_addr, INTMASK_TXDONE ) )
         {
-			/*
-        	 * Note, the driver only currently uses the txdone interrupt when
-        	 * in frame transmit mode. In block mode all TX handling is done by the
-        	 * receive interrupt handling code as we know that for every frame received
-        	 * a frame must be placed in the TX FIFO.
-        	 */
+            /*
+             * Note, the driver only currently uses the txdone interrupt when
+             * in frame transmit mode. In block mode all TX handling is done by the
+             * receive interrupt handling code as we know that for every frame received
+             * a frame must be placed in the TX FIFO.
+             */
             if( SPI_SLAVE_XFER_FRAME == this_spi->slave_xfer_mode )
             {
                 /* Execute the user callback to update the slave_tx_frame */
-        	    if( NULL_SLAVE_TX_UPDATE_HANDLER != this_spi->slave_tx_frame_handler )
+                if( NULL_SLAVE_TX_UPDATE_HANDLER != this_spi->slave_tx_frame_handler )
                 {
-        		    this_spi->slave_tx_frame_handler ( this_spi );
+                    this_spi->slave_tx_frame_handler ( this_spi );
                 }
 
                 /* Reload slave tx frame into Tx data register. */
@@ -958,7 +948,7 @@ void SPI_isr
             }
             else if( SPI_SLAVE_XFER_BLOCK != this_spi->slave_xfer_mode )
             {
-            	/* Slave transfer mode not set up so discard anything in TX FIFO */
+                /* Slave transfer mode not set up so discard anything in TX FIFO */
                 HAL_set_8bit_reg( this_spi->base_addr, CMD, CMD_TXFIFORST_MASK );
             }
             else
@@ -992,7 +982,7 @@ void SPI_isr
             /*
              * Call the command handler if one exists.
              */
-			if( NULL_SLAVE_CMD_HANDLER != this_spi->cmd_handler )
+            if( NULL_SLAVE_CMD_HANDLER != this_spi->cmd_handler )
             {
                 this_spi->cmd_handler( this_spi->slave_rx_buffer, this_spi->slave_rx_idx );
             }
@@ -1005,49 +995,49 @@ void SPI_isr
         /* Handle slave select becoming de-asserted. */
         if( ENABLE == HAL_get_8bit_reg_field( this_spi->base_addr, INTMASK_SSEND) )
         {
-        	/* Only supposed to do all this if transferring blocks... */
-        	if(SPI_SLAVE_XFER_BLOCK == this_spi->slave_xfer_mode)
-        	{
-				uint32_t rx_size;
+            /* Only supposed to do all this if transferring blocks... */
+            if(SPI_SLAVE_XFER_BLOCK == this_spi->slave_xfer_mode)
+            {
+                uint32_t rx_size;
 
-				/* Empty any remaining bytes in RX FIFO */
-				read_slave_rx_fifo( this_spi );
-				rx_size = this_spi->slave_rx_idx;
-				/*
-				 * Re-enable command interrupt if required. 
-				 * Must be done before re loading FIFO to ensure stale response
-				 * data is not pushed into the FIFO.
-				 */
-				if(NULL_SLAVE_CMD_HANDLER != this_spi->cmd_handler)
-				{
-					this_spi->cmd_done = 0u;
-					this_spi->resp_tx_buffer = 0u;
-					this_spi->resp_buff_size = 0u;
-					this_spi->resp_buff_tx_idx = 0u;
-					HAL_set_8bit_reg_field( this_spi->base_addr, INTCLR_CMDINT, ENABLE );
-					HAL_set_8bit_reg_field( this_spi->base_addr, CTRL2_INTCMD, ENABLE );
-				}
-				/*
-				 * Reset the transmit index to 0 to restart transmit at the start of the
-				 * transmit buffer in the next transaction. This also requires flushing
-				 * the Tx FIFO and refilling it with the start of Tx data buffer.
-				 */
-				this_spi->slave_tx_idx = 0u;
-				HAL_set_8bit_reg( this_spi->base_addr, CMD, CMD_TXFIFORST_MASK | CMD_RXFIFORST_MASK );
-				fill_slave_tx_fifo( this_spi );
+                /* Empty any remaining bytes in RX FIFO */
+                read_slave_rx_fifo( this_spi );
+                rx_size = this_spi->slave_rx_idx;
+                /*
+                 * Re-enable command interrupt if required. 
+                 * Must be done before re loading FIFO to ensure stale response
+                 * data is not pushed into the FIFO.
+                 */
+                if(NULL_SLAVE_CMD_HANDLER != this_spi->cmd_handler)
+                {
+                    this_spi->cmd_done = 0u;
+                    this_spi->resp_tx_buffer = 0u;
+                    this_spi->resp_buff_size = 0u;
+                    this_spi->resp_buff_tx_idx = 0u;
+                    HAL_set_8bit_reg_field( this_spi->base_addr, INTCLR_CMDINT, ENABLE );
+                    HAL_set_8bit_reg_field( this_spi->base_addr, CTRL2_INTCMD, ENABLE );
+                }
+                /*
+                 * Reset the transmit index to 0 to restart transmit at the start of the
+                 * transmit buffer in the next transaction. This also requires flushing
+                 * the Tx FIFO and refilling it with the start of Tx data buffer.
+                 */
+                this_spi->slave_tx_idx = 0u;
+                HAL_set_8bit_reg( this_spi->base_addr, CMD, CMD_TXFIFORST_MASK | CMD_RXFIFORST_MASK );
+                fill_slave_tx_fifo( this_spi );
 
-				/* Prepare to receive next packet. */
-				this_spi->slave_rx_idx = 0u;
-				/*
-				 * Call the receive handler if one exists.
-				 */
-				if( NULL_BLOCK_HANDLER != this_spi->block_rx_handler )
-				{
-					this_spi->block_rx_handler( this_spi->slave_rx_buffer, rx_size );
-				}
+                /* Prepare to receive next packet. */
+                this_spi->slave_rx_idx = 0u;
+                /*
+                 * Call the receive handler if one exists.
+                 */
+                if( NULL_BLOCK_HANDLER != this_spi->block_rx_handler )
+                {
+                    this_spi->block_rx_handler( this_spi->slave_rx_buffer, rx_size );
+                }
 
-				HAL_set_8bit_reg_field( this_spi->base_addr, INTCLR_RXDATA, ENABLE );
-        	}
+                HAL_set_8bit_reg_field( this_spi->base_addr, INTCLR_RXDATA, ENABLE );
+            }
 
             HAL_set_8bit_reg_field( this_spi->base_addr, INTCLR_SSEND, ENABLE );
         }
@@ -1066,22 +1056,22 @@ static void fill_slave_tx_fifo
     spi_instance_t * this_spi
 )
 {
-	/* First see if slave_tx_buffer needs transmitting */
-	while( ( this_spi->slave_tx_idx < this_spi->slave_tx_size ) &&
-			!HAL_get_8bit_reg_field( this_spi->base_addr, STATUS_TXFULL ) )
-	{
-		HAL_set_32bit_reg( this_spi->base_addr, TXDATA, (uint32_t)this_spi->slave_tx_buffer[this_spi->slave_tx_idx] );
-		++this_spi->slave_tx_idx;
-	}
+    /* First see if slave_tx_buffer needs transmitting */
+    while( ( this_spi->slave_tx_idx < this_spi->slave_tx_size ) &&
+            !HAL_get_8bit_reg_field( this_spi->base_addr, STATUS_TXFULL ) )
+    {
+        HAL_set_32bit_reg( this_spi->base_addr, TXDATA, (uint32_t)this_spi->slave_tx_buffer[this_spi->slave_tx_idx] );
+        ++this_spi->slave_tx_idx;
+    }
 
     /* Then see if it is safe to look at putting resp_tx_buffer in FIFO? */
     if( this_spi->slave_tx_idx >= this_spi->slave_tx_size )
     {
         while( ( this_spi->resp_buff_tx_idx < this_spi->resp_buff_size ) &&
-        		!HAL_get_8bit_reg_field( this_spi->base_addr, STATUS_TXFULL ) )
+                !HAL_get_8bit_reg_field( this_spi->base_addr, STATUS_TXFULL ) )
         {
-			HAL_set_32bit_reg( this_spi->base_addr, TXDATA, (uint32_t)this_spi->resp_tx_buffer[this_spi->resp_buff_tx_idx] );
-			++this_spi->resp_buff_tx_idx;
+            HAL_set_32bit_reg( this_spi->base_addr, TXDATA, (uint32_t)this_spi->resp_tx_buffer[this_spi->resp_buff_tx_idx] );
+            ++this_spi->resp_buff_tx_idx;
         }
     }
 }
@@ -1101,11 +1091,11 @@ static void read_slave_rx_fifo
         while( !HAL_get_8bit_reg_field( this_spi->base_addr, STATUS_RXEMPTY ) )
         {
             rx_frame = HAL_get_32bit_reg( this_spi->base_addr, RXDATA ); /* Read irresepective to clear the RX IRQ */
-        	if( this_spi->slave_rx_idx < this_spi->slave_rx_size )
-			{
-				this_spi->slave_rx_buffer[this_spi->slave_rx_idx] = (uint8_t)rx_frame;
-			}
-			++this_spi->slave_rx_idx;
+            if( this_spi->slave_rx_idx < this_spi->slave_rx_size )
+            {
+                this_spi->slave_rx_buffer[this_spi->slave_rx_idx] = (uint8_t)rx_frame;
+            }
+            ++this_spi->slave_rx_idx;
         }
     }
     else if( SPI_SLAVE_XFER_FRAME == this_spi->slave_xfer_mode ) /* Frame handling mode */
@@ -1116,7 +1106,7 @@ static void read_slave_rx_fifo
             rx_frame = HAL_get_32bit_reg( this_spi->base_addr, RXDATA );
             if( NULL_FRAME_HANDLER != this_spi->frame_rx_handler )
             {
-            	this_spi->frame_rx_handler( rx_frame );
+                this_spi->frame_rx_handler( rx_frame );
             }
         }
     }
