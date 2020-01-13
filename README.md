@@ -18,7 +18,7 @@ The FPGA designs include the following features:
 * DDR for code/data
 * User peripherals such as GPIO, Timers, UART
 * Adafruit touch screen display
-* Designs created with Libero v12.1
+* Designs created with Libero v12.3
 
 #### Projects
 * MIV_RV32IMA_L1_AHB_TickTacToe or MiV_RV32IMA_L1_AXI_TickTackToe
