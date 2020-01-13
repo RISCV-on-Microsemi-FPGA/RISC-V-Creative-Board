@@ -1,4 +1,4 @@
-## RISC-V Creative Development Board Designs for Libero v12.2
+## RISC-V Creative Development Board Designs for Libero v12.3
 
 Sample Mi-V Libero project for FPGA designs for RISC-V Creative board. The RISC-V Creative Development Board includes a IGLOO2 M2GL025 FPGA.
 
@@ -14,7 +14,7 @@ a sufficient file path for the project will result in errors**.
 ### Instructions for Building the Design
 -------------
 
-- Launch Libero v12.2 on your computer. Wait for Libero to start, make sure you have the latest Libero cores downloaded.
+- Launch Libero v12.3 on your computer. Wait for Libero to start, make sure you have the latest Libero cores downloaded.
 - Examine the .tcl files provided and choose one.
 - In Libero Press "CTRL+U" to display the "Execute Script" menu. Alternatively, click Project from the top left hand corner of Libero Suite and select "Execute Script" from there.
 - Follow the instructions below and refer to the images to build the design.
