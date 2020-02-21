@@ -25,6 +25,11 @@
 # User Locked I/O settings
 # 
 
+set_io CLK0_PAD       \
+    -pinname H16      \
+    -fixed yes        \
+    -DIRECTION INPUT
+
 
 set_io {GPIO_IN[0]}   \
     -pinname H12      \
