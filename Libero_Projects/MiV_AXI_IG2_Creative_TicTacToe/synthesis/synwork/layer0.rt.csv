@@ -1,4 +1,0 @@
-Library, Design Unit ,Compile time , Hardware Gen ,Optimization Stg1 ,Optimization Stg2 , Peak Mem Usage, Incr Mem Usage, Hardware Gen ,Optimization Stg1 ,Optimization Stg2
-work, MiV_RV32IMA_L1_AXI_0_MiV_RV32IMA_L1_AXI_0_0_MIV_RV32IMA_L1_AXI_ROCKET,0h:00m:01s,0h:00m:00s,0h:00m:00s,0h:00m:01s,   197 MB,    14 MB,     1 MB,     3 MB,    11 MB
-work, MiV_RV32IMA_L1_AXI_0_MiV_RV32IMA_L1_AXI_0_0_MIV_RV32IMA_L1_AXI_DCACHE_DCACHE,0h:00m:01s,0h:00m:00s,0h:00m:00s,0h:00m:01s,   244 MB,     9 MB,     0 MB,     4 MB,     5 MB
-work, MiV_RV32IMA_L1_AXI_0_MiV_RV32IMA_L1_AXI_0_0_MIV_RV32IMA_L1_AXI_TLDEBUG_MODULE_INNER_DM_INNER,0h:00m:02s,0h:00m:00s,0h:00m:00s,0h:00m:01s,   244 MB,    21 MB,     6 MB,     9 MB,     6 MB

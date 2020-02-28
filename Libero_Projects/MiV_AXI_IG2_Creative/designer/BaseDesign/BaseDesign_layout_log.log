@@ -1,75 +1,0 @@
-INFO: Reading User SDC file C:\GitHub-LSRAM-12.3\RISC-V-Creative-Board-1\Libero_Projects\MiV_AXI_IG2_Creative\constraint\BaseDesign_derived_constraints.sdc.
-INFO: Reading User SDC file C:\GitHub-LSRAM-12.3\RISC-V-Creative-Board-1\Libero_Projects\MiV_AXI_IG2_Creative\constraint\io_jtag_constraints.sdc.
-INFO: The option "Abort flow if errors are found in SDC" is turned ON in Project Settings> Design flow page. The Place & Route tool will fail if errors are found in associated SDC files. Please uncheck the option to ignore the errors and continue running the tool.
-
-No errors or warnings found.
-INFO: The option "Abort flow if errors are found in PDC" is turned ON in Project Settings> Design flow page. The Place & Route tool will fail if errors are found in associated PDC files. Please uncheck the option to ignore the errors and continue running the tool
-***** Place and Route Configurations *****
-Timing-driven            : ON
-Power-driven             : OFF
-I/O Register Combining   : ON
-High-effort              : ON
-Repair min-delay         : ON
-Incremental              : OFF
-Inter-clock optimization : ON
-TDPR scenario            : place_and_route
-
-INFO: Reading User PDC file C:\GitHub-LSRAM-12.3\RISC-V-Creative-Board-1\Libero_Projects\MiV_AXI_IG2_Creative\constraint\io\io_constraints.pdc. 0 error(s) and 0 warning(s)
-
-Running the I/O Bank and Globals Assigner.
-Info:  I/O Bank and Globals Assigner identified 8 fixed I/O macros, 0 unfixed I/O macros
-
-I/O Bank and Globals Assigner completed successfully.
-Total time spent in I/O Bank and Globals Assigner: 0 seconds
-
-Placer V5.0 - 12.800.0 
-Design: BaseDesign                      Started: Thu Feb 27 12:01:17 2020
-
-Initializing High-Effort Timing-Driven Placement ...
-Clustering ...
-Placing ...
-Improving placement ...
-End of placement.
-
-Placer Runtime Summary   :
-Clustering (1 pass)      : 9 seconds
-Placement                : 27 seconds
-Improvement              : 53 seconds
-
-Placer completed successfully.
-
-Design: BaseDesign                      
-Finished: Thu Feb 27 12:03:14 2020
-Total CPU Time:     00:02:29            Total Elapsed Time: 00:01:57
-Total Memory Usage: 816.4 Mbytes
-                        o - o - o - o - o - o
-
-
-Router 
-Design: C:\GitHub-LSRAM-12.3\RISC-V-Creative-Board-1\Libero_Projects\MiV_AXI_IG2_Creative\designer\BaseDesign\BaseDesignStarted: Thu Feb 27 12:03:30 2020
-
-
-Router completed successfully.
-
-Design: C:\GitHub-LSRAM-12.3\RISC-V-Creative-Board-1\Libero_Projects\MiV_AXI_IG2_Creative\designer\BaseDesign\BaseDesign
-Finished: Thu Feb 27 12:04:12 2020
-Total CPU Time:     00:00:41            Total Elapsed Time: 00:00:42
-Total Memory Usage: 895.9 Mbytes
-                        o - o - o - o - o - o
-
-Info: Iteration 1:
-  Total violating paths eligible for improvement: 56
-  Worst minimum delay slack: -0.06 ns
-Info: Iteration 2:
-  Total violating paths eligible for improvement: 0
-  Worst minimum delay slack: 
-Resource Usage
-+---------------+-------+-------+------------+
-| Type          | Used  | Total | Percentage |
-+---------------+-------+-------+------------+
-| 4LUT          | 18962 | 27696 | 68.46      |
-| DFF           | 12504 | 27696 | 45.15      |
-| I/O Register  | 0     | 408   | 0.00       |
-| Logic Element | 21861 | 27696 | 78.93      |
-+---------------+-------+-------+------------+
-
