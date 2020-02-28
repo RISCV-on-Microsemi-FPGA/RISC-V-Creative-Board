@@ -1,0 +1,124 @@
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(4608): WARNING: net 'N_10817' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(4609): WARNING: net 'N_10818' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(8512): WARNING: net 'N_10822' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(8513): WARNING: net 'N_10823' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(8514): WARNING: net 'N_10824' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(8689): WARNING: net 'N_10825' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(8690): WARNING: net 'N_10826' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(8691): WARNING: net 'N_10827' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(30185): WARNING: net 'N_10837' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(30186): WARNING: net 'N_10838' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(30187): WARNING: net 'N_10839' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(35799): WARNING: net 'N_10845' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(35800): WARNING: net 'N_10846' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(35801): WARNING: net 'N_10847' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(36528): WARNING: net 'N_10840' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(36538): WARNING: net 'N_10848' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(36539): WARNING: net 'N_10849' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(36540): WARNING: net 'N_10850' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(53057): WARNING: net 'N_10871' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(53058): WARNING: net 'N_10872' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(53059): WARNING: net 'N_10873' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(54005): WARNING: net 'N_10864' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(54006): WARNING: net 'N_10865' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(54007): WARNING: net 'N_10866' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(54011): WARNING: net 'N_10874' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(54012): WARNING: net 'N_10875' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(54013): WARNING: net 'N_10876' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(56812): WARNING: net 'N_10887' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(72900): WARNING: net 'N_10892' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(72909): WARNING: net 'N_10893' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(72910): WARNING: net 'N_10894' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(72911): WARNING: net 'N_10895' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(113983): WARNING: net 'N_10919' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(113984): WARNING: net 'N_10920' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(113985): WARNING: net 'N_10921' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(113986): WARNING: net 'N_10922' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(113987): WARNING: net 'N_10923' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(113988): WARNING: net 'N_10924' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(113989): WARNING: net 'N_10925' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(113990): WARNING: net 'N_10926' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(113991): WARNING: net 'N_10927' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(113992): WARNING: net 'N_10928' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(143882): WARNING: net 'N_10944' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(143885): WARNING: net 'N_10947' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(171065): WARNING: net 'N_10957' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(171066): WARNING: net 'N_10958' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(171067): WARNING: net 'N_10959' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(171068): WARNING: net 'N_10960' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(171069): WARNING: net 'N_10961' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(171070): WARNING: net 'N_10962' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(171071): WARNING: net 'N_10963' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(171072): WARNING: net 'N_10964' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(171081): WARNING: net 'N_10973' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(171082): WARNING: net 'N_10974' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(171083): WARNING: net 'N_10975' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(171084): WARNING: net 'N_10976' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(171085): WARNING: net 'N_10977' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(171086): WARNING: net 'N_10978' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(184340): WARNING: net 'N_10905' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(184341): WARNING: net 'N_10906' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(184342): WARNING: net 'N_10907' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(184343): WARNING: net 'N_10908' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(184344): WARNING: net 'N_10909' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(184345): WARNING: net 'N_10910' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(184346): WARNING: net 'N_10911' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(184440): WARNING: net 'N_10948' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(184443): WARNING: net 'N_10951' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(184446): WARNING: net 'N_10980' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(184447): WARNING: net 'N_10981' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(184448): WARNING: net 'N_10982' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(199057): WARNING: net 'N_10986' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(199058): WARNING: net 'N_10987' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(199059): WARNING: net 'N_10988' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(199060): WARNING: net 'N_10989' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(199061): WARNING: net 'N_10990' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(200656): WARNING: net 'N_10852' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(200657): WARNING: net 'N_10853' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(200658): WARNING: net 'N_10854' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(200746): WARNING: net 'N_10881' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(200747): WARNING: net 'N_10882' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(200748): WARNING: net 'N_10883' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(200749): WARNING: net 'N_10884' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(200896): WARNING: net 'N_10890' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(200900): WARNING: net 'N_10891' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(200926): WARNING: net 'N_10991' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(208713): WARNING: net 'N_10992' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(208799): WARNING: net 'N_10993' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(216327): WARNING: net 'N_10828' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(216328): WARNING: net 'N_10829' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(216329): WARNING: net 'N_10830' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/synthesis/TicTacToe.vm(216331): WARNING: net 'N_10994' does not have a driver (VDB-1002)
+
+===============================================================================.
+
+Info: Global design data: 
+      Total globals:                       8 
+      Globals that cannot be demoted:      1 
+      Globals considered for demotion:     7 
+
+
+Info: List of globals that cannot be demoted: 
+    CLK    ASYN   DATA   Instance Name 
+    ---    ----   ----   ------------- 
+    5509   0      0      'FCCC_0_inst_0/FCCC_0_0/GL0_INST' 
+
+Info: List of globals considered for demotion: 
+    CLK    ASYN   DATA   Instance Name 
+    ---    ----   ----   ------------- 
+    314    0      0      'CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_inferred_clock_RNIJ683' 
+    17     0      1      'CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UDRCK_inferred_clock_RNIFUN4' 
+    0      856    2      'reset_synchronizer_0/sync_asert_reg_RNIE9T5[1]' 
+    0      40     0      'MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dmiResetCatch/MIV_RV32IMA_L1_AHB_ASYNC_RESET_SYNCHRONIZER_SHIFT_REG_W1_D3_I0/sync_0/reg_0/q_rep_RNI0A87' 
+    0      30     0      'MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/_T_49_RNIVJ66' 
+    0      25     0      'CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst_RNILAHC' 
+    0      24     0      'MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmiXbar/un1_reset_debug_RNICCBD' 
+
+Info: Demotion information: 
+      Disconnected 1 data pins from global 'CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UDRCK_inferred_clock_RNIFUN4'. 
+      Disconnected 2 data pins from global 'reset_synchronizer_0/sync_asert_reg_RNIE9T5[1]'. 
+Info: CMPG4-302: Added 0 row global instances.
+Info: CMPG4-303: Deleted 0 global instances.
+
+===============================================================================.
+

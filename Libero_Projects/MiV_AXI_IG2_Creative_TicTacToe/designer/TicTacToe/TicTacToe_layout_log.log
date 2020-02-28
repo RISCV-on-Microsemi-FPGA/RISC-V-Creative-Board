@@ -1,0 +1,75 @@
+INFO: Reading User SDC file C:\GitHub-LSRAM-12.3\RISC-V-Creative-Board-1\Libero_Projects\MiV_AXI_IG2_Creative_TicTacToe\constraint\TicTacToe_derived_constraints.sdc.
+INFO: Reading User SDC file C:\GitHub-LSRAM-12.3\RISC-V-Creative-Board-1\Libero_Projects\MiV_AXI_IG2_Creative_TicTacToe\constraint\io_jtag_constraints.sdc.
+INFO: The option "Abort flow if errors are found in SDC" is turned ON in Project Settings> Design flow page. The Place & Route tool will fail if errors are found in associated SDC files. Please uncheck the option to ignore the errors and continue running the tool.
+
+No errors or warnings found.
+INFO: The option "Abort flow if errors are found in PDC" is turned ON in Project Settings> Design flow page. The Place & Route tool will fail if errors are found in associated PDC files. Please uncheck the option to ignore the errors and continue running the tool
+***** Place and Route Configurations *****
+Timing-driven            : ON
+Power-driven             : OFF
+I/O Register Combining   : ON
+High-effort              : ON
+Repair min-delay         : ON
+Incremental              : OFF
+Inter-clock optimization : ON
+TDPR scenario            : place_and_route
+
+INFO: Reading User PDC file C:\GitHub-LSRAM-12.3\RISC-V-Creative-Board-1\Libero_Projects\MiV_AXI_IG2_Creative_TicTacToe\constraint\io\io_constraints.pdc. 0 error(s) and 0 warning(s)
+
+Running the I/O Bank and Globals Assigner.
+Info:  I/O Bank and Globals Assigner identified 11 fixed I/O macros, 0 unfixed I/O macros
+
+I/O Bank and Globals Assigner completed successfully.
+Total time spent in I/O Bank and Globals Assigner: 0 seconds
+
+Placer V5.0 - 12.800.0 
+Design: TicTacToe                       Started: Wed Feb 26 18:07:07 2020
+
+Initializing High-Effort Timing-Driven Placement ...
+Clustering ...
+Placing ...
+Improving placement ...
+End of placement.
+
+Placer Runtime Summary   :
+Clustering (1 pass)      : 12 seconds
+Placement                : 29 seconds
+Improvement              : 57 seconds
+
+Placer completed successfully.
+
+Design: TicTacToe                       
+Finished: Wed Feb 26 18:09:16 2020
+Total CPU Time:     00:02:53            Total Elapsed Time: 00:02:09
+Total Memory Usage: 815.8 Mbytes
+                        o - o - o - o - o - o
+
+
+Router 
+Design: C:\GitHub-LSRAM-12.3\RISC-V-Creative-Board-1\Libero_Projects\MiV_AXI_IG2_Creative_TicTacToe\designer\TicTacToe\TicTacToeStarted: Wed Feb 26 18:09:36 2020
+
+
+Router completed successfully.
+
+Design: C:\GitHub-LSRAM-12.3\RISC-V-Creative-Board-1\Libero_Projects\MiV_AXI_IG2_Creative_TicTacToe\designer\TicTacToe\TicTacToe
+Finished: Wed Feb 26 18:10:26 2020
+Total CPU Time:     00:00:50            Total Elapsed Time: 00:00:50
+Total Memory Usage: 895.5 Mbytes
+                        o - o - o - o - o - o
+
+Info: Iteration 1:
+  Total violating paths eligible for improvement: 2
+  Worst minimum delay slack: -0.017 ns
+Info: Iteration 2:
+  Total violating paths eligible for improvement: 0
+  Worst minimum delay slack: 
+Resource Usage
++---------------+-------+-------+------------+
+| Type          | Used  | Total | Percentage |
++---------------+-------+-------+------------+
+| 4LUT          | 19373 | 27696 | 69.95      |
+| DFF           | 12776 | 27696 | 46.13      |
+| I/O Register  | 0     | 408   | 0.00       |
+| Logic Element | 22489 | 27696 | 81.20      |
++---------------+-------+-------+------------+
+

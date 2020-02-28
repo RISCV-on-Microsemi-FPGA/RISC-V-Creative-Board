@@ -1,0 +1,85 @@
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(67087): WARNING: net 'N_17090' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(67088): WARNING: net 'N_17091' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(67089): WARNING: net 'N_17092' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(93311): WARNING: net 'N_17111' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(93312): WARNING: net 'N_17112' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(93313): WARNING: net 'N_17113' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(93314): WARNING: net 'N_17114' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(94413): WARNING: net 'N_17104' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(94414): WARNING: net 'N_17105' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(94415): WARNING: net 'N_17106' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(94419): WARNING: net 'N_17115' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(94420): WARNING: net 'N_17116' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(94421): WARNING: net 'N_17117' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(94422): WARNING: net 'N_17118' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(99473): WARNING: net 'N_17128' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(114069): WARNING: net 'N_17142' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(115933): WARNING: net 'N_17133' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(115934): WARNING: net 'N_17134' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(115935): WARNING: net 'N_17135' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(115942): WARNING: net 'N_17143' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(157398): WARNING: net 'N_17156' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(157399): WARNING: net 'N_17157' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(157400): WARNING: net 'N_17158' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(157401): WARNING: net 'N_17159' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(157402): WARNING: net 'N_17160' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(157403): WARNING: net 'N_17161' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(157404): WARNING: net 'N_17162' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(157405): WARNING: net 'N_17163' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(157406): WARNING: net 'N_17164' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(157407): WARNING: net 'N_17165' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(215028): WARNING: net 'N_17174' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(215029): WARNING: net 'N_17175' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(215030): WARNING: net 'N_17176' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(215031): WARNING: net 'N_17177' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(215032): WARNING: net 'N_17178' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(215033): WARNING: net 'N_17179' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(215034): WARNING: net 'N_17180' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(215035): WARNING: net 'N_17181' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(215036): WARNING: net 'N_17182' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(215037): WARNING: net 'N_17183' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(215039): WARNING: net 'N_17184' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(228306): WARNING: net 'N_17144' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(228307): WARNING: net 'N_17145' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(228308): WARNING: net 'N_17146' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(228309): WARNING: net 'N_17147' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(228310): WARNING: net 'N_17148' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(228401): WARNING: net 'N_17185' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(228402): WARNING: net 'N_17186' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(334723): WARNING: net 'N_17123' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(334724): WARNING: net 'N_17124' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(334725): WARNING: net 'N_17125' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(334726): WARNING: net 'N_17126' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative/synthesis/BaseDesign.vm(334890): WARNING: net 'N_17131' does not have a driver (VDB-1002)
+
+===============================================================================.
+
+Info: Global design data: 
+      Total globals:                       8 
+      Globals that cannot be demoted:      1 
+      Globals considered for demotion:     7 
+
+
+Info: List of globals that cannot be demoted: 
+    CLK    ASYN   DATA   Instance Name 
+    ---    ----   ----   ------------- 
+    10469  0      0      'FCCC_0_inst_0/FCCC_0_0/GL0_INST' 
+
+Info: List of globals considered for demotion: 
+    CLK    ASYN   DATA   Instance Name 
+    ---    ----   ----   ------------- 
+    314    0      0      'CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_inferred_clock_RNIJ683' 
+    17     0      1      'CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UDRCK_inferred_clock_RNIFUN4' 
+    0      1502   0      'reset_synchronizer_0/sync_asert_reg_rep_RNIK2MB[1]' 
+    0      40     0      'MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/dmiResetCatch/MIV_RV32IMA_L1_AXI_ASYNC_RESET_SYNCHRONIZER_SHIFT_REG_W1_D3_I0/sync_0/reg_0/q_rep_RNI5R15' 
+    0      30     0      'MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/_T_49_RNI4PI' 
+    0      25     0      'CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst_RNILAHC' 
+    0      24     0      'MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/un1_reset_debug_RNIINRF' 
+
+Info: Demotion information: 
+      Disconnected 1 data pins from global 'CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UDRCK_inferred_clock_RNIFUN4'. 
+Info: CMPG4-302: Added 0 row global instances.
+Info: CMPG4-303: Deleted 0 global instances.
+
+===============================================================================.
+

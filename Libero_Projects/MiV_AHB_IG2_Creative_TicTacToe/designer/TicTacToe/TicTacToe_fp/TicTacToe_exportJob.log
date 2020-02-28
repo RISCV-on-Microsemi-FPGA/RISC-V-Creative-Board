@@ -1,0 +1,18 @@
+Software Version: 12.800.0.16
+Opened 'C:\GitHub-LSRAM-12.3\RISC-V-Creative-Board-1\Libero_Projects\MiV_AHB_IG2_Creative_TicTacToe\designer\TicTacToe\TicTacToe_fp\TicTacToe.pro'
+The 'open_project' command succeeded.
+PDB file 'C:\GitHub-LSRAM-12.3\RISC-V-Creative-Board-1\Libero_Projects\MiV_AHB_IG2_Creative_TicTacToe\designer\TicTacToe\TicTacToe.pdb' has been loaded successfully.
+DESIGN : TicTacToe;  CHECKSUM : 01B2;  PDB_VERSION : 1.9
+Load Programming Data(s) Finished : Wed Feb 26 16:56:45 2020 (Elapsed time 00:00:02)
+The 'load_programming_data' command succeeded.
+Successfully exported PPD file for currently secured device: 'C:\GitHub-LSRAM-12.3\RISC-V-Creative-Board-1\FlashPro_Express_Projects\Programming_Files\tempExport\BaseDesign_IG2_Creative_TicTacToe_AHB_ProgramFile.ppd'; file programs Fabric.
+Fabric component bitstream digest: 9ca3152dee20c077abfdcdfc6bdb23dac2cb26bf285ebf19b9c86429fd92ed56
+Finished: Wed Feb 26 16:57:04 2020 (Elapsed time 00:00:19)
+
+The 'export_single_ppd' command succeeded.
+Project saved.
+The 'save_project' command succeeded.
+Project closed.
+Exported log file C:\GitHub-LSRAM-12.3\RISC-V-Creative-Board-1\Libero_Projects\MiV_AHB_IG2_Creative_TicTacToe\designer\TicTacToe\TicTacToe_fp\TicTacToe.log.
+The 'close_project' command succeeded.
+The Execute Script command succeeded.

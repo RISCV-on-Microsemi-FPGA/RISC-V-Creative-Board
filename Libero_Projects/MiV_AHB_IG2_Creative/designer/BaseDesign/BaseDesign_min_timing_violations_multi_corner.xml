@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml-stylesheet href="rptstyle.xsl" type="text/xsl" ?>
+<doc>
+<title>Timing Violation Multi Corner Report Min Delay Analysis
+</title>
+<text>SmartTime Version 12.800.0.16</text>
+<text>Microsemi Corporation - Microsemi Libero Software Release v12.3 (Version 12.800.0.16)</text>
+<text>Date: Thu Feb 27 11:38:43 2020
+</text>
+<table>
+<header>
+</header>
+<row>
+ <cell>Design</cell>
+ <cell>BaseDesign</cell>
+</row>
+<row>
+ <cell>Family</cell>
+ <cell>IGLOO2</cell>
+</row>
+<row>
+ <cell>Die</cell>
+ <cell>M2GL025</cell>
+</row>
+<row>
+ <cell>Package</cell>
+ <cell>256 VF</cell>
+</row>
+<row>
+ <cell>Temperature Range</cell>
+ <cell>0 - 85 C</cell>
+</row>
+<row>
+ <cell>Voltage Range</cell>
+ <cell>1.14 - 1.26 V</cell>
+</row>
+<row>
+ <cell>Speed Grade</cell>
+ <cell>STD</cell>
+</row>
+<row>
+ <cell>Design State</cell>
+ <cell>Post-Layout</cell>
+</row>
+<row>
+ <cell>Data source</cell>
+ <cell>Production</cell>
+</row>
+<row>
+ <cell>Multi Corner Report Operating Conditions</cell>
+ <cell>BEST, TYPICAL, WORST</cell>
+</row>
+<row>
+ <cell>Scenario for Timing Analysis</cell>
+ <cell>timing_analysis</cell>
+</row>
+</table>
+<text></text>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+ <cell>Operating Conditions</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC/sink_valid/sync_0/reg_0/q:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_1/sink_extend/sync_0/reg_0/q:D</cell>
+ <cell>0.687</cell>
+ <cell>-0.022</cell>
+ <cell>6.251</cell>
+ <cell>6.273</cell>
+ <cell>WORST</cell>
+</row>
+<row>
+ <cell>Path 2</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/ridx_bin/reg_0/q:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/ridx_gray/sync_2/reg_0/q:D</cell>
+ <cell>0.700</cell>
+ <cell>-0.017</cell>
+ <cell>6.253</cell>
+ <cell>6.270</cell>
+ <cell>WORST</cell>
+</row>
+<row>
+ <cell>Path 3</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/mem_0_data[23]:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[24]:D</cell>
+ <cell>0.703</cell>
+ <cell>-0.005</cell>
+ <cell>6.221</cell>
+ <cell>6.226</cell>
+ <cell>WORST</cell>
+</row>
+</table>
+<text></text>
+</doc>

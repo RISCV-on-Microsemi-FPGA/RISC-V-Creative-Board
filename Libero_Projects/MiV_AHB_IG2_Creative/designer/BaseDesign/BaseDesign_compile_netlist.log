@@ -1,0 +1,107 @@
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(23704): WARNING: net 'N_8357' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(23705): WARNING: net 'N_8358' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(23706): WARNING: net 'N_8359' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(29409): WARNING: net 'N_8365' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(29410): WARNING: net 'N_8366' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(29411): WARNING: net 'N_8367' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(29412): WARNING: net 'N_8368' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(30169): WARNING: net 'N_8360' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(30181): WARNING: net 'N_8369' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(30182): WARNING: net 'N_8370' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(30183): WARNING: net 'N_8371' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(30184): WARNING: net 'N_8372' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(46748): WARNING: net 'N_8394' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(46749): WARNING: net 'N_8395' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(46750): WARNING: net 'N_8396' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(47719): WARNING: net 'N_8388' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(47720): WARNING: net 'N_8389' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(47721): WARNING: net 'N_8390' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(47725): WARNING: net 'N_8397' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(47726): WARNING: net 'N_8398' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(47727): WARNING: net 'N_8399' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(50532): WARNING: net 'N_8409' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(107710): WARNING: net 'N_8438' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(107711): WARNING: net 'N_8439' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(107712): WARNING: net 'N_8440' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(107713): WARNING: net 'N_8441' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(107714): WARNING: net 'N_8442' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(107715): WARNING: net 'N_8443' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(107716): WARNING: net 'N_8444' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(107717): WARNING: net 'N_8445' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(107718): WARNING: net 'N_8446' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(107719): WARNING: net 'N_8447' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(137587): WARNING: net 'N_8461' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(137591): WARNING: net 'N_8465' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(164788): WARNING: net 'N_8476' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(164789): WARNING: net 'N_8477' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(164790): WARNING: net 'N_8478' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(164791): WARNING: net 'N_8479' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(164792): WARNING: net 'N_8480' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(164793): WARNING: net 'N_8481' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(164794): WARNING: net 'N_8482' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(164795): WARNING: net 'N_8483' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(164804): WARNING: net 'N_8492' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(164805): WARNING: net 'N_8493' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(164806): WARNING: net 'N_8494' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(164807): WARNING: net 'N_8495' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(164808): WARNING: net 'N_8496' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(164809): WARNING: net 'N_8497' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(178075): WARNING: net 'N_8424' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(178076): WARNING: net 'N_8425' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(178077): WARNING: net 'N_8426' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(178078): WARNING: net 'N_8427' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(178079): WARNING: net 'N_8428' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(178080): WARNING: net 'N_8429' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(178081): WARNING: net 'N_8430' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(178175): WARNING: net 'N_8466' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(178179): WARNING: net 'N_8470' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(178182): WARNING: net 'N_8499' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(178183): WARNING: net 'N_8500' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(192929): WARNING: net 'N_8505' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(192930): WARNING: net 'N_8506' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(192931): WARNING: net 'N_8507' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(192932): WARNING: net 'N_8508' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(192933): WARNING: net 'N_8509' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(194590): WARNING: net 'N_8374' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(194591): WARNING: net 'N_8375' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(194592): WARNING: net 'N_8376' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(194593): WARNING: net 'N_8377' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(194682): WARNING: net 'N_8403' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(194683): WARNING: net 'N_8404' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(194684): WARNING: net 'N_8405' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(194685): WARNING: net 'N_8406' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(194822): WARNING: net 'N_8412' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(194826): WARNING: net 'N_8413' does not have a driver (VDB-1002)
+C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative/synthesis/BaseDesign.vm(194850): WARNING: net 'N_8510' does not have a driver (VDB-1002)
+
+===============================================================================.
+
+Info: Global design data: 
+      Total globals:                       8 
+      Globals that cannot be demoted:      1 
+      Globals considered for demotion:     7 
+
+
+Info: List of globals that cannot be demoted: 
+    CLK    ASYN   DATA   Instance Name 
+    ---    ----   ----   ------------- 
+    5301   0      0      'FCCC_0_inst_0/FCCC_0_0/GL0_INST' 
+
+Info: List of globals considered for demotion: 
+    CLK    ASYN   DATA   Instance Name 
+    ---    ----   ----   ------------- 
+    314    0      0      'CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_inferred_clock_RNIJ683' 
+    17     0      1      'CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UDRCK_inferred_clock_RNIFUN4' 
+    0      617    0      'reset_synchronizer_0/sync_asert_reg_rep_RNIK2MB[1]' 
+    0      40     0      'MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dmiResetCatch/MIV_RV32IMA_L1_AHB_ASYNC_RESET_SYNCHRONIZER_SHIFT_REG_W1_D3_I0/sync_0/reg_0/q_rep_RNI0A87' 
+    0      30     0      'MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/_T_49_RNIVJ66' 
+    0      25     0      'CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst_RNILAHC' 
+    0      24     0      'MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmiXbar/un1_reset_debug_RNICCBD' 
+
+Info: Demotion information: 
+      Disconnected 1 data pins from global 'CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UDRCK_inferred_clock_RNIFUN4'. 
+Info: CMPG4-302: Added 0 row global instances.
+Info: CMPG4-303: Deleted 0 global instances.
+
+===============================================================================.
+

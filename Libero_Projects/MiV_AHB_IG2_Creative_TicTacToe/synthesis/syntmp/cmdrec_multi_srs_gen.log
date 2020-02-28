@@ -1,0 +1,7 @@
+C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\bin64\syn_nfilter.exe  -link  -top  TicTacToe  -multisrs  C:\GitHub-LSRAM-12.3\RISC-V-Creative-Board-1\Libero_Projects\MiV_AHB_IG2_Creative_TicTacToe\synthesis\synwork\TicTacToe_comp.srs  -osyn  C:\GitHub-LSRAM-12.3\RISC-V-Creative-Board-1\Libero_Projects\MiV_AHB_IG2_Creative_TicTacToe\synthesis\synwork\TicTacToe_mult.srs  -log  C:\GitHub-LSRAM-12.3\RISC-V-Creative-Board-1\Libero_Projects\MiV_AHB_IG2_Creative_TicTacToe\synthesis\synlog\TicTacToe_multi_srs_gen.srr 
+relcom:..\..\..\..\..\..\Microsemi\Libero_SoC_v12.3\SynplifyPro\bin64\syn_nfilter.exe -link -top TicTacToe -multisrs ..\synwork\TicTacToe_comp.srs -osyn ..\synwork\TicTacToe_mult.srs -log ..\synlog\TicTacToe_multi_srs_gen.srr
+rc:0 success:1 runtime:1
+file:..\synwork\TicTacToe_comp.srs|io:i|time:1582735492|size:647334|exec:0|csum:C3BBAC7321915E551285C7DAC33D05E7
+file:..\synwork\TicTacToe_mult.srs|io:o|time:1582735494|size:13449|exec:0|csum:
+file:..\synlog\TicTacToe_multi_srs_gen.srr|io:o|time:1582735494|size:1053|exec:0|csum:
+file:..\..\..\..\..\..\Microsemi\Libero_SoC_v12.3\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1562075633|size:8810496|exec:1|csum:20DB59B568B25441B8251D61083745CC

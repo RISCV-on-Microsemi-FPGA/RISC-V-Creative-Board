@@ -25,10 +25,6 @@
 # User Locked I/O settings
 # 
 
-set_io CLK0_PAD       \
-    -pinname H16      \
-    -fixed yes        \
-    -DIRECTION INPUT
 
 
 set_io {GPIO_IN[0]}   \
@@ -43,27 +39,21 @@ set_io {GPIO_IN[1]}   \
     -DIRECTION INPUT
 
 
-set_io {GPIO_OUT_0[4]}  \
+set_io {GPIO_OUT_0[0]}  \
     -pinname M10        \
     -fixed yes          \
     -DIRECTION OUTPUT
 
 
-set_io {GPIO_OUT_0[5]}  \
+set_io {GPIO_OUT_0[1]}  \
     -pinname M9         \
     -fixed yes          \
     -DIRECTION OUTPUT
 
 
-set_io {GPIO_OUT_0[6]}  \
+set_io {GPIO_OUT_0[2]}  \
     -pinname G1         \
     -fixed yes          \
-    -DIRECTION OUTPUT
-
-
-set_io INIT_DONE       \
-    -pinname N16       \
-    -fixed yes         \
     -DIRECTION OUTPUT
 
 
@@ -103,7 +93,18 @@ set_io TX              \
     -DIRECTION OUTPUT
 
 
-
+# Unused Constraints
+# set_io CLK0_PAD       \
+    # -pinname H16      \
+    # -fixed yes        \
+    # -DIRECTION INPUT
+	
+	
+# set_io INIT_DONE       \
+    # -pinname N16       \
+    # -fixed yes         \
+    # -DIRECTION OUTPUT
+	
 # 
 # Dedicated Peripheral I/O Settings
 # 

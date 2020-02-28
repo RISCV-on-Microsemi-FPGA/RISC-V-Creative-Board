@@ -1,0 +1,12 @@
+Microsemi Corporation - Microsemi Libero Software Release v12.3 (Version 12.800.0.16)
+
+Date      :  Wed Feb 26 16:43:50 2020
+Project   :  C:\GitHub-LSRAM-12.3\RISC-V-Creative-Board-1\Libero_Projects\MiV_AHB_IG2_Creative_TicTacToe
+Component :  CoreTimer_1
+Family    :  IGLOO2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/component/Actel/DirectCore/CoreTimer/2.0.103/rtl/vlog/core/coretimer.v
+    C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/component/work/CoreTimer_1/CoreTimer_1.v
+

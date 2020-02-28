@@ -1,0 +1,1936 @@
+-------------------------------------
+ External Hold Repair Report 
+-------------------------------------
+ Iteration 1  
+ Total I/O input ports improved: 0       
+-------------------------------------
+
+
+
+-------------------------
+ Min-delay Repair Report 
+-------------------------
+ Iteration 1  
+ Total paths eligible for improvement: 110     
+ Total paths improved: 110     
+-------------------------
+
+Path 1
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC/sink_valid/sync_0/reg_0/q:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_1/sink_extend/sync_0/reg_0/q:D
+------------------------
+Path min-delay slack:      -564 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_1/sink_extend/sync_0/reg_0/q:D
+-------------------------------------
+  Pin max-delay slack:     6715 ps
+  Min-delay inserted:       641 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_1/sink_extend/sync_0/reg_0/q_CFG1C_TEST
+
+
+Path 2
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC/sink_valid/sync_0/reg_0/q:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_1/sink_extend/sync_0/reg_0/q:D
+------------------------
+Path min-delay slack:      -561 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_1/sink_extend/sync_0/reg_0/q:D
+-------------------------------------
+  Pin max-delay slack:     6708 ps
+  Min-delay inserted:       786 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_1/sink_extend/sync_0/reg_0/q_CFG1A_TEST
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_1/sink_extend/sync_0/reg_0/q_CFG1C_TEST
+
+
+Path 3
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/widx_bin/reg_0/q:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/widx_gray/sync_2/reg_0/q:D
+------------------------
+Path min-delay slack:      -556 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/widx_gray/sync_2/reg_0/q:D
+-------------------------------------
+  Pin max-delay slack:     6700 ps
+  Min-delay inserted:       935 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/widx_gray/sync_2/reg_0/q_CFG1A_TEST
+
+
+Path 4
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC/source_valid/sync_0/reg_0/q:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_1/source_extend/sync_0/reg_0/q:D
+------------------------
+Path min-delay slack:      -552 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_1/source_extend/sync_0/reg_0/q:D
+-------------------------------------
+  Pin max-delay slack:     6695 ps
+  Min-delay inserted:       641 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_1/source_extend/sync_0/reg_0/q_CFG1C_TEST
+
+
+Path 5
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/mem_0_data[2]:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[3]:D
+------------------------
+Path min-delay slack:      -452 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[3]:D
+-------------------------------------
+  Pin max-delay slack:     6505 ps
+  Min-delay inserted:       903 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[3]_CFG1A_TEST
+
+
+Path 6
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/mem_0_data[14]:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[15]:D
+------------------------
+Path min-delay slack:      -447 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[15]:D
+-------------------------------------
+  Pin max-delay slack:     6499 ps
+  Min-delay inserted:       668 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[15]_CFG1A_TEST
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[15]_CFG1C_TEST
+
+
+Path 7
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/mem_0_data[5]:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[6]:D
+------------------------
+Path min-delay slack:      -446 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[6]:D
+-------------------------------------
+  Pin max-delay slack:     6496 ps
+  Min-delay inserted:       640 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[6]_CFG1A_TEST
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[6]_CFG1C_TEST
+
+
+Path 8
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/ridx_bin/reg_0/q:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/ridx_gray/sync_2/reg_0/q:D
+------------------------
+Path min-delay slack:      -445 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/ridx_gray/sync_2/reg_0/q:D
+-------------------------------------
+  Pin max-delay slack:     6501 ps
+  Min-delay inserted:       604 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/ridx_gray/sync_2/reg_0/q_CFG1C_TEST
+
+
+Path 9
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/ridx_bin/reg_0/q:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/ridx_gray/sync_2/reg_0/q:D
+------------------------
+Path min-delay slack:      -445 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/ridx_gray/sync_2/reg_0/q:D
+-------------------------------------
+  Pin max-delay slack:     6498 ps
+  Min-delay inserted:       669 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/ridx_gray/sync_2/reg_0/q_CFG1A_TEST
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/ridx_gray/sync_2/reg_0/q_CFG1C_TEST
+
+
+Path 10
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/mem_0_data[6]:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[7]:D
+------------------------
+Path min-delay slack:      -440 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[7]:D
+-------------------------------------
+  Pin max-delay slack:     6487 ps
+  Min-delay inserted:       638 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[7]_CFG1A_TEST
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[7]_CFG1C_TEST
+
+
+Path 11
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/mem_0_data[24]:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[25]:D
+------------------------
+Path min-delay slack:      -437 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[25]:D
+-------------------------------------
+  Pin max-delay slack:     6478 ps
+  Min-delay inserted:       825 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[25]_CFG1A_TEST
+
+
+Path 12
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/mem_0_data[16]:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[17]:D
+------------------------
+Path min-delay slack:      -434 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[17]:D
+-------------------------------------
+  Pin max-delay slack:     6472 ps
+  Min-delay inserted:       667 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[17]_CFG1A_TEST
+
+
+Path 13
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/mem_0_data[9]:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[10]:D
+------------------------
+Path min-delay slack:      -433 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[10]:D
+-------------------------------------
+  Pin max-delay slack:     6471 ps
+  Min-delay inserted:       640 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[10]_CFG1A_TEST
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[10]_CFG1C_TEST
+
+
+Path 14
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/mem_0_data[11]:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[12]:D
+------------------------
+Path min-delay slack:      -428 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[12]:D
+-------------------------------------
+  Pin max-delay slack:     6462 ps
+  Min-delay inserted:       903 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[12]_CFG1A_TEST
+
+
+Path 15
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/mem_0_data[23]:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[24]:D
+------------------------
+Path min-delay slack:      -427 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[24]:D
+-------------------------------------
+  Pin max-delay slack:     6463 ps
+  Min-delay inserted:       811 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[24]_CFG1A_TEST
+
+
+Path 16
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/mem_0_data[20]:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[21]:D
+------------------------
+Path min-delay slack:      -424 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[21]:D
+-------------------------------------
+  Pin max-delay slack:     6468 ps
+  Min-delay inserted:       613 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[21]_CFG1B_TEST
+
+
+Path 17
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/mem_0_data[1]:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[2]:D
+------------------------
+Path min-delay slack:      -423 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[2]:D
+-------------------------------------
+  Pin max-delay slack:     6456 ps
+  Min-delay inserted:       622 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[2]_CFG1C_TEST
+
+
+Path 18
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/mem_0_data[29]:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[30]:D
+------------------------
+Path min-delay slack:      -422 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[30]:D
+-------------------------------------
+  Pin max-delay slack:     6454 ps
+  Min-delay inserted:       702 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[30]_CFG1A_TEST
+
+
+Path 19
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/mem_0_data[22]:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[23]:D
+------------------------
+Path min-delay slack:      -421 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[23]:D
+-------------------------------------
+  Pin max-delay slack:     6451 ps
+  Min-delay inserted:       825 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[23]_CFG1A_TEST
+
+
+Path 20
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/mem_0_data[4]:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[5]:D
+------------------------
+Path min-delay slack:      -417 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[5]:D
+-------------------------------------
+  Pin max-delay slack:     6445 ps
+  Min-delay inserted:       571 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[5]_CFG1A_TEST
+
+
+Path 21
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/mem_0_data[8]:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[9]:D
+------------------------
+Path min-delay slack:      -360 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[9]:D
+-------------------------------------
+  Pin max-delay slack:     6342 ps
+  Min-delay inserted:       739 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[9]_CFG1C_TEST0
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[9]_CFG1C_TEST
+
+
+Path 22
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/mem_0_data[21]:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[22]:D
+------------------------
+Path min-delay slack:      -358 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[22]:D
+-------------------------------------
+  Pin max-delay slack:     6352 ps
+  Min-delay inserted:       643 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[22]_CFG1C_TEST
+
+
+Path 23
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/mem_0_data[15]:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[16]:D
+------------------------
+Path min-delay slack:      -357 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[16]:D
+-------------------------------------
+  Pin max-delay slack:     6336 ps
+  Min-delay inserted:       784 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[16]_CFG1A_TEST
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[16]_CFG1C_TEST
+
+
+Path 24
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/mem_0_data[0]:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[1]:D
+------------------------
+Path min-delay slack:      -346 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[1]:D
+-------------------------------------
+  Pin max-delay slack:     6332 ps
+  Min-delay inserted:       648 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[1]_CFG1C_TEST
+
+
+Path 25
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/mem_0_data[17]:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[18]:D
+------------------------
+Path min-delay slack:      -337 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[18]:D
+-------------------------------------
+  Pin max-delay slack:     6305 ps
+  Min-delay inserted:       702 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[18]_CFG1A_TEST
+
+
+Path 26
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/mem_0_data[19]:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[20]:D
+------------------------
+Path min-delay slack:      -327 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[20]:D
+-------------------------------------
+  Pin max-delay slack:     6272 ps
+  Min-delay inserted:       726 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[20]_CFG1B_TEST
+
+
+Path 27
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/mem_0_data[12]:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[13]:D
+------------------------
+Path min-delay slack:      -326 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[13]:D
+-------------------------------------
+  Pin max-delay slack:     6278 ps
+  Min-delay inserted:       685 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[13]_CFG1A_TEST
+
+
+Path 28
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/mem_0_data[18]:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[19]:D
+------------------------
+Path min-delay slack:      -313 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[19]:D
+-------------------------------------
+  Pin max-delay slack:     6256 ps
+  Min-delay inserted:       696 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[19]_CFG1C_TEST
+
+
+Path 29
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/mem_0_data[28]:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[29]:D
+------------------------
+Path min-delay slack:      -297 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[29]:D
+-------------------------------------
+  Pin max-delay slack:     6222 ps
+  Min-delay inserted:       766 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[29]_CFG1A_TEST
+
+
+Path 30
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/mem_0_data[26]:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[27]:D
+------------------------
+Path min-delay slack:      -294 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[27]:D
+-------------------------------------
+  Pin max-delay slack:     6215 ps
+  Min-delay inserted:       773 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[27]_CFG1A_TEST
+
+
+Path 31
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/mem_0_data[7]:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[8]:D
+------------------------
+Path min-delay slack:      -282 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[8]:D
+-------------------------------------
+  Pin max-delay slack:     6200 ps
+  Min-delay inserted:       674 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[8]_CFG1A_TEST
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[8]_CFG1C_TEST
+
+
+Path 32
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/mem_0_data[27]:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[28]:D
+------------------------
+Path min-delay slack:      -269 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[28]:D
+-------------------------------------
+  Pin max-delay slack:     6198 ps
+  Min-delay inserted:       767 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[28]_CFG1A_TEST
+
+
+Path 33
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/mem_0_data[10]:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[11]:D
+------------------------
+Path min-delay slack:      -226 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[11]:D
+-------------------------------------
+  Pin max-delay slack:     6098 ps
+  Min-delay inserted:       621 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[11]_CFG1B_TEST
+
+
+Path 34
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/mem_0_data[30]:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[31]:D
+------------------------
+Path min-delay slack:      -146 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[31]:D
+-------------------------------------
+  Pin max-delay slack:     5944 ps
+  Min-delay inserted:       602 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[31]_CFG1A_TEST
+
+
+Path 35
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/mem_0_data[13]:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[14]:D
+------------------------
+Path min-delay slack:      -128 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[14]:D
+-------------------------------------
+  Pin max-delay slack:     5912 ps
+  Min-delay inserted:       490 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[14]_CFG1C_TEST
+
+
+Path 36
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/mem_0_data[25]:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[26]:D
+------------------------
+Path min-delay slack:      -127 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[26]:D
+-------------------------------------
+  Pin max-delay slack:     5918 ps
+  Min-delay inserted:       828 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[26]_CFG1A_TEST
+
+
+Path 37
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/mem_0_data[31]:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[32]:D
+------------------------
+Path min-delay slack:      -114 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[32]:D
+-------------------------------------
+  Pin max-delay slack:     5885 ps
+  Min-delay inserted:       790 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[32]_CFG1A_TEST
+
+
+Path 38
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_17:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_16:D
+------------------------
+Path min-delay slack:       -57 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_16:D
+-------------------------------------
+  Pin max-delay slack:   165191 ps
+  Min-delay inserted:       419 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_16_CFG1A_TEST
+
+
+Path 39
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_15:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_14:D
+------------------------
+Path min-delay slack:       -55 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_14:D
+-------------------------------------
+  Pin max-delay slack:   165190 ps
+  Min-delay inserted:       419 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_14_CFG1A_TEST
+
+
+Path 40
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_25:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_24:D
+------------------------
+Path min-delay slack:       -55 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_24:D
+-------------------------------------
+  Pin max-delay slack:   165189 ps
+  Min-delay inserted:       424 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_24_CFG1A_TEST
+
+
+Path 41
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_2/sink_valid/sync_2/reg_0/q:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_2/sink_valid/sync_1/reg_0/q:D
+------------------------
+Path min-delay slack:       -52 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_2/sink_valid/sync_1/reg_0/q:D
+-------------------------------------
+  Pin max-delay slack:   165183 ps
+  Min-delay inserted:       438 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_2/sink_valid/sync_1/reg_0/q_CFG1B_TEST
+
+
+Path 42
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_29:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_28:D
+------------------------
+Path min-delay slack:       -52 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_28:D
+-------------------------------------
+  Pin max-delay slack:   165186 ps
+  Min-delay inserted:       745 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_28_CFG1A_TEST
+
+
+Path 43
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC/source_valid/sync_3/reg_0/q:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC/source_valid/sync_2/reg_0/q:D
+------------------------
+Path min-delay slack:       -51 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC/source_valid/sync_2/reg_0/q:D
+-------------------------------------
+  Pin max-delay slack:   165181 ps
+  Min-delay inserted:       440 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC/source_valid/sync_2/reg_0/q_CFG1B_TEST
+
+
+Path 44
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_6:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_5:D
+------------------------
+Path min-delay slack:       -51 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_5:D
+-------------------------------------
+  Pin max-delay slack:   165180 ps
+  Min-delay inserted:       536 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_5_CFG1A_TEST
+
+
+Path 45
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_23:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_22:D
+------------------------
+Path min-delay slack:       -51 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_22:D
+-------------------------------------
+  Pin max-delay slack:   165181 ps
+  Min-delay inserted:       438 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_22_CFG1B_TEST
+
+
+Path 46
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_25:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_24:D
+------------------------
+Path min-delay slack:       -51 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_24:D
+-------------------------------------
+  Pin max-delay slack:   165183 ps
+  Min-delay inserted:       653 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_24_CFG1A_TEST
+
+
+Path 47
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC/source_valid/sync_2/reg_0/q:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC/source_valid/sync_1/reg_0/q:D
+------------------------
+Path min-delay slack:       -50 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC/source_valid/sync_1/reg_0/q:D
+-------------------------------------
+  Pin max-delay slack:   165181 ps
+  Min-delay inserted:       438 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC/source_valid/sync_1/reg_0/q_CFG1B_TEST
+
+
+Path 48
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_18:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_17:D
+------------------------
+Path min-delay slack:       -50 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_17:D
+-------------------------------------
+  Pin max-delay slack:   165181 ps
+  Min-delay inserted:       536 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_17_CFG1A_TEST
+
+
+Path 49
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_20:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_19:D
+------------------------
+Path min-delay slack:       -50 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_19:D
+-------------------------------------
+  Pin max-delay slack:   165181 ps
+  Min-delay inserted:       424 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_19_CFG1A_TEST
+
+
+Path 50
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_28:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_27:D
+------------------------
+Path min-delay slack:       -50 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_27:D
+-------------------------------------
+  Pin max-delay slack:   165182 ps
+  Min-delay inserted:      1051 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_27_CFG1A_TEST
+
+
+Path 51
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiAccessChain/regs_40:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_addr[6]:D
+------------------------
+Path min-delay slack:       -49 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_addr[6]:D
+-------------------------------------
+  Pin max-delay slack:   165177 ps
+  Min-delay inserted:       419 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_addr[6]_CFG1A_TEST
+
+
+Path 52
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC/sink_valid/sync_2/reg_0/q:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC/sink_valid/sync_1/reg_0/q:D
+------------------------
+Path min-delay slack:       -48 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC/sink_valid/sync_1/reg_0/q:D
+-------------------------------------
+  Pin max-delay slack:   165177 ps
+  Min-delay inserted:       533 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC/sink_valid/sync_1/reg_0/q_CFG1A_TEST
+
+
+Path 53
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_2/source_valid/sync_1/reg_0/q:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_2/source_valid/sync_0/reg_0/q:D
+------------------------
+Path min-delay slack:       -48 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_2/source_valid/sync_0/reg_0/q:D
+-------------------------------------
+  Pin max-delay slack:   165177 ps
+  Min-delay inserted:       744 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_2/source_valid/sync_0/reg_0/q_CFG1A_TEST
+
+
+Path 54
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_2/sink_valid/sync_1/reg_0/q:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_2/sink_valid/sync_0/reg_0/q:D
+------------------------
+Path min-delay slack:       -48 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_2/sink_valid/sync_0/reg_0/q:D
+-------------------------------------
+  Pin max-delay slack:   165177 ps
+  Min-delay inserted:       534 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_2/sink_valid/sync_0/reg_0/q_CFG1A_TEST
+
+
+Path 55
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_1_0:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_0:D
+------------------------
+Path min-delay slack:       -48 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_0:D
+-------------------------------------
+  Pin max-delay slack:   165176 ps
+  Min-delay inserted:       438 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_0_CFG1B_TEST
+
+
+Path 56
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_23:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_22:D
+------------------------
+Path min-delay slack:       -48 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_22:D
+-------------------------------------
+  Pin max-delay slack:   165177 ps
+  Min-delay inserted:       571 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_22_CFG1A_TEST
+
+
+Path 57
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_19:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_18:D
+------------------------
+Path min-delay slack:       -48 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_18:D
+-------------------------------------
+  Pin max-delay slack:   165176 ps
+  Min-delay inserted:       424 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_18_CFG1A_TEST
+
+
+Path 58
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC/source_valid/sync_1/reg_0/q:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC/source_valid/sync_0/reg_0/q:D
+------------------------
+Path min-delay slack:       -47 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC/source_valid/sync_0/reg_0/q:D
+-------------------------------------
+  Pin max-delay slack:   165174 ps
+  Min-delay inserted:       418 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC/source_valid/sync_0/reg_0/q_CFG1A_TEST
+
+
+Path 59
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/widx_gray/sync_2/reg_0/q:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/widx_gray/sync_1/reg_0/q:D
+------------------------
+Path min-delay slack:       -46 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/widx_gray/sync_1/reg_0/q:D
+-------------------------------------
+  Pin max-delay slack:   165174 ps
+  Min-delay inserted:       842 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/widx_gray/sync_1/reg_0/q_CFG1A_TEST
+
+
+Path 60
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/ridx_gray/sync_2/reg_0/q:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/ridx_gray/sync_1/reg_0/q:D
+------------------------
+Path min-delay slack:       -46 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/ridx_gray/sync_1/reg_0/q:D
+-------------------------------------
+  Pin max-delay slack:   165175 ps
+  Min-delay inserted:       587 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/ridx_gray/sync_1/reg_0/q_CFG1A_TEST
+
+
+Path 61
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_14:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_13:D
+------------------------
+Path min-delay slack:       -46 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_13:D
+-------------------------------------
+  Pin max-delay slack:   165172 ps
+  Min-delay inserted:       418 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_13_CFG1A_TEST
+
+
+Path 62
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_22:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_21:D
+------------------------
+Path min-delay slack:       -46 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_21:D
+-------------------------------------
+  Pin max-delay slack:   165173 ps
+  Min-delay inserted:       533 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_21_CFG1A_TEST
+
+
+Path 63
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_28:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_27:D
+------------------------
+Path min-delay slack:       -46 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_27:D
+-------------------------------------
+  Pin max-delay slack:   165173 ps
+  Min-delay inserted:       438 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_27_CFG1B_TEST
+
+
+Path 64
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_31:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_30:D
+------------------------
+Path min-delay slack:       -46 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_30:D
+-------------------------------------
+  Pin max-delay slack:   165174 ps
+  Min-delay inserted:       640 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_30_CFG1A_TEST
+
+
+Path 65
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_27:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_26:D
+------------------------
+Path min-delay slack:       -45 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_26:D
+-------------------------------------
+  Pin max-delay slack:   165172 ps
+  Min-delay inserted:       536 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_26_CFG1A_TEST
+
+
+Path 66
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_7:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_6:D
+------------------------
+Path min-delay slack:       -45 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_6:D
+-------------------------------------
+  Pin max-delay slack:   165171 ps
+  Min-delay inserted:       534 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_6_CFG1A_TEST
+
+
+Path 67
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_9:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_8:D
+------------------------
+Path min-delay slack:       -45 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_8:D
+-------------------------------------
+  Pin max-delay slack:   165173 ps
+  Min-delay inserted:       533 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_8_CFG1A_TEST
+
+
+Path 68
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_13:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_12:D
+------------------------
+Path min-delay slack:       -44 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_12:D
+-------------------------------------
+  Pin max-delay slack:   165171 ps
+  Min-delay inserted:       571 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_12_CFG1A_TEST
+
+
+Path 69
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_30:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_29:D
+------------------------
+Path min-delay slack:       -44 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_29:D
+-------------------------------------
+  Pin max-delay slack:   165168 ps
+  Min-delay inserted:       420 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_29_CFG1A_TEST
+
+
+Path 70
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_13_0:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_12:D
+------------------------
+Path min-delay slack:       -44 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_12:D
+-------------------------------------
+  Pin max-delay slack:   165171 ps
+  Min-delay inserted:       534 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_12_CFG1A_TEST
+
+
+Path 71
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_16:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_15:D
+------------------------
+Path min-delay slack:       -44 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_15:D
+-------------------------------------
+  Pin max-delay slack:   165170 ps
+  Min-delay inserted:       533 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_15_CFG1A_TEST
+
+
+Path 72
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiAccessChain/regs_0:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_op[0]:D
+------------------------
+Path min-delay slack:       -43 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_op[0]:D
+-------------------------------------
+  Pin max-delay slack:   165169 ps
+  Min-delay inserted:       571 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_op[0]_CFG1A_TEST
+
+
+Path 73
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/widx_gray/sync_1/reg_0/q:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/widx_gray/sync_0/reg_0/q:D
+------------------------
+Path min-delay slack:       -42 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/widx_gray/sync_0/reg_0/q:D
+-------------------------------------
+  Pin max-delay slack:   165166 ps
+  Min-delay inserted:       684 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/widx_gray/sync_0/reg_0/q_CFG1A_TEST
+
+
+Path 74
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiAccessChain/regs_17:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_data[15]:D
+------------------------
+Path min-delay slack:       -42 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_data[15]:D
+-------------------------------------
+  Pin max-delay slack:   165162 ps
+  Min-delay inserted:       641 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_data[15]_CFG1A_TEST
+
+
+Path 75
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiAccessChain/regs_35:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_addr[1]:D
+------------------------
+Path min-delay slack:       -42 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_addr[1]:D
+-------------------------------------
+  Pin max-delay slack:   165164 ps
+  Min-delay inserted:       440 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_addr[1]_CFG1B_TEST
+
+
+Path 76
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiAccessChain/regs_39:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_addr[5]:D
+------------------------
+Path min-delay slack:       -42 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_addr[5]:D
+-------------------------------------
+  Pin max-delay slack:   165166 ps
+  Min-delay inserted:       440 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_addr[5]_CFG1B_TEST
+
+
+Path 77
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_30:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_29:D
+------------------------
+Path min-delay slack:       -42 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_29:D
+-------------------------------------
+  Pin max-delay slack:   165167 ps
+  Min-delay inserted:       777 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_29_CFG1A_TEST
+
+
+Path 78
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/ridx_gray/sync_1/reg_0/q:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/ridx_gray/sync_0/reg_0/q:D
+------------------------
+Path min-delay slack:       -41 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/ridx_gray/sync_0/reg_0/q:D
+-------------------------------------
+  Pin max-delay slack:   165163 ps
+  Min-delay inserted:       920 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/ridx_gray/sync_0/reg_0/q_CFG1A_TEST
+
+
+Path 79
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_26:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_25:D
+------------------------
+Path min-delay slack:       -41 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_25:D
+-------------------------------------
+  Pin max-delay slack:   165165 ps
+  Min-delay inserted:       470 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_25_CFG1A_TEST
+
+
+Path 80
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC/source_valid/sync_3/reg_0/q:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC/source_valid/sync_2/reg_0/q:D
+------------------------
+Path min-delay slack:       -40 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC/source_valid/sync_2/reg_0/q:D
+-------------------------------------
+  Pin max-delay slack:   165164 ps
+  Min-delay inserted:       424 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC/source_valid/sync_2/reg_0/q_CFG1A_TEST
+
+
+Path 81
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_26:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_25:D
+------------------------
+Path min-delay slack:       -40 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_25:D
+-------------------------------------
+  Pin max-delay slack:   165162 ps
+  Min-delay inserted:       786 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_25_CFG1A_TEST
+
+
+Path 82
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_3:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_2_0:D
+------------------------
+Path min-delay slack:       -40 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_2_0:D
+-------------------------------------
+  Pin max-delay slack:   165164 ps
+  Min-delay inserted:       424 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_2_0_CFG1A_TEST
+
+
+Path 83
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_17:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_16:D
+------------------------
+Path min-delay slack:       -39 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_16:D
+-------------------------------------
+  Pin max-delay slack:   165161 ps
+  Min-delay inserted:       533 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_16_CFG1A_TEST
+
+
+Path 84
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_5:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_4:D
+------------------------
+Path min-delay slack:       -39 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_4:D
+-------------------------------------
+  Pin max-delay slack:   165162 ps
+  Min-delay inserted:       418 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_4_CFG1A_TEST
+
+
+Path 85
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC/source_valid/sync_1/reg_0/q:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC/source_valid/sync_0/reg_0/q:D
+------------------------
+Path min-delay slack:       -38 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC/source_valid/sync_0/reg_0/q:D
+-------------------------------------
+  Pin max-delay slack:   165160 ps
+  Min-delay inserted:       420 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC/source_valid/sync_0/reg_0/q_CFG1A_TEST
+
+
+Path 86
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_2/source_valid/sync_2/reg_0/q:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_2/source_valid/sync_1/reg_0/q:D
+------------------------
+Path min-delay slack:       -37 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_2/source_valid/sync_1/reg_0/q:D
+-------------------------------------
+  Pin max-delay slack:   165160 ps
+  Min-delay inserted:       636 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_2/source_valid/sync_1/reg_0/q_CFG1A_TEST
+
+
+Path 87
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_2/sink_valid/sync_2/reg_0/q:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_2/sink_valid/sync_1/reg_0/q:D
+------------------------
+Path min-delay slack:       -37 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_2/sink_valid/sync_1/reg_0/q:D
+-------------------------------------
+  Pin max-delay slack:   165159 ps
+  Min-delay inserted:       892 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_2/sink_valid/sync_1/reg_0/q_CFG1A_TEST
+
+
+Path 88
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_27:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_26:D
+------------------------
+Path min-delay slack:       -37 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_26:D
+-------------------------------------
+  Pin max-delay slack:   165157 ps
+  Min-delay inserted:       746 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_26_CFG1A_TEST
+
+
+Path 89
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiAccessChain/regs_15:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_data[13]:D
+------------------------
+Path min-delay slack:       -36 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_data[13]:D
+-------------------------------------
+  Pin max-delay slack:   165154 ps
+  Min-delay inserted:      1023 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_data[13]_CFG1A_TEST
+
+
+Path 90
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiAccessChain/regs_7:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_data[5]:D
+------------------------
+Path min-delay slack:       -36 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_data[5]:D
+-------------------------------------
+  Pin max-delay slack:   165156 ps
+  Min-delay inserted:       685 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_data[5]_CFG1A_TEST
+
+
+Path 91
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_24:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_23:D
+------------------------
+Path min-delay slack:       -36 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_23:D
+-------------------------------------
+  Pin max-delay slack:   165155 ps
+  Min-delay inserted:       782 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_23_CFG1A_TEST
+
+
+Path 92
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_22:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_21:D
+------------------------
+Path min-delay slack:       -36 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_21:D
+-------------------------------------
+  Pin max-delay slack:   165157 ps
+  Min-delay inserted:       571 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_21_CFG1A_TEST
+
+
+Path 93
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiAccessChain/regs_37:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_addr[3]:D
+------------------------
+Path min-delay slack:       -35 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_addr[3]:D
+-------------------------------------
+  Pin max-delay slack:   165153 ps
+  Min-delay inserted:       534 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_addr[3]_CFG1A_TEST
+
+
+Path 94
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_31:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_30:D
+------------------------
+Path min-delay slack:       -35 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_30:D
+-------------------------------------
+  Pin max-delay slack:   165152 ps
+  Min-delay inserted:       863 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dtmInfoChain/regs_30_CFG1A_TEST
+
+
+Path 95
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/ridx_gray/sync_2/reg_0/q:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/ridx_gray/sync_1/reg_0/q:D
+------------------------
+Path min-delay slack:       -34 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/ridx_gray/sync_1/reg_0/q:D
+-------------------------------------
+  Pin max-delay slack:   165153 ps
+  Min-delay inserted:       594 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/ridx_gray/sync_1/reg_0/q_CFG1A_TEST
+
+
+Path 96
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiAccessChain/regs_36:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_addr[2]:D
+------------------------
+Path min-delay slack:       -33 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_addr[2]:D
+-------------------------------------
+  Pin max-delay slack:   165150 ps
+  Min-delay inserted:       547 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_addr[2]_CFG1A_TEST
+
+
+Path 97
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiAccessChain/regs_8:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_data[6]:D
+------------------------
+Path min-delay slack:       -33 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_data[6]:D
+-------------------------------------
+  Pin max-delay slack:   165150 ps
+  Min-delay inserted:       424 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_data[6]_CFG1A_TEST
+
+
+Path 98
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC/sink_valid/sync_3/reg_0/q:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC/sink_valid/sync_2/reg_0/q:D
+------------------------
+Path min-delay slack:       -32 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC/sink_valid/sync_2/reg_0/q:D
+-------------------------------------
+  Pin max-delay slack:   165151 ps
+  Min-delay inserted:       418 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC/sink_valid/sync_2/reg_0/q_CFG1A_TEST
+
+
+Path 99
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiAccessChain/regs_11:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_data[9]:D
+------------------------
+Path min-delay slack:       -32 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_data[9]:D
+-------------------------------------
+  Pin max-delay slack:   165149 ps
+  Min-delay inserted:       653 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_data[9]_CFG1A_TEST
+
+
+Path 100
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_14:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_13_0:D
+------------------------
+Path min-delay slack:       -32 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_13_0:D
+-------------------------------------
+  Pin max-delay slack:   165149 ps
+  Min-delay inserted:       685 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_13_0_CFG1A_TEST
+
+
+Path 101
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiAccessChain/regs_14:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_data[12]:D
+------------------------
+Path min-delay slack:       -21 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_data[12]:D
+-------------------------------------
+  Pin max-delay slack:   165130 ps
+  Min-delay inserted:       542 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_data[12]_CFG1A_TEST
+
+
+Path 102
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiAccessChain/regs_6:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_data[4]:D
+------------------------
+Path min-delay slack:       -20 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_data[4]:D
+-------------------------------------
+  Pin max-delay slack:   165127 ps
+  Min-delay inserted:      1023 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_data[4]_CFG1A_TEST
+
+
+Path 103
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiAccessChain/regs_1:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_op[1]:D
+------------------------
+Path min-delay slack:       -18 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_op[1]:D
+-------------------------------------
+  Pin max-delay slack:   165124 ps
+  Min-delay inserted:       860 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiReqReg_op[1]_CFG1A_TEST
+
+
+Path 104
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_11:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_10:D
+------------------------
+Path min-delay slack:        -7 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_10_5_0_158_a2:B
+-------------------------------------
+  Pin max-delay slack:   165104 ps
+  Min-delay inserted:      1044 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_10_5_0_158_a2_CFG1A_TEST
+
+
+Path 105
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[16]:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiAccessChain/regs_17:D
+------------------------
+Path min-delay slack:        -6 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiAccessChain/regs_17_6_0_0:B
+-------------------------------------
+  Pin max-delay slack:   165103 ps
+  Min-delay inserted:       683 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiAccessChain/regs_17_6_0_0_CFG1A_TEST
+
+
+Path 106
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_8:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_7:D
+------------------------
+Path min-delay slack:        -4 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_7_5_0_136_a2:B
+-------------------------------------
+  Pin max-delay slack:   165098 ps
+  Min-delay inserted:       922 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_7_5_0_136_a2_CFG1A_TEST
+
+
+Path 107
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_4:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_3_1:D
+------------------------
+Path min-delay slack:        -3 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_3_1_RNO:B
+-------------------------------------
+  Pin max-delay slack:   165094 ps
+  Min-delay inserted:       387 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_3_1_RNO_CFG1A_TEST
+
+
+Path 108
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[6]:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiAccessChain/regs_7:D
+------------------------
+Path min-delay slack:        -2 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiAccessChain/regs_7_6_0_0:B
+-------------------------------------
+  Pin max-delay slack:   165092 ps
+  Min-delay inserted:       765 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiAccessChain/regs_7_6_0_0_CFG1A_TEST
+
+
+Path 109
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_9:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_8:D
+------------------------
+Path min-delay slack:        -2 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_8_RNO:B
+-------------------------------------
+  Pin max-delay slack:   165093 ps
+  Min-delay inserted:      1006 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/idcodeChain/regs_8_RNO_CFG1A_TEST
+
+
+Path 110
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[29]:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiAccessChain/regs_30:D
+------------------------
+Path min-delay slack:        -1 ps
+------------------------
+  On sink pin: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiAccessChain/regs_30_6_0_0:C
+-------------------------------------
+  Pin max-delay slack:   165093 ps
+  Min-delay inserted:       543 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/dtm/dmiAccessChain/regs_30_6_0_0_CFG1A_TEST
+
+
+
+
+-------------------------------------
+ External Hold Repair Report 
+-------------------------------------
+ Iteration 2  
+ Total I/O input ports improved: 0       
+-------------------------------------
+
+
+
+-------------------------
+ Min-delay Repair Report 
+-------------------------
+ Iteration 2  
+ Total paths eligible for improvement: 6       
+ Total paths improved: 6       
+-------------------------
+
+Path 1
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/mem_0_data[12]:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[13]:D
+------------------------
+Path min-delay slack:      -290 ps
+------------------------
+  On sink pin: mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[13]_CFG1A_TEST:A
+-------------------------------------
+  Pin max-delay slack:     6233 ps
+  Min-delay inserted:       645 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[13]_CFG1A_TEST_CFG1A_TEST
+      mdr_mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[13]_CFG1A_TEST_CFG1C_TEST
+
+
+Path 2
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC/sink_valid/sync_0/reg_0/q:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_1/sink_extend/sync_0/reg_0/q:D
+------------------------
+Path min-delay slack:      -270 ps
+------------------------
+  On sink pin: mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_1/sink_extend/sync_0/reg_0/q_CFG1C_TEST:A
+-------------------------------------
+  Pin max-delay slack:     6202 ps
+  Min-delay inserted:       674 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_1/sink_extend/sync_0/reg_0/q_CFG1C_TEST_CFG1A_TEST
+      mdr_mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_1/sink_extend/sync_0/reg_0/q_CFG1C_TEST_CFG1C_TEST
+
+
+Path 3
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC/source_valid/sync_0/reg_0/q:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_1/source_extend/sync_0/reg_0/q:D
+------------------------
+Path min-delay slack:      -262 ps
+------------------------
+  On sink pin: mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_1/source_extend/sync_0/reg_0/q_CFG1C_TEST:A
+-------------------------------------
+  Pin max-delay slack:     6187 ps
+  Min-delay inserted:       669 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_1/source_extend/sync_0/reg_0/q_CFG1C_TEST_CFG1A_TEST
+      mdr_mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_1/source_extend/sync_0/reg_0/q_CFG1C_TEST_CFG1C_TEST
+
+
+Path 4
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC/sink_valid/sync_0/reg_0/q:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_1/sink_extend/sync_0/reg_0/q:D
+------------------------
+Path min-delay slack:      -211 ps
+------------------------
+  On sink pin: mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_1/sink_extend/sync_0/reg_0/q_CFG1A_TEST:A
+-------------------------------------
+  Pin max-delay slack:     6095 ps
+  Min-delay inserted:       678 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/MIV_RV32IMA_L1_AHB_ASYNC_VALID_SYNC_1/sink_extend/sync_0/reg_0/q_CFG1A_TEST_CFG1A_TEST
+
+
+Path 5
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SOURCE/mem_0_data[4]:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[5]:D
+------------------------
+Path min-delay slack:      -193 ps
+------------------------
+  On sink pin: mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[5]_CFG1A_TEST:A
+-------------------------------------
+  Pin max-delay slack:     6063 ps
+  Min-delay inserted:       676 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/deq_bits_reg/sync_0[5]_CFG1A_TEST_CFG1A_TEST
+
+
+Path 6
+------------------------
+From: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK/ridx_bin/reg_0/q:CLK
+  To: MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/ridx_gray/sync_2/reg_0/q:D
+------------------------
+Path min-delay slack:      -155 ps
+------------------------
+  On sink pin: mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/ridx_gray/sync_2/reg_0/q_CFG1C_TEST:A
+-------------------------------------
+  Pin max-delay slack:     5989 ps
+  Min-delay inserted:       634 ps ( Estimated )
+  ----------------------------
+  Delay buffers inserted before the sink:
+      mdr_mdr_MiV_RV32IMA_L1_AHB_0_inst_0/MiV_RV32IMA_L1_AHB_0_0/ChiselTop0/debug_1/dmOuter/source1/ridx_gray/sync_2/reg_0/q_CFG1C_TEST_CFG1A_TEST
+
+
+
+
+-------------------------------------
+ External Hold Repair Report 
+-------------------------------------
+ Iteration 3  
+ Total I/O input ports improved: 0       
+-------------------------------------
+
+
+
+-------------------------
+ Min-delay Repair Report 
+-------------------------
+ Iteration 3  
+ Total paths eligible for improvement: 0       
+ Total paths improved: 0       
+-------------------------
+
+
+Note:
+    [1]: A net cannot be modified for repair if:
+         - it is hardwired, preserved, or global;
+         - the sink pin is a clock pin;
+         - the sink pin has negative max-delay slack allowance;
+
+    [2]: A location is not feasible for inserting a delay buffer if the estimated minimum delay to be inserted might exceed the max-delay slack allowance of the sink pin.
+
+    [3]: The I/O delay taps cannot be used to fix hold violations in RTG4 design if it is a MSIO or MSIOD that drives a GB.
+
+
+

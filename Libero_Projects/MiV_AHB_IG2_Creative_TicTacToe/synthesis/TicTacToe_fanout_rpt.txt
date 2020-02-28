@@ -1,0 +1,18 @@
+
+########			REPORT FOR HIGH FANOUT NETS			########
+
+CLOCK GLOBAL THRESHOLD - 2
+ASYNC GLOBAL THRESHOLD - 12
+GLOBAL THRESHOLD - 5000
+
+NET NAME                                                                                                                         CLOCK LOADS     ASYNC RST LOADS     DATA LOADS     TOTAL FANOUT     GLOBAL BUFFER PRESENT
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FCCC_0_GL0                                                                                                                       5509            0                   0              5509             YES                  
+un1_DUT_TCK_inferred_clock_RNIJ683                                                                                               314             0                   0              314              YES                  
+CoreJTAGDebug_0_inst_0.CoreJTAGDebug_0_0.genblk1\.genblk1\.genblk1\.UJTAG_inst.iUDRCK                                            17              0                   1              18               YES                  
+sync_asert_reg_arst1                                                                                                             0               824                 34             858              YES                  
+MiV_RV32IMA_L1_AHB_0_inst_0.MiV_RV32IMA_L1_AHB_0_0.ChiselTop0.q_arst_0                                                           0               40                  0              40               YES                  
+MiV_RV32IMA_L1_AHB_0_inst_0.MiV_RV32IMA_L1_AHB_0_0.ChiselTop0.debug_1.dmInner.MIV_RV32IMA_L1_AHB_ASYNC_QUEUE_SINK._T_49_arst     0               30                  0              30               YES                  
+URSTB_arst                                                                                                                       0               25                  0              25               YES                  
+MiV_RV32IMA_L1_AHB_0_inst_0.MiV_RV32IMA_L1_AHB_0_0.ChiselTop0.debug_1.un1_reset_debug_arst                                       0               24                  0              24               YES                  
+==========================================================================================================================================================================================================================

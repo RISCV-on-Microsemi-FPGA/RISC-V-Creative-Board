@@ -1,0 +1,1906 @@
+<html>
+    <head>
+        <style>
+      body { font-family:arial; font-size:10pt; text-align:left; }
+      h1, h2 {
+          padding-top: 30px;
+      }
+      h3 {
+          padding-top: 20px;
+      }
+      h4, h5, h6 {
+          padding-top: 10px;
+          font-size:12pt;
+      }
+      table {
+          font-family:arial; font-size:10pt; text-align:left;
+          border-color:#B0B0B0;
+          border-style:solid;
+          border-width:1px;
+          border-collapse:collapse;
+      }
+      table th, table td {
+          font-family:arial; font-size:10pt; text-align:left;
+          border-color:#B0B0B0;
+          border-style:solid;
+          border-width:1px;
+          padding: 4px;
+      }
+     </style>
+    </head>
+    <body>
+        <h1 align="center">Global Net Report</h1>
+        <p>Microsemi Corporation - Microsemi Libero Software Release v12.3 (Version 12.800.0.16)</p>
+        <p>Date: Wed Feb 26 18:09:22 2020
+</p>
+        <h2>Global Nets Information</h2>
+        <table cellpadding="4">
+            <tr>
+                <th/>
+                <th> From </th>
+                <th> GB Location </th>
+                <th> Net Name </th>
+                <th> Fanout </th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>GB[2] </td>
+                <td>(292, 72)</td>
+                <td>FCCC_0_inst_0/FCCC_0_0/GL0_INST/U0_YWn</td>
+                <td>10671</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>GB[7] </td>
+                <td>(297, 72)</td>
+                <td>reset_synchronizer_0/sync_asert_reg_RNIE9T5[1]/U0_YWn</td>
+                <td>1736</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>GB[5] </td>
+                <td>(295, 72)</td>
+                <td>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_inferred_clock_RNIJ683/U0_YWn</td>
+                <td>314</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>GB[4] </td>
+                <td>(294, 72)</td>
+                <td>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/dmiResetCatch/MIV_RV32IMA_L1_AXI_ASYNC_RESET_SYNCHRONIZER_SHIFT_REG_W1_D3_I0/sync_0/reg_0/q_rep_RNI5R15/U0_YWn</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>GB[0] </td>
+                <td>(290, 72)</td>
+                <td>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/_T_49_RNI4PI/U0_YWn_GEast</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>GB[1] </td>
+                <td>(291, 72)</td>
+                <td>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst_RNILAHC/U0_YWn_GEast</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>GB[3] </td>
+                <td>(293, 72)</td>
+                <td>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/un1_reset_debug_RNIINRF/U0_YWn_GEast</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>GB[6] </td>
+                <td>(296, 72)</td>
+                <td>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UDRCK_inferred_clock_RNIFUN4/U0_YWn_GEast</td>
+                <td>17</td>
+            </tr>
+        </table>
+        <p/>
+        <h2>I/O to GB Connections</h2>
+        <p>(none)</p>
+        <h2>Fabric to GB Connections</h2>
+        <table cellpadding="4">
+            <tr>
+                <th/>
+                <th> From </th>
+                <th> From Location </th>
+                <th> To </th>
+                <th> Net Name </th>
+                <th> Net Type </th>
+                <th> Fanout </th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>reset_synchronizer_0/sync_asert_reg[1]:Q</td>
+                <td>(415, 70)</td>
+                <td>GB[7] </td>
+                <td>reset_synchronizer_0/sync_asert_reg[1]</td>
+                <td>ROUTED</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_0:Y</td>
+                <td>(621, 57)</td>
+                <td>GB[5] </td>
+                <td>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK</td>
+                <td>ROUTED</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/dmiResetCatch/MIV_RV32IMA_L1_AXI_ASYNC_RESET_SYNCHRONIZER_SHIFT_REG_W1_D3_I0/sync_0/reg_0/q_rep:Q</td>
+                <td>(417, 70)</td>
+                <td>GB[4] </td>
+                <td>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/dmiResetCatch/MIV_RV32IMA_L1_AXI_ASYNC_RESET_SYNCHRONIZER_SHIFT_REG_W1_D3_I0/sync_0/reg_0/q_rep_Z</td>
+                <td>ROUTED</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/_T_49:Y</td>
+                <td>(410, 66)</td>
+                <td>GB[0] </td>
+                <td>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/_T_49_Z</td>
+                <td>ROUTED</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst/INST_UJTAG_SYSRESET_FF_IP:URSTB</td>
+                <td>(624, 8)</td>
+                <td>GB[1] </td>
+                <td>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst_URSTB</td>
+                <td>ROUTED</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/un1_reset_debug:Y</td>
+                <td>(409, 66)</td>
+                <td>GB[3] </td>
+                <td>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/un1_reset_debug_Z</td>
+                <td>ROUTED</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst/INST_UJTAG_SYSRESET_FF_IP:UDRCK</td>
+                <td>(624, 8)</td>
+                <td>GB[6] </td>
+                <td>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UDRCK</td>
+                <td>ROUTED</td>
+                <td>2</td>
+            </tr>
+        </table>
+        <p/>
+        <h2>CCC to GB Connections</h2>
+        <table cellpadding="4">
+            <tr>
+                <th/>
+                <th> From </th>
+                <th> From Location </th>
+                <th>Pin Swapped for Back Annotation Only</th>
+                <th> To </th>
+                <th> Net Name </th>
+                <th> Net Type </th>
+                <th> Fanout </th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>FCCC_0_inst_0/FCCC_0_0/CCC_INST/INST_CCC_IP:GL0</td>
+                <td>CCC-NW1 (18, 134)</td>
+                <td>GL0 =&gt; GL2</td>
+                <td>GB[2] </td>
+                <td>FCCC_0_inst_0/FCCC_0_0/GL0_net</td>
+                <td>HARDWIRED</td>
+                <td>1</td>
+            </tr>
+        </table>
+        <p/>
+        <h2>CCC Input Connections</h2>
+        <table cellpadding="4">
+            <tr>
+                <th/>
+                <th> From </th>
+                <th> From Location </th>
+                <th> To (Pin Swapped for Back Annotation Only) </th>
+                <th> CCC Location </th>
+                <th> Net Name </th>
+                <th> Net Type </th>
+                <th> Fanout </th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>OSC_0_inst_0/OSC_0_0/I_RCOSC_25_50MHZ:CLKOUT</td>
+                <td>(24, 134)</td>
+                <td>FCCC_0_inst_0/FCCC_0_0/CCC_INST/INST_CCC_IP:RCOSC_25_50MHZ</td>
+                <td>CCC-NW1 (18, 134)</td>
+                <td>OSC_0_RCOSC_25_50MHZ_CCC_OUT_RCOSC_25_50MHZ_CCC</td>
+                <td>HARDWIRED</td>
+                <td>1</td>
+            </tr>
+        </table>
+        <p/>
+        <h2>Local Clock Nets to RGB Connections</h2>
+        <p>(none)</p>
+        <h2>Global Clock Nets to RGB Connections</h2>
+        <table cellpadding="4">
+            <tr>
+                <th/>
+                <th> From </th>
+                <th> From Location </th>
+                <th> Net Name </th>
+                <th> Fanout </th>
+                <th/>
+                <th> RGB Location </th>
+                <th> Local Fanout </th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>GB[2] </td>
+                <td>(292, 72)</td>
+                <td>FCCC_0_inst_0/FCCC_0_0/GL0_INST/U0_YWn</td>
+                <td>10671</td>
+                <td>1</td>
+                <td>(146, 6)</td>
+                <td>29</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>2</td>
+                <td>(146, 9)</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>3</td>
+                <td>(146, 12)</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>4</td>
+                <td>(146, 15)</td>
+                <td>115</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>5</td>
+                <td>(146, 18)</td>
+                <td>95</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>6</td>
+                <td>(146, 21)</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>7</td>
+                <td>(146, 24)</td>
+                <td>137</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>8</td>
+                <td>(146, 27)</td>
+                <td>88</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>9</td>
+                <td>(146, 30)</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>10</td>
+                <td>(146, 33)</td>
+                <td>87</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>11</td>
+                <td>(146, 36)</td>
+                <td>62</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>12</td>
+                <td>(146, 39)</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>13</td>
+                <td>(146, 42)</td>
+                <td>126</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>14</td>
+                <td>(146, 45)</td>
+                <td>116</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>15</td>
+                <td>(146, 48)</td>
+                <td>144</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>16</td>
+                <td>(146, 51)</td>
+                <td>120</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>17</td>
+                <td>(146, 54)</td>
+                <td>99</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>18</td>
+                <td>(146, 57)</td>
+                <td>105</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>19</td>
+                <td>(146, 60)</td>
+                <td>79</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>20</td>
+                <td>(146, 63)</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>21</td>
+                <td>(146, 66)</td>
+                <td>98</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>22</td>
+                <td>(146, 75)</td>
+                <td>140</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>23</td>
+                <td>(146, 78)</td>
+                <td>129</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>24</td>
+                <td>(146, 81)</td>
+                <td>180</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>25</td>
+                <td>(146, 84)</td>
+                <td>148</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>26</td>
+                <td>(146, 87)</td>
+                <td>106</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>27</td>
+                <td>(146, 90)</td>
+                <td>146</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>28</td>
+                <td>(146, 93)</td>
+                <td>127</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>29</td>
+                <td>(146, 96)</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>30</td>
+                <td>(146, 99)</td>
+                <td>123</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>31</td>
+                <td>(146, 102)</td>
+                <td>137</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>32</td>
+                <td>(146, 105)</td>
+                <td>105</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>33</td>
+                <td>(146, 108)</td>
+                <td>110</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>34</td>
+                <td>(146, 111)</td>
+                <td>107</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>35</td>
+                <td>(146, 114)</td>
+                <td>111</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>36</td>
+                <td>(146, 117)</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>37</td>
+                <td>(146, 120)</td>
+                <td>84</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>38</td>
+                <td>(146, 123)</td>
+                <td>78</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>39</td>
+                <td>(146, 126)</td>
+                <td>66</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>40</td>
+                <td>(146, 129)</td>
+                <td>66</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>41</td>
+                <td>(146, 132)</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>42</td>
+                <td>(146, 135)</td>
+                <td>109</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>43</td>
+                <td>(146, 138)</td>
+                <td>103</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>44</td>
+                <td>(146, 141)</td>
+                <td>68</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>45</td>
+                <td>(146, 144)</td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>46</td>
+                <td>(147, 69)</td>
+                <td>97</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>47</td>
+                <td>(446, 9)</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>48</td>
+                <td>(446, 12)</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>49</td>
+                <td>(446, 15)</td>
+                <td>113</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>50</td>
+                <td>(446, 18)</td>
+                <td>119</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>51</td>
+                <td>(446, 39)</td>
+                <td>142</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>52</td>
+                <td>(446, 42)</td>
+                <td>169</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>53</td>
+                <td>(446, 45)</td>
+                <td>138</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>54</td>
+                <td>(446, 48)</td>
+                <td>86</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>55</td>
+                <td>(446, 51)</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>56</td>
+                <td>(446, 54)</td>
+                <td>77</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>57</td>
+                <td>(446, 90)</td>
+                <td>148</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>58</td>
+                <td>(446, 93)</td>
+                <td>192</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>59</td>
+                <td>(446, 96)</td>
+                <td>115</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>60</td>
+                <td>(446, 99)</td>
+                <td>185</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>61</td>
+                <td>(446, 102)</td>
+                <td>221</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>62</td>
+                <td>(446, 105)</td>
+                <td>237</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>63</td>
+                <td>(446, 108)</td>
+                <td>160</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>64</td>
+                <td>(446, 111)</td>
+                <td>180</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>65</td>
+                <td>(446, 114)</td>
+                <td>208</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>66</td>
+                <td>(446, 117)</td>
+                <td>170</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>67</td>
+                <td>(446, 120)</td>
+                <td>210</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>68</td>
+                <td>(446, 123)</td>
+                <td>227</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>69</td>
+                <td>(446, 126)</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>70</td>
+                <td>(446, 129)</td>
+                <td>162</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>71</td>
+                <td>(446, 132)</td>
+                <td>161</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>72</td>
+                <td>(446, 135)</td>
+                <td>214</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>73</td>
+                <td>(446, 138)</td>
+                <td>237</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>74</td>
+                <td>(446, 141)</td>
+                <td>225</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>75</td>
+                <td>(446, 144)</td>
+                <td>61</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>76</td>
+                <td>(447, 21)</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>77</td>
+                <td>(447, 24)</td>
+                <td>183</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>78</td>
+                <td>(447, 30)</td>
+                <td>152</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>79</td>
+                <td>(447, 33)</td>
+                <td>151</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>80</td>
+                <td>(447, 36)</td>
+                <td>114</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>81</td>
+                <td>(447, 60)</td>
+                <td>106</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>82</td>
+                <td>(447, 63)</td>
+                <td>113</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>83</td>
+                <td>(447, 66)</td>
+                <td>120</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>84</td>
+                <td>(447, 69)</td>
+                <td>95</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>85</td>
+                <td>(447, 78)</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>86</td>
+                <td>(447, 84)</td>
+                <td>99</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>87</td>
+                <td>(447, 87)</td>
+                <td>122</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>88</td>
+                <td>(448, 27)</td>
+                <td>177</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>89</td>
+                <td>(448, 57)</td>
+                <td>103</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>90</td>
+                <td>(448, 75)</td>
+                <td>122</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>91</td>
+                <td>(448, 81)</td>
+                <td>110</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>GB[7] </td>
+                <td>(297, 72)</td>
+                <td>reset_synchronizer_0/sync_asert_reg_RNIE9T5[1]/U0_YWn</td>
+                <td>1736</td>
+                <td>1</td>
+                <td>(147, 6)</td>
+                <td>29</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>2</td>
+                <td>(147, 9)</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>3</td>
+                <td>(147, 12)</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>4</td>
+                <td>(147, 15)</td>
+                <td>91</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>5</td>
+                <td>(147, 18)</td>
+                <td>69</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>6</td>
+                <td>(147, 21)</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>7</td>
+                <td>(147, 24)</td>
+                <td>103</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>8</td>
+                <td>(147, 27)</td>
+                <td>31</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>9</td>
+                <td>(147, 30)</td>
+                <td>41</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>10</td>
+                <td>(147, 33)</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>11</td>
+                <td>(147, 36)</td>
+                <td>56</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>12</td>
+                <td>(147, 39)</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>13</td>
+                <td>(147, 42)</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>14</td>
+                <td>(147, 45)</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>15</td>
+                <td>(447, 9)</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>16</td>
+                <td>(447, 15)</td>
+                <td>37</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>17</td>
+                <td>(447, 18)</td>
+                <td>48</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>18</td>
+                <td>(447, 39)</td>
+                <td>88</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>19</td>
+                <td>(447, 42)</td>
+                <td>76</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>20</td>
+                <td>(447, 45)</td>
+                <td>64</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>21</td>
+                <td>(447, 48)</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>22</td>
+                <td>(447, 51)</td>
+                <td>34</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>23</td>
+                <td>(447, 54)</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>24</td>
+                <td>(447, 90)</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>25</td>
+                <td>(447, 93)</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>26</td>
+                <td>(447, 96)</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>27</td>
+                <td>(447, 99)</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>28</td>
+                <td>(448, 24)</td>
+                <td>117</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>29</td>
+                <td>(448, 30)</td>
+                <td>113</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>30</td>
+                <td>(448, 33)</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>31</td>
+                <td>(448, 36)</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>32</td>
+                <td>(448, 60)</td>
+                <td>39</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>33</td>
+                <td>(448, 63)</td>
+                <td>37</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>34</td>
+                <td>(448, 69)</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>35</td>
+                <td>(449, 27)</td>
+                <td>129</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>36</td>
+                <td>(449, 57)</td>
+                <td>39</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>37</td>
+                <td>(449, 78)</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>38</td>
+                <td>(449, 87)</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>39</td>
+                <td>(450, 66)</td>
+                <td>36</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>GB[5] </td>
+                <td>(295, 72)</td>
+                <td>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_inferred_clock_RNIJ683/U0_YWn</td>
+                <td>314</td>
+                <td>1</td>
+                <td>(146, 69)</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>2</td>
+                <td>(446, 33)</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>3</td>
+                <td>(446, 36)</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>4</td>
+                <td>(446, 60)</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>5</td>
+                <td>(446, 63)</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>6</td>
+                <td>(446, 66)</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>7</td>
+                <td>(446, 69)</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>8</td>
+                <td>(446, 75)</td>
+                <td>39</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>9</td>
+                <td>(446, 78)</td>
+                <td>67</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>10</td>
+                <td>(446, 81)</td>
+                <td>54</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>11</td>
+                <td>(446, 84)</td>
+                <td>48</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>12</td>
+                <td>(446, 87)</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>13</td>
+                <td>(447, 27)</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>14</td>
+                <td>(447, 57)</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>GB[4] </td>
+                <td>(294, 72)</td>
+                <td>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/dmiResetCatch/MIV_RV32IMA_L1_AXI_ASYNC_RESET_SYNCHRONIZER_SHIFT_REG_W1_D3_I0/sync_0/reg_0/q_rep_RNI5R15/U0_YWn</td>
+                <td>40</td>
+                <td>1</td>
+                <td>(148, 69)</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>2</td>
+                <td>(448, 66)</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>3</td>
+                <td>(448, 78)</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>4</td>
+                <td>(448, 84)</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>5</td>
+                <td>(449, 75)</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>6</td>
+                <td>(449, 81)</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>GB[0] </td>
+                <td>(290, 72)</td>
+                <td>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/_T_49_RNI4PI/U0_YWn_GEast</td>
+                <td>30</td>
+                <td>1</td>
+                <td>(448, 87)</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>2</td>
+                <td>(449, 66)</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>3</td>
+                <td>(449, 84)</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>GB[1] </td>
+                <td>(291, 72)</td>
+                <td>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst_RNILAHC/U0_YWn_GEast</td>
+                <td>25</td>
+                <td>1</td>
+                <td>(448, 21)</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>2</td>
+                <td>(449, 24)</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>3</td>
+                <td>(449, 30)</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>4</td>
+                <td>(449, 69)</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>5</td>
+                <td>(450, 27)</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>6</td>
+                <td>(450, 57)</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>GB[3] </td>
+                <td>(293, 72)</td>
+                <td>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/un1_reset_debug_RNIINRF/U0_YWn_GEast</td>
+                <td>24</td>
+                <td>1</td>
+                <td>(447, 75)</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>2</td>
+                <td>(447, 81)</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>GB[6] </td>
+                <td>(296, 72)</td>
+                <td>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UDRCK_inferred_clock_RNIFUN4/U0_YWn_GEast</td>
+                <td>17</td>
+                <td>1</td>
+                <td>(446, 21)</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>2</td>
+                <td>(446, 24)</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>3</td>
+                <td>(446, 27)</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>4</td>
+                <td>(446, 30)</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>5</td>
+                <td>(446, 57)</td>
+                <td>1</td>
+            </tr>
+        </table>
+        <p/>
+    </body>
+</html>

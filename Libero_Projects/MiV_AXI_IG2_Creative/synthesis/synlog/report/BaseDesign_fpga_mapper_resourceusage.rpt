@@ -1,0 +1,47 @@
+Resource Usage Report for BaseDesign 
+
+Mapping to part: m2gl025vf400std
+Cell usage:
+AND2            1 use
+CCC             1 use
+CLKINT          8 uses
+RCOSC_25_50MHZ  1 use
+SYSRESET        1 use
+UJTAG           1 use
+CFG1           12 uses
+CFG2           1913 uses
+CFG3           4979 uses
+CFG4           6822 uses
+
+Carry cells:
+ARI1            1075 uses - used for arithmetic functions
+ARI1            2296 uses - used for Wide-Mux implementation
+Total ARI1      3371 uses
+
+
+Sequential Cells: 
+SLE            10704 uses
+
+DSP Blocks:    2 of 34 (5%)
+ MACC:         1 MultAdd
+ MACC:         1 Mult
+
+I/O ports: 14
+I/O primitives: 8
+INBUF          3 uses
+OUTBUF         5 uses
+
+
+Global Clock Buffers: 8
+
+Total LUTs:    17097
+
+Extra resources required for RAM and MACC interface logic during P&R:
+
+RAM64x18 Interface Logic : SLEs = 864; LUTs = 864;
+RAM1K18  Interface Logic : SLEs = 864; LUTs = 864;
+MACC     Interface Logic : SLEs = 72; LUTs = 72;
+
+Total number of SLEs after P&R:  10704 + 864 + 864 + 72 = 12504;
+Total number of LUTs after P&R:  17097 + 864 + 864 + 72 = 18897;
+

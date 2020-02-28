@@ -1,0 +1,61 @@
+
+Copyright (C) 1994-2019 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: O-2018.09M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.3\SynplifyPro
+OS: Windows 6.2
+
+Hostname: IRD-LT-M52413
+
+Implementation : synthesis
+
+# Written on Thu Feb 27 11:33:05 2020
+
+##### FILES SYNTAX CHECKED ##############################################
+Constraint File(s):      "C:\GitHub-LSRAM-12.3\RISC-V-Creative-Board-1\Libero_Projects\MiV_AHB_IG2_Creative\designer\BaseDesign\synthesis.fdc"
+
+#Run constraint checker to find more issues with constraints.
+#########################################################################
+
+
+
+No issues found in constraint syntax.
+
+
+
+Clock Summary
+*************
+
+          Start                                                Requested     Requested     Clock                                                             Clock                   Clock
+Level     Clock                                                Frequency     Period        Type                                                              Group                   Load 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+0 -       OSC_0_inst_0/OSC_0_0/I_RCOSC_25_50MHZ/CLKOUT         50.0 MHz      20.000        declared                                                          default_clkgroup        0    
+1 .         FCCC_0_inst_0/FCCC_0_0/GL0                         50.0 MHz      20.000        generated (from OSC_0_inst_0/OSC_0_0/I_RCOSC_25_50MHZ/CLKOUT)     default_clkgroup        5400 
+                                                                                                                                                                                          
+0 -       System                                               100.0 MHz     10.000        system                                                            system_clkgroup         0    
+                                                                                                                                                                                          
+0 -       TCK                                                  6.0 MHz       166.670       declared                                                          default_clkgroup        0    
+                                                                                                                                                                                          
+0 -       COREJTAGDEBUG_UJTAG_WRAPPER|UDRCK_inferred_clock     100.0 MHz     10.000        inferred                                                          Inferred_clkgroup_0     363  
+==========================================================================================================================================================================================
+
+
+Clock Load Summary
+******************
+
+                                                     Clock     Source                                                                                                     Clock Pin                                                                         Non-clock Pin     Non-clock Pin                                                                         
+Clock                                                Load      Pin                                                                                                        Seq Example                                                                       Seq Example       Comb Example                                                                          
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+OSC_0_inst_0/OSC_0_0/I_RCOSC_25_50MHZ/CLKOUT         0         OSC_0_inst_0.OSC_0_0.I_RCOSC_25_50MHZ.CLKOUT(RCOSC_25_50MHZ)                                               -                                                                                 -                 -                                                                                     
+FCCC_0_inst_0/FCCC_0_0/GL0                           5400      FCCC_0_inst_0.FCCC_0_0.CCC_INST.GL0(CCC)                                                                   CoreTimer_0_inst_0.CoreTimer_0_0.CtrlReg[2:0].C                                   -                 FCCC_0_inst_0.FCCC_0_0.GL0_INST.I(BUFG)                                               
+                                                                                                                                                                                                                                                                                                                                                                    
+System                                               0         -                                                                                                          -                                                                                 -                 -                                                                                     
+                                                                                                                                                                                                                                                                                                                                                                    
+TCK                                                  0         TCK(port)                                                                                                  -                                                                                 -                 -                                                                                     
+                                                                                                                                                                                                                                                                                                                                                                    
+COREJTAGDEBUG_UJTAG_WRAPPER|UDRCK_inferred_clock     363       CoreJTAGDebug_0_inst_0.CoreJTAGDebug_0_0.genblk1\.genblk1\.genblk1\.UJTAG_inst.UJTAG_inst.UDRCK(UJTAG)     CoreJTAGDebug_0_inst_0.CoreJTAGDebug_0_0.genblk3\.genblk1\.UJ_JTAG.pauselow.C     -                 CoreJTAGDebug_0_inst_0.CoreJTAGDebug_0_0.genblk3\.genblk1\.UJ_JTAG.un1_UDRCK.I[0](inv)
+====================================================================================================================================================================================================================================================================================================================================================================

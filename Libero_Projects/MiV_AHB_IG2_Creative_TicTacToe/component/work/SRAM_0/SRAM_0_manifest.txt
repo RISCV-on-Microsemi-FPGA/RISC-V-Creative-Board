@@ -1,0 +1,23 @@
+Microsemi Corporation - Microsemi Libero Software Release v12.3 (Version 12.800.0.16)
+
+Date      :  Wed Feb 26 16:43:54 2020
+Project   :  C:\GitHub-LSRAM-12.3\RISC-V-Creative-Board-1\Libero_Projects\MiV_AHB_IG2_Creative_TicTacToe
+Component :  SRAM_0
+Family    :  IGLOO2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/component/work/SRAM_0/SRAM_0.v
+    C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/component/work/SRAM_0/SRAM_0_0/rtl/vlog/core/AHBLSramIf.v
+    C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/component/work/SRAM_0/SRAM_0_0/rtl/vlog/core/CoreAHBLSRAM.v
+    C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/component/work/SRAM_0/SRAM_0_0/rtl/vlog/core/SramCtrlIf.v
+    C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/component/work/SRAM_0/SRAM_0_0/rtl/vlog/core/lsram_2048to139264x8.v
+    C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/component/work/SRAM_0/SRAM_0_0/rtl/vlog/core/usram_128to9216x8.v
+
+Stimulus files for all Simulation tools:
+    C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/component/Actel/DirectCore/COREAHBLSRAM/2.2.104/mti/scripts/compileList.do
+    C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/component/Actel/DirectCore/COREAHBLSRAM/2.2.104/mti/scripts/run.do
+    C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/component/Actel/DirectCore/COREAHBLSRAM/2.2.104/mti/scripts/wave.do
+    C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/component/work/SRAM_0/SRAM_0_0/coreparameters.v
+    C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AHB_IG2_Creative_TicTacToe/component/work/SRAM_0/SRAM_0_0/rtl/vlog/test/user/tb.v
+

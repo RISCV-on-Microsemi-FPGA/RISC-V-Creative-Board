@@ -1,0 +1,7 @@
+C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\bin64\syn_nfilter.exe  -link  -top  BaseDesign  -multisrs  C:\GitHub-LSRAM-12.3\RISC-V-Creative-Board-1\Libero_Projects\MiV_AXI_IG2_Creative\synthesis\synwork\BaseDesign_comp.srs  -osyn  C:\GitHub-LSRAM-12.3\RISC-V-Creative-Board-1\Libero_Projects\MiV_AXI_IG2_Creative\synthesis\synwork\BaseDesign_mult.srs  -log  C:\GitHub-LSRAM-12.3\RISC-V-Creative-Board-1\Libero_Projects\MiV_AXI_IG2_Creative\synthesis\synlog\BaseDesign_multi_srs_gen.srr 
+relcom:..\..\..\..\..\..\Microsemi\Libero_SoC_v12.3\SynplifyPro\bin64\syn_nfilter.exe -link -top BaseDesign -multisrs ..\synwork\BaseDesign_comp.srs -osyn ..\synwork\BaseDesign_mult.srs -log ..\synlog\BaseDesign_multi_srs_gen.srr
+rc:0 success:1 runtime:1
+file:..\synwork\BaseDesign_comp.srs|io:i|time:1582804706|size:769301|exec:0|csum:01C06A165664A9A60D420926FB7793C7
+file:..\synwork\BaseDesign_mult.srs|io:o|time:1582804708|size:15817|exec:0|csum:
+file:..\synlog\BaseDesign_multi_srs_gen.srr|io:o|time:1582804708|size:1053|exec:0|csum:
+file:..\..\..\..\..\..\Microsemi\Libero_SoC_v12.3\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1562075633|size:8810496|exec:1|csum:20DB59B568B25441B8251D61083745CC

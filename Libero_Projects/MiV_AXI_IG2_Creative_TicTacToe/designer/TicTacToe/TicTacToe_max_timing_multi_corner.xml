@@ -1,0 +1,5326 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml-stylesheet href="rptstyle.xsl" type="text/xsl" ?>
+<doc>
+<title>Timing Multi Corner Report Max Delay Analysis
+</title>
+<text>SmartTime Version 12.800.0.16</text>
+<text>Microsemi Corporation - Microsemi Libero Software Release v12.3 (Version 12.800.0.16)</text>
+<text>Date: Wed Feb 26 18:26:19 2020
+</text>
+<table>
+<header>
+</header>
+<row>
+ <cell>Design</cell>
+ <cell>TicTacToe</cell>
+</row>
+<row>
+ <cell>Family</cell>
+ <cell>IGLOO2</cell>
+</row>
+<row>
+ <cell>Die</cell>
+ <cell>M2GL025</cell>
+</row>
+<row>
+ <cell>Package</cell>
+ <cell>256 VF</cell>
+</row>
+<row>
+ <cell>Temperature Range</cell>
+ <cell>0 - 85 C</cell>
+</row>
+<row>
+ <cell>Voltage Range</cell>
+ <cell>1.14 - 1.26 V</cell>
+</row>
+<row>
+ <cell>Speed Grade</cell>
+ <cell>STD</cell>
+</row>
+<row>
+ <cell>Design State</cell>
+ <cell>Post-Layout</cell>
+</row>
+<row>
+ <cell>Data source</cell>
+ <cell>Production</cell>
+</row>
+<row>
+ <cell>Multi Corner Report Operating Conditions</cell>
+ <cell>BEST, TYPICAL, WORST</cell>
+</row>
+<row>
+ <cell>Scenario for Timing Analysis</cell>
+ <cell>timing_analysis</cell>
+</row>
+</table>
+<text></text>
+<section>
+<name>Summary</name>
+<table>
+<header>
+ <cell>Clock Domain</cell>
+ <cell>Period (ns)</cell>
+ <cell>Frequency (MHz)</cell>
+ <cell>Required Period (ns)</cell>
+ <cell>Required Frequency (MHz)</cell>
+ <cell>External Setup (ns)</cell>
+ <cell>Max Clock-To-Out (ns)</cell>
+</header>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0</cell>
+ <cell>14.348</cell>
+ <cell>69.696</cell>
+ <cell>20.000</cell>
+ <cell>50.000</cell>
+ <cell>-0.416</cell>
+ <cell>13.522</cell>
+</row>
+<row>
+ <cell>OSC_0_inst_0/OSC_0_0/I_RCOSC_25_50MHZ/CLKOUT</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+ <cell>20.000</cell>
+ <cell>50.000</cell>
+ <cell>N/A</cell>
+ <cell>N/A</cell>
+</row>
+<row>
+ <cell>TCK</cell>
+ <cell>17.463</cell>
+ <cell>57.264</cell>
+ <cell>166.670</cell>
+ <cell>6.000</cell>
+ <cell>2.830</cell>
+ <cell>N/A</cell>
+</row>
+</table>
+<text></text>
+<table>
+<header>
+ <cell></cell>
+ <cell>Min Delay (ns)</cell>
+ <cell>Max Delay (ns)</cell>
+</header>
+<row>
+ <cell>Input to Output</cell>
+ <cell>0.047</cell>
+</row>
+</table>
+</section>
+<section>
+<name>Clock Domain FCCC_0_inst_0/FCCC_0_0/GL0</name>
+<text></text>
+<section>
+<name>SET Register to Register</name>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+ <cell>Setup (ns)</cell>
+ <cell>Minimum Period (ns)</cell>
+ <cell>Operating Conditions</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/dcache/s2_req_addr_Z[8]:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/frontend/icache/MIV_RV32IMA_L1_AXI_DATA_ARRAYS_0/MIV_RV32IMA_L1_AXI_DATA_ARRAYS_0_0_EXT/ram_ram_0_0/INST_RAM1K18_IP:A_ADDR[4]</cell>
+ <cell>14.023</cell>
+ <cell>5.652</cell>
+ <cell>19.692</cell>
+ <cell>25.344</cell>
+ <cell>0.500</cell>
+ <cell>14.348</cell>
+ <cell>WORST</cell>
+</row>
+<row>
+ <cell>Path 2</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/dcache/s2_req_addr_Z[8]:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/frontend/icache/MIV_RV32IMA_L1_AXI_DATA_ARRAYS_0/MIV_RV32IMA_L1_AXI_DATA_ARRAYS_0_0_EXT/ram_ram_0_2/INST_RAM1K18_IP:A_ADDR[4]</cell>
+ <cell>14.004</cell>
+ <cell>5.675</cell>
+ <cell>19.673</cell>
+ <cell>25.348</cell>
+ <cell>0.500</cell>
+ <cell>14.325</cell>
+ <cell>WORST</cell>
+</row>
+<row>
+ <cell>Path 3</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/dcache/s2_req_addr_Z[7]:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/frontend/icache/MIV_RV32IMA_L1_AXI_DATA_ARRAYS_0/MIV_RV32IMA_L1_AXI_DATA_ARRAYS_0_0_EXT/ram_ram_0_0/INST_RAM1K18_IP:A_ADDR[4]</cell>
+ <cell>13.970</cell>
+ <cell>5.717</cell>
+ <cell>19.627</cell>
+ <cell>25.344</cell>
+ <cell>0.500</cell>
+ <cell>14.283</cell>
+ <cell>WORST</cell>
+</row>
+<row>
+ <cell>Path 4</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/dcache/s2_req_addr_Z[7]:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/frontend/icache/MIV_RV32IMA_L1_AXI_DATA_ARRAYS_0/MIV_RV32IMA_L1_AXI_DATA_ARRAYS_0_0_EXT/ram_ram_0_2/INST_RAM1K18_IP:A_ADDR[4]</cell>
+ <cell>13.951</cell>
+ <cell>5.740</cell>
+ <cell>19.608</cell>
+ <cell>25.348</cell>
+ <cell>0.500</cell>
+ <cell>14.260</cell>
+ <cell>WORST</cell>
+</row>
+<row>
+ <cell>Path 5</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/dcache/s2_req_addr_Z[8]:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/frontend/icache/MIV_RV32IMA_L1_AXI_DATA_ARRAYS_0/MIV_RV32IMA_L1_AXI_DATA_ARRAYS_0_0_EXT/ram_ram_0_1/INST_RAM1K18_IP:A_ADDR[4]</cell>
+ <cell>13.887</cell>
+ <cell>5.791</cell>
+ <cell>19.556</cell>
+ <cell>25.347</cell>
+ <cell>0.500</cell>
+ <cell>14.209</cell>
+ <cell>WORST</cell>
+</row>
+</table>
+<text></text>
+<section><name>Expanded Path 1</name></section>
+<table>
+<header>
+ <cell>Pin Name</cell>
+ <cell>Type</cell>
+ <cell>Net Name</cell>
+ <cell>Cell Name</cell>
+ <cell>Op</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Total (ns)</cell>
+ <cell>Fanout</cell>
+ <cell>Edge</cell>
+</header>
+<row>
+ <cell>From: MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/dcache/s2_req_addr_Z[8]:CLK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>To: MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/frontend/icache/MIV_RV32IMA_L1_AXI_DATA_ARRAYS_0/MIV_RV32IMA_L1_AXI_DATA_ARRAYS_0_0_EXT/ram_ram_0_0/INST_RAM1K18_IP:A_ADDR[4]</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>25.344</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>-</cell>
+ <cell></cell>
+ <cell>19.692</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>slack</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>5.652</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data arrival time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/CCC_INST/INST_CCC_IP:GL0</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell>Clock generation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>3.797</cell>
+ <cell>3.797</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST:An</cell>
+ <cell>net</cell>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_net</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.291</cell>
+ <cell>4.088</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST:YWn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GBM</cell>
+ <cell>+</cell>
+ <cell>0.209</cell>
+ <cell>4.297</cell>
+ <cell>46</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST/U0_RGB1_RGB37:An</cell>
+ <cell>net</cell>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST/U0_YWn</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.430</cell>
+ <cell>4.727</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST/U0_RGB1_RGB37:YR</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.372</cell>
+ <cell>5.099</cell>
+ <cell>64</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/dcache/s2_req_addr_Z[8]:CLK</cell>
+ <cell>net</cell>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST/U0_RGB1_RGB37_rgbr_net_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.570</cell>
+ <cell>5.669</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/dcache/s2_req_addr_Z[8]:Q</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>+</cell>
+ <cell>0.127</cell>
+ <cell>5.796</cell>
+ <cell>9</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/dcache/lrscAddrMatch_0_I_9:B</cell>
+ <cell>net</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/_T_2852[8]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.983</cell>
+ <cell>6.779</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/dcache/lrscAddrMatch_0_I_9:UB</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:ARI1_CC</cell>
+ <cell>+</cell>
+ <cell>0.518</cell>
+ <cell>7.297</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/dcache/lrscAddrMatch_0_I_1_CC_0:UB[7]</cell>
+ <cell>net</cell>
+ <cell>NET_CC_CONFIG9670</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>7.297</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/dcache/lrscAddrMatch_0_I_1_CC_0:CO</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CC_CONFIG</cell>
+ <cell>+</cell>
+ <cell>0.565</cell>
+ <cell>7.862</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/dcache/lrscAddrMatch_0_I_1_CC_1:CI</cell>
+ <cell>net</cell>
+ <cell>CI_TO_CO9665</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>7.862</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/dcache/lrscAddrMatch_0_I_1_CC_1:CC[7]</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CC_CONFIG</cell>
+ <cell>+</cell>
+ <cell>0.344</cell>
+ <cell>8.206</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/dcache/lrscAddrMatch_0_I_75_FCINST1:CC</cell>
+ <cell>net</cell>
+ <cell>NET_CC_CONFIG9707</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>8.206</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/dcache/lrscAddrMatch_0_I_75_FCINST1:CO</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:FCEND_BUFF_CC</cell>
+ <cell>+</cell>
+ <cell>0.078</cell>
+ <cell>8.284</cell>
+ <cell>4</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/dcache/MIV_RV32IMA_L1_AXI_AMOALU/N_2037_i:D</cell>
+ <cell>net</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/dcache/lrscAddrMatch_0_data_tmp[12]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>1.006</cell>
+ <cell>9.290</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/dcache/MIV_RV32IMA_L1_AXI_AMOALU/N_2037_i:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG4</cell>
+ <cell>+</cell>
+ <cell>0.168</cell>
+ <cell>9.458</cell>
+ <cell>8</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/dcache/MIV_RV32IMA_L1_AXI_AMOALU/io_cpu_s2_nack_a4:A</cell>
+ <cell>net</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/N_2037_i</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.584</cell>
+ <cell>10.042</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/dcache/MIV_RV32IMA_L1_AXI_AMOALU/io_cpu_s2_nack_a4:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG2</cell>
+ <cell>+</cell>
+ <cell>0.102</cell>
+ <cell>10.144</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/dcache/MIV_RV32IMA_L1_AXI_AMOALU/io_cpu_s2_nack_0_1:C</cell>
+ <cell>net</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/dcache/MIV_RV32IMA_L1_AXI_AMOALU/io_cpu_s2_nack_a4_Z</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.692</cell>
+ <cell>10.836</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/dcache/MIV_RV32IMA_L1_AXI_AMOALU/io_cpu_s2_nack_0_1:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG4</cell>
+ <cell>+</cell>
+ <cell>0.173</cell>
+ <cell>11.009</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/dcache/MIV_RV32IMA_L1_AXI_AMOALU/io_cpu_s2_nack_0_2:C</cell>
+ <cell>net</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/dcache/MIV_RV32IMA_L1_AXI_AMOALU/io_cpu_s2_nack_0_1_Z</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.266</cell>
+ <cell>11.275</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/dcache/MIV_RV32IMA_L1_AXI_AMOALU/io_cpu_s2_nack_0_2:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG3</cell>
+ <cell>+</cell>
+ <cell>0.088</cell>
+ <cell>11.363</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/dcache/MIV_RV32IMA_L1_AXI_AMOALU/io_cpu_s2_nack_0:C</cell>
+ <cell>net</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/dcache/MIV_RV32IMA_L1_AXI_AMOALU/io_cpu_s2_nack_0_2_Z</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.108</cell>
+ <cell>11.471</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/dcache/MIV_RV32IMA_L1_AXI_AMOALU/io_cpu_s2_nack_0:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG4</cell>
+ <cell>+</cell>
+ <cell>0.088</cell>
+ <cell>11.559</cell>
+ <cell>9</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/core/replay_wb_common:A</cell>
+ <cell>net</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/dcache_io_cpu_s2_nack</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>1.242</cell>
+ <cell>12.801</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/core/replay_wb_common:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG2</cell>
+ <cell>+</cell>
+ <cell>0.088</cell>
+ <cell>12.889</cell>
+ <cell>42</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/core/io_imem_req_bits_pc_0[3]:A</cell>
+ <cell>net</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/replay_wb_common</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>1.199</cell>
+ <cell>14.088</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/core/io_imem_req_bits_pc_0[3]:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG3</cell>
+ <cell>+</cell>
+ <cell>0.118</cell>
+ <cell>14.206</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/core/io_imem_req_bits_pc[3]:C</cell>
+ <cell>net</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/core/N_1339</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.112</cell>
+ <cell>14.318</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/core/io_imem_req_bits_pc[3]:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG3</cell>
+ <cell>+</cell>
+ <cell>0.102</cell>
+ <cell>14.420</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/frontend/_T_171[3]:B</cell>
+ <cell>net</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/core_io_imem_req_bits_pc[3]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>1.221</cell>
+ <cell>15.641</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/frontend/_T_171[3]:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG3</cell>
+ <cell>+</cell>
+ <cell>0.102</cell>
+ <cell>15.743</cell>
+ <cell>3</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/frontend/icache/_T_346[1]:C</cell>
+ <cell>net</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/frontend/_T_171[3]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.984</cell>
+ <cell>16.727</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/frontend/icache/_T_346[1]:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG4</cell>
+ <cell>+</cell>
+ <cell>0.102</cell>
+ <cell>16.829</cell>
+ <cell>5</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/frontend/icache/MIV_RV32IMA_L1_AXI_DATA_ARRAYS_0/MIV_RV32IMA_L1_AXI_DATA_ARRAYS_0_0_EXT/reg_RW0_addr_0_cZ[1]:C</cell>
+ <cell>net</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/frontend/icache/_T_346[1]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>1.164</cell>
+ <cell>17.993</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/frontend/icache/MIV_RV32IMA_L1_AXI_DATA_ARRAYS_0/MIV_RV32IMA_L1_AXI_DATA_ARRAYS_0_0_EXT/reg_RW0_addr_0_cZ[1]:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG3</cell>
+ <cell>+</cell>
+ <cell>0.102</cell>
+ <cell>18.095</cell>
+ <cell>4</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/frontend/icache/MIV_RV32IMA_L1_AXI_DATA_ARRAYS_0/MIV_RV32IMA_L1_AXI_DATA_ARRAYS_0_0_EXT/ram_ram_0_0/CFG_8:C</cell>
+ <cell>net</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/frontend/icache/MIV_RV32IMA_L1_AXI_DATA_ARRAYS_0/MIV_RV32IMA_L1_AXI_DATA_ARRAYS_0_0_EXT/reg_RW0_addr_0_2[1]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>1.280</cell>
+ <cell>19.375</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/frontend/icache/MIV_RV32IMA_L1_AXI_DATA_ARRAYS_0/MIV_RV32IMA_L1_AXI_DATA_ARRAYS_0_0_EXT/ram_ram_0_0/CFG_8:IPC</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG2_IP_BC</cell>
+ <cell>+</cell>
+ <cell>0.245</cell>
+ <cell>19.620</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/frontend/icache/MIV_RV32IMA_L1_AXI_DATA_ARRAYS_0/MIV_RV32IMA_L1_AXI_DATA_ARRAYS_0_0_EXT/ram_ram_0_0/INST_RAM1K18_IP:A_ADDR[4]</cell>
+ <cell>net</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/frontend/icache/MIV_RV32IMA_L1_AXI_DATA_ARRAYS_0/MIV_RV32IMA_L1_AXI_DATA_ARRAYS_0_0_EXT/ram_ram_0_0/A_ADDR_net[4]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.072</cell>
+ <cell>19.692</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>19.692</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data required time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0</cell>
+ <cell>Clock Constraint</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>20.000</cell>
+ <cell>20.000</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/CCC_INST/INST_CCC_IP:GL0</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>20.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell>Clock generation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>3.797</cell>
+ <cell>23.797</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST:An</cell>
+ <cell>net</cell>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_net</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.291</cell>
+ <cell>24.088</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST:YWn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GBM</cell>
+ <cell>+</cell>
+ <cell>0.209</cell>
+ <cell>24.297</cell>
+ <cell>46</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST/U0_RGB1_RGB7:An</cell>
+ <cell>net</cell>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST/U0_YWn</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.457</cell>
+ <cell>24.754</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST/U0_RGB1_RGB7:YR</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.372</cell>
+ <cell>25.126</cell>
+ <cell>9</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/frontend/icache/MIV_RV32IMA_L1_AXI_DATA_ARRAYS_0/MIV_RV32IMA_L1_AXI_DATA_ARRAYS_0_0_EXT/ram_ram_0_0/FF_0:CLK</cell>
+ <cell>net</cell>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST/U0_RGB1_RGB7_rgbr_net_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.555</cell>
+ <cell>25.681</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/frontend/icache/MIV_RV32IMA_L1_AXI_DATA_ARRAYS_0/MIV_RV32IMA_L1_AXI_DATA_ARRAYS_0_0_EXT/ram_ram_0_0/FF_0:IPCLKn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE_IP_CLK</cell>
+ <cell>+</cell>
+ <cell>0.070</cell>
+ <cell>25.751</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/frontend/icache/MIV_RV32IMA_L1_AXI_DATA_ARRAYS_0/MIV_RV32IMA_L1_AXI_DATA_ARRAYS_0_0_EXT/ram_ram_0_0/INST_RAM1K18_IP:A_CLK</cell>
+ <cell>net</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/frontend/icache/MIV_RV32IMA_L1_AXI_DATA_ARRAYS_0/MIV_RV32IMA_L1_AXI_DATA_ARRAYS_0_0_EXT/ram_ram_0_0/A_CLK_net</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.093</cell>
+ <cell>25.844</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/frontend/icache/MIV_RV32IMA_L1_AXI_DATA_ARRAYS_0/MIV_RV32IMA_L1_AXI_DATA_ARRAYS_0_0_EXT/ram_ram_0_0/INST_RAM1K18_IP:A_ADDR[4]</cell>
+ <cell>Library setup time</cell>
+ <cell></cell>
+ <cell>ADLIB:RAM1K18_IP</cell>
+ <cell>-</cell>
+ <cell>0.500</cell>
+ <cell>25.344</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>25.344</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Operating Conditions</cell>
+ <cell>WORST</cell>
+</row>
+</table>
+</section>
+<section>
+<name>SET External Setup</name>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+ <cell>Setup (ns)</cell>
+ <cell>External Setup (ns)</cell>
+ <cell>Operating Conditions</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>RX</cell>
+ <cell>CoreUARTapb_0_inst_0/CoreUARTapb_0_0/CUARTlOlI/CUARTO01/CUARTI1Il[2]:D</cell>
+ <cell>2.821</cell>
+ <cell></cell>
+ <cell>2.821</cell>
+ <cell></cell>
+ <cell>0.162</cell>
+ <cell>-0.263</cell>
+ <cell>BEST</cell>
+</row>
+<row>
+ <cell>Path 2</cell>
+ <cell>GPIO_IN[1]</cell>
+ <cell>CoreGPIO_IN_inst_0/CoreGPIO_IN_0/xhdl1.GEN_BITS_1_.gpin1:D</cell>
+ <cell>2.307</cell>
+ <cell></cell>
+ <cell>2.307</cell>
+ <cell></cell>
+ <cell>0.154</cell>
+ <cell>-0.810</cell>
+ <cell>BEST</cell>
+</row>
+<row>
+ <cell>Path 3</cell>
+ <cell>GPIO_IN[0]</cell>
+ <cell>CoreGPIO_IN_inst_0/CoreGPIO_IN_0/xhdl1.GEN_BITS_0_.gpin1:D</cell>
+ <cell>2.201</cell>
+ <cell></cell>
+ <cell>2.201</cell>
+ <cell></cell>
+ <cell>0.154</cell>
+ <cell>-0.882</cell>
+ <cell>BEST</cell>
+</row>
+<row>
+ <cell>Path 4</cell>
+ <cell>SPISDI</cell>
+ <cell>CORESPI_0_inst_0/CORESPI_0_0/USPI/UCC/msrxs_shiftreg[0]:D</cell>
+ <cell>2.181</cell>
+ <cell></cell>
+ <cell>2.181</cell>
+ <cell></cell>
+ <cell>0.162</cell>
+ <cell>-0.914</cell>
+ <cell>BEST</cell>
+</row>
+<row>
+ <cell>Path 5</cell>
+ <cell>SPISDI</cell>
+ <cell>CORESPI_0_inst_0/CORESPI_0_0/USPI/UCC/msrxs_datain[0]:D</cell>
+ <cell>1.887</cell>
+ <cell></cell>
+ <cell>1.887</cell>
+ <cell></cell>
+ <cell>0.162</cell>
+ <cell>-1.215</cell>
+ <cell>BEST</cell>
+</row>
+</table>
+<text></text>
+<section><name>Expanded Path 1</name></section>
+<table>
+<header>
+ <cell>Pin Name</cell>
+ <cell>Type</cell>
+ <cell>Net Name</cell>
+ <cell>Cell Name</cell>
+ <cell>Op</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Total (ns)</cell>
+ <cell>Fanout</cell>
+ <cell>Edge</cell>
+</header>
+<row>
+ <cell>From: RX</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>To: CoreUARTapb_0_inst_0/CoreUARTapb_0_0/CUARTlOlI/CUARTO01/CUARTI1Il[2]:D</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>-</cell>
+ <cell></cell>
+ <cell>2.821</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>slack</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data arrival time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>RX</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>RX_ibuf/U0/U_IOPAD:PAD</cell>
+ <cell>net</cell>
+ <cell>RX</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>RX_ibuf/U0/U_IOPAD:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:IOPAD_IN</cell>
+ <cell>+</cell>
+ <cell>0.917</cell>
+ <cell>0.917</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>RX_ibuf/U0/U_IOINFF:A</cell>
+ <cell>net</cell>
+ <cell>RX_ibuf/U0/YIN1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>-0.003</cell>
+ <cell>0.914</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>RX_ibuf/U0/U_IOINFF:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:IOINFF_BYPASS</cell>
+ <cell>+</cell>
+ <cell>0.050</cell>
+ <cell>0.964</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CoreUARTapb_0_inst_0/CoreUARTapb_0_0/CUARTlOlI/CUARTO01/CUARTI1Il[2]:D</cell>
+ <cell>net</cell>
+ <cell>RX_c</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>1.857</cell>
+ <cell>2.821</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2.821</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data required time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/CCC_INST/INST_CCC_IP:GL0</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell>Clock generation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>2.164</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST:An</cell>
+ <cell>net</cell>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_net</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.166</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST:YEn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GBM</cell>
+ <cell>+</cell>
+ <cell>0.118</cell>
+ <cell>N/C</cell>
+ <cell>45</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST/U0_RGB1_RGB82:An</cell>
+ <cell>net</cell>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST/U0_YWn_GEast</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.260</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST/U0_RGB1_RGB82:YL</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.212</cell>
+ <cell>N/C</cell>
+ <cell>102</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreUARTapb_0_inst_0/CoreUARTapb_0_0/CUARTlOlI/CUARTO01/CUARTI1Il[2]:CLK</cell>
+ <cell>net</cell>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST/U0_RGB1_RGB82_rgbl_net_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.326</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreUARTapb_0_inst_0/CoreUARTapb_0_0/CUARTlOlI/CUARTO01/CUARTI1Il[2]:D</cell>
+ <cell>Library setup time</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>-</cell>
+ <cell>0.162</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Operating Conditions</cell>
+ <cell>BEST</cell>
+</row>
+</table>
+</section>
+<section>
+<name>SET Clock to Output</name>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+ <cell>Clock to Out (ns)</cell>
+ <cell>Operating Conditions</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>CoreGPIO_OUT_inst_0/CoreGPIO_OUT_0/xhdl1.GEN_BITS[2].APB_32.GPOUT_reg[2]:CLK</cell>
+ <cell>GPIO_OUT[2]</cell>
+ <cell>4.420</cell>
+ <cell></cell>
+ <cell>7.792</cell>
+ <cell></cell>
+ <cell>7.792</cell>
+ <cell>BEST</cell>
+</row>
+<row>
+ <cell>Path 2</cell>
+ <cell>CoreUARTapb_0_inst_0/CoreUARTapb_0_0/CUARTlOlI/CUARTIO1/CUARTll1:CLK</cell>
+ <cell>TX</cell>
+ <cell>4.162</cell>
+ <cell></cell>
+ <cell>7.509</cell>
+ <cell></cell>
+ <cell>7.509</cell>
+ <cell>BEST</cell>
+</row>
+<row>
+ <cell>Path 3</cell>
+ <cell>CORESPI_0_inst_0/CORESPI_0_0/USPI/UCC/stxs_direct:CLK</cell>
+ <cell>SPISDO</cell>
+ <cell>4.101</cell>
+ <cell></cell>
+ <cell>7.464</cell>
+ <cell></cell>
+ <cell>7.464</cell>
+ <cell>BEST</cell>
+</row>
+<row>
+ <cell>Path 4</cell>
+ <cell>CORESPI_0_inst_0/CORESPI_0_0/USPI/UCC/spi_ssel_pos:CLK</cell>
+ <cell>TFT_EN</cell>
+ <cell>3.856</cell>
+ <cell></cell>
+ <cell>7.211</cell>
+ <cell></cell>
+ <cell>7.211</cell>
+ <cell>BEST</cell>
+</row>
+<row>
+ <cell>Path 5</cell>
+ <cell>CORESPI_0_inst_0/CORESPI_0_0/USPI/UCC/stxs_datareg[7]:CLK</cell>
+ <cell>SPISDO</cell>
+ <cell>3.841</cell>
+ <cell></cell>
+ <cell>7.194</cell>
+ <cell></cell>
+ <cell>7.194</cell>
+ <cell>BEST</cell>
+</row>
+</table>
+<text></text>
+<section><name>Expanded Path 1</name></section>
+<table>
+<header>
+ <cell>Pin Name</cell>
+ <cell>Type</cell>
+ <cell>Net Name</cell>
+ <cell>Cell Name</cell>
+ <cell>Op</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Total (ns)</cell>
+ <cell>Fanout</cell>
+ <cell>Edge</cell>
+</header>
+<row>
+ <cell>From: CoreGPIO_OUT_inst_0/CoreGPIO_OUT_0/xhdl1.GEN_BITS[2].APB_32.GPOUT_reg[2]:CLK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>To: GPIO_OUT[2]</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>-</cell>
+ <cell></cell>
+ <cell>7.792</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>slack</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data arrival time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/CCC_INST/INST_CCC_IP:GL0</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell>Clock generation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>2.231</cell>
+ <cell>2.231</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST:An</cell>
+ <cell>net</cell>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_net</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.171</cell>
+ <cell>2.402</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST:YEn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GBM</cell>
+ <cell>+</cell>
+ <cell>0.122</cell>
+ <cell>2.524</cell>
+ <cell>45</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST/U0_RGB1_RGB72:An</cell>
+ <cell>net</cell>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST/U0_YWn_GEast</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.266</cell>
+ <cell>2.790</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST/U0_RGB1_RGB72:YR</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.218</cell>
+ <cell>3.008</cell>
+ <cell>92</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreGPIO_OUT_inst_0/CoreGPIO_OUT_0/xhdl1.GEN_BITS[2].APB_32.GPOUT_reg[2]:CLK</cell>
+ <cell>net</cell>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST/U0_RGB1_RGB72_rgbr_net_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.364</cell>
+ <cell>3.372</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreGPIO_OUT_inst_0/CoreGPIO_OUT_0/xhdl1.GEN_BITS[2].APB_32.GPOUT_reg[2]:Q</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>+</cell>
+ <cell>0.075</cell>
+ <cell>3.447</cell>
+ <cell>2</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>GPIO_OUT_obuf[2]/U0/U_IOOUTFF:A</cell>
+ <cell>net</cell>
+ <cell>GPIO_OUT_c[2]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>2.351</cell>
+ <cell>5.798</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>GPIO_OUT_obuf[2]/U0/U_IOOUTFF:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:IOOUTFF_BYPASS</cell>
+ <cell>+</cell>
+ <cell>0.226</cell>
+ <cell>6.024</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>GPIO_OUT_obuf[2]/U0/U_IOPAD:D</cell>
+ <cell>net</cell>
+ <cell>GPIO_OUT_obuf[2]/U0/DOUT</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.031</cell>
+ <cell>6.055</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>GPIO_OUT_obuf[2]/U0/U_IOPAD:PAD</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:IOPAD_TRI</cell>
+ <cell>+</cell>
+ <cell>1.737</cell>
+ <cell>7.792</cell>
+ <cell>0</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>GPIO_OUT[2]</cell>
+ <cell>net</cell>
+ <cell>GPIO_OUT[2]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>7.792</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>7.792</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data required time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/CCC_INST/INST_CCC_IP:GL0</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell>Clock generation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>2.231</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>GPIO_OUT[2]</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Operating Conditions</cell>
+ <cell>BEST</cell>
+</row>
+</table>
+</section>
+<section>
+<name>SET Register to Asynchronous</name>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+ <cell>Recovery (ns)</cell>
+ <cell>Minimum Period (ns)</cell>
+ <cell>Skew (ns)</cell>
+ <cell>Operating Conditions</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>reset_synchronizer_0/sync_asert_reg[1]:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AXI_ASYNC_VALID_SYNC_1/source_extend/sync_0/reg_0/q:ALn</cell>
+ <cell>4.270</cell>
+ <cell>15.269</cell>
+ <cell>9.962</cell>
+ <cell>25.231</cell>
+ <cell>0.415</cell>
+ <cell>4.731</cell>
+ <cell>0.046</cell>
+ <cell>WORST</cell>
+</row>
+<row>
+ <cell>Path 2</cell>
+ <cell>reset_synchronizer_0/sync_asert_reg[1]:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SOURCE/MIV_RV32IMA_L1_AXI_ASYNC_VALID_SYNC_1/sink_extend/sync_0/reg_0/q:ALn</cell>
+ <cell>4.270</cell>
+ <cell>15.269</cell>
+ <cell>9.962</cell>
+ <cell>25.231</cell>
+ <cell>0.415</cell>
+ <cell>4.731</cell>
+ <cell>0.046</cell>
+ <cell>WORST</cell>
+</row>
+<row>
+ <cell>Path 3</cell>
+ <cell>reset_synchronizer_0/sync_asert_reg[1]:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AXI_ASYNC_VALID_SYNC_1/source_extend/sync_0/reg_0/q:ALn</cell>
+ <cell>4.234</cell>
+ <cell>15.297</cell>
+ <cell>9.926</cell>
+ <cell>25.223</cell>
+ <cell>0.415</cell>
+ <cell>4.703</cell>
+ <cell>0.054</cell>
+ <cell>WORST</cell>
+</row>
+<row>
+ <cell>Path 4</cell>
+ <cell>reset_synchronizer_0/sync_asert_reg[1]:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AXI_ASYNC_VALID_SYNC/sink_valid/sync_0/reg_0/q:ALn</cell>
+ <cell>4.273</cell>
+ <cell>15.303</cell>
+ <cell>9.965</cell>
+ <cell>25.268</cell>
+ <cell>0.415</cell>
+ <cell>4.697</cell>
+ <cell>0.009</cell>
+ <cell>WORST</cell>
+</row>
+<row>
+ <cell>Path 5</cell>
+ <cell>reset_synchronizer_0/sync_asert_reg[1]:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AXI_ASYNC_VALID_SYNC/sink_valid/sync_1/reg_0/q:ALn</cell>
+ <cell>4.273</cell>
+ <cell>15.303</cell>
+ <cell>9.965</cell>
+ <cell>25.268</cell>
+ <cell>0.415</cell>
+ <cell>4.697</cell>
+ <cell>0.009</cell>
+ <cell>WORST</cell>
+</row>
+</table>
+<text></text>
+<section><name>Expanded Path 1</name></section>
+<table>
+<header>
+ <cell>Pin Name</cell>
+ <cell>Type</cell>
+ <cell>Net Name</cell>
+ <cell>Cell Name</cell>
+ <cell>Op</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Total (ns)</cell>
+ <cell>Fanout</cell>
+ <cell>Edge</cell>
+</header>
+<row>
+ <cell>From: reset_synchronizer_0/sync_asert_reg[1]:CLK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>To: MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AXI_ASYNC_VALID_SYNC_1/source_extend/sync_0/reg_0/q:ALn</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>25.231</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>-</cell>
+ <cell></cell>
+ <cell>9.962</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>slack</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>15.269</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data arrival time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/CCC_INST/INST_CCC_IP:GL0</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell>Clock generation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>3.797</cell>
+ <cell>3.797</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST:An</cell>
+ <cell>net</cell>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_net</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.291</cell>
+ <cell>4.088</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST:YEn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GBM</cell>
+ <cell>+</cell>
+ <cell>0.209</cell>
+ <cell>4.297</cell>
+ <cell>45</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST/U0_RGB1_RGB48:An</cell>
+ <cell>net</cell>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST/U0_YWn_GEast</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.447</cell>
+ <cell>4.744</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST/U0_RGB1_RGB48:YL</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.372</cell>
+ <cell>5.116</cell>
+ <cell>52</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>reset_synchronizer_0/sync_asert_reg[1]:CLK</cell>
+ <cell>net</cell>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST/U0_RGB1_RGB48_rgbl_net_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.576</cell>
+ <cell>5.692</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>reset_synchronizer_0/sync_asert_reg[1]:Q</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>+</cell>
+ <cell>0.102</cell>
+ <cell>5.794</cell>
+ <cell>3</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/un1_reset_debug:A</cell>
+ <cell>net</cell>
+ <cell>reset_synchronizer_0/sync_asert_reg[1]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.521</cell>
+ <cell>6.315</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/un1_reset_debug:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG2</cell>
+ <cell>+</cell>
+ <cell>0.186</cell>
+ <cell>6.501</cell>
+ <cell>17</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/_T_49:B</cell>
+ <cell>net</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/un1_reset_debug_Z</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.123</cell>
+ <cell>6.624</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/_T_49:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG2</cell>
+ <cell>+</cell>
+ <cell>0.118</cell>
+ <cell>6.742</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/_T_49_RNI4PI:An</cell>
+ <cell>net</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/_T_49_Z</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>1.388</cell>
+ <cell>8.130</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/_T_49_RNI4PI:YEn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GBM</cell>
+ <cell>+</cell>
+ <cell>0.452</cell>
+ <cell>8.582</cell>
+ <cell>3</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/_T_49_RNI4PI/U0_RGB1_RGB1:An</cell>
+ <cell>net</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/_T_49_RNI4PI/U0_YWn_GEast</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.424</cell>
+ <cell>9.006</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/_T_49_RNI4PI/U0_RGB1_RGB1:YL</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.292</cell>
+ <cell>9.298</cell>
+ <cell>10</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AXI_ASYNC_VALID_SYNC_1/source_extend/sync_0/reg_0/q:ALn</cell>
+ <cell>net</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/_T_49_RNI4PI/U0_RGB1_RGB1_rgbl_net_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.664</cell>
+ <cell>9.962</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>9.962</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data required time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0</cell>
+ <cell>Clock Constraint</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>20.000</cell>
+ <cell>20.000</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/CCC_INST/INST_CCC_IP:GL0</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>20.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell>Clock generation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>3.797</cell>
+ <cell>23.797</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST:An</cell>
+ <cell>net</cell>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_net</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.291</cell>
+ <cell>24.088</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST:YEn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GBM</cell>
+ <cell>+</cell>
+ <cell>0.209</cell>
+ <cell>24.297</cell>
+ <cell>45</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST/U0_RGB1_RGB50:An</cell>
+ <cell>net</cell>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST/U0_YWn_GEast</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.447</cell>
+ <cell>24.744</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST/U0_RGB1_RGB50:YL</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.372</cell>
+ <cell>25.116</cell>
+ <cell>64</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AXI_ASYNC_VALID_SYNC_1/source_extend/sync_0/reg_0/q:CLK</cell>
+ <cell>net</cell>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST/U0_RGB1_RGB50_rgbl_net_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.530</cell>
+ <cell>25.646</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AXI_ASYNC_VALID_SYNC_1/source_extend/sync_0/reg_0/q:ALn</cell>
+ <cell>Library recovery time</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>-</cell>
+ <cell>0.415</cell>
+ <cell>25.231</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>25.231</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Operating Conditions</cell>
+ <cell>WORST</cell>
+</row>
+</table>
+</section>
+<section>
+<name>SET External Recovery</name>
+<text>No Path</text>
+</section>
+<section>
+<name>SET Asynchronous to Register</name>
+<text>No Path</text>
+</section>
+<section>
+<name>SET TCK to FCCC_0_inst_0/FCCC_0_0/GL0</name>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+ <cell>Setup (ns)</cell>
+ <cell>Operating Conditions</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_1/q:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/plic/pending_26:EN</cell>
+ <cell>4.518</cell>
+ <cell>1.133</cell>
+ <cell>10.857</cell>
+ <cell>11.990</cell>
+ <cell>0.363</cell>
+ <cell>WORST</cell>
+</row>
+<row>
+ <cell>Path 2</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_1/q:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/core/csr/reg_bp_0_control_w:EN</cell>
+ <cell>4.211</cell>
+ <cell>1.416</cell>
+ <cell>10.550</cell>
+ <cell>11.966</cell>
+ <cell>0.363</cell>
+ <cell>WORST</cell>
+</row>
+<row>
+ <cell>Path 3</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_1/q:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/tile/core/csr/reg_bp_0_control_x:EN</cell>
+ <cell>4.185</cell>
+ <cell>1.452</cell>
+ <cell>10.524</cell>
+ <cell>11.976</cell>
+ <cell>0.363</cell>
+ <cell>WORST</cell>
+</row>
+<row>
+ <cell>Path 4</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_0/q:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AXI_ASYNC_VALID_SYNC_1/source_extend/sync_0/reg_0/q:ALn</cell>
+ <cell>4.034</cell>
+ <cell>1.493</cell>
+ <cell>10.398</cell>
+ <cell>11.891</cell>
+ <cell></cell>
+ <cell>WORST</cell>
+</row>
+<row>
+ <cell>Path 5</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_0/q:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/dmiXing/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SOURCE/MIV_RV32IMA_L1_AXI_ASYNC_VALID_SYNC_1/sink_extend/sync_0/reg_0/q:ALn</cell>
+ <cell>4.034</cell>
+ <cell>1.493</cell>
+ <cell>10.398</cell>
+ <cell>11.891</cell>
+ <cell></cell>
+ <cell>WORST</cell>
+</row>
+</table>
+<text></text>
+<section><name>Expanded Path 1</name></section>
+<table>
+<header>
+ <cell>Pin Name</cell>
+ <cell>Type</cell>
+ <cell>Net Name</cell>
+ <cell>Cell Name</cell>
+ <cell>Op</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Total (ns)</cell>
+ <cell>Fanout</cell>
+ <cell>Edge</cell>
+</header>
+<row>
+ <cell>From: MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_1/q:CLK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>To: MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/plic/pending_26:EN</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>11.990</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>-</cell>
+ <cell></cell>
+ <cell>10.857</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>slack</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>1.133</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data arrival time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>TCK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>TCK</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst/INST_UJTAG_SYSRESET_FF_IP:TCK</cell>
+ <cell>net</cell>
+ <cell>TCK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst/INST_UJTAG_SYSRESET_FF_IP:UDRSH</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:UJTAG_SYSRESET_FF_IP</cell>
+ <cell>+</cell>
+ <cell>0.046</cell>
+ <cell>0.046</cell>
+ <cell>32</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_0:D</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/UDRSHInt</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>1.905</cell>
+ <cell>1.951</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_0:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG4</cell>
+ <cell>+</cell>
+ <cell>0.395</cell>
+ <cell>2.346</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_inferred_clock_RNIJ683:An</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>2.231</cell>
+ <cell>4.577</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_inferred_clock_RNIJ683:YWn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GBM</cell>
+ <cell>+</cell>
+ <cell>0.452</cell>
+ <cell>5.029</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_inferred_clock_RNIJ683/U0_RGB1_RGB4:An</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_inferred_clock_RNIJ683/U0_YWn</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.422</cell>
+ <cell>5.451</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_inferred_clock_RNIJ683/U0_RGB1_RGB4:YR</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.292</cell>
+ <cell>5.743</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_1/q:CLK</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_inferred_clock_RNIJ683/U0_RGB1_RGB4_rgbr_net_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.596</cell>
+ <cell>6.339</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_1/q:Q</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>+</cell>
+ <cell>0.127</cell>
+ <cell>6.466</cell>
+ <cell>2</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/reset:B</cell>
+ <cell>net</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1_io_ctrl_ndreset</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.410</cell>
+ <cell>6.876</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/reset:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG2</cell>
+ <cell>+</cell>
+ <cell>0.102</cell>
+ <cell>6.978</cell>
+ <cell>801</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/plic/pending_26_RNO_0:A</cell>
+ <cell>net</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/reset_arst</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>2.226</cell>
+ <cell>9.204</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/plic/pending_26_RNO_0:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG4</cell>
+ <cell>+</cell>
+ <cell>0.099</cell>
+ <cell>9.303</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/plic/pending_26:EN</cell>
+ <cell>net</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/plic/_T_1924_or</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>1.554</cell>
+ <cell>10.857</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>10.857</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data required time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0</cell>
+ <cell>Clock Constraint</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>6.660</cell>
+ <cell>6.660</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/CCC_INST/INST_CCC_IP:GL0</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>6.660</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell>Clock generation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>3.797</cell>
+ <cell>10.457</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST:An</cell>
+ <cell>net</cell>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_net</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.291</cell>
+ <cell>10.748</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST:YEn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GBM</cell>
+ <cell>+</cell>
+ <cell>0.209</cell>
+ <cell>10.957</cell>
+ <cell>45</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST/U0_RGB1_RGB72:An</cell>
+ <cell>net</cell>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST/U0_YWn_GEast</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.456</cell>
+ <cell>11.413</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST/U0_RGB1_RGB72:YL</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.372</cell>
+ <cell>11.785</cell>
+ <cell>59</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/plic/pending_26:CLK</cell>
+ <cell>net</cell>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST/U0_RGB1_RGB72_rgbl_net_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.568</cell>
+ <cell>12.353</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/plic/pending_26:EN</cell>
+ <cell>Library setup time</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>-</cell>
+ <cell>0.363</cell>
+ <cell>11.990</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>11.990</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Operating Conditions</cell>
+ <cell>WORST</cell>
+</row>
+</table>
+</section>
+</section>
+<section>
+<name>Clock Domain OSC_0_inst_0/OSC_0_0/I_RCOSC_25_50MHZ/CLKOUT</name>
+<text></text>
+<section>
+<name>SET Register to Register</name>
+<text>No Path</text>
+</section>
+<section>
+<name>SET External Setup</name>
+<text>No Path</text>
+</section>
+<section>
+<name>SET Clock to Output</name>
+<text>No Path</text>
+</section>
+<section>
+<name>SET Register to Asynchronous</name>
+<text>No Path</text>
+</section>
+<section>
+<name>SET External Recovery</name>
+<text>No Path</text>
+</section>
+<section>
+<name>SET Asynchronous to Register</name>
+<text>No Path</text>
+</section>
+</section>
+<section>
+<name>Clock Domain TCK</name>
+<text></text>
+<section>
+<name>SET Register to Register</name>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+ <cell>Setup (ns)</cell>
+ <cell>Minimum Period (ns)</cell>
+ <cell>Operating Conditions</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/UTDO:CLK</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst/INST_UJTAG_SYSRESET_FF_IP:UTDO</cell>
+ <cell>3.466</cell>
+ <cell>74.599</cell>
+ <cell>8.409</cell>
+ <cell>83.008</cell>
+ <cell>0.322</cell>
+ <cell>17.463</cell>
+ <cell>WORST</cell>
+</row>
+<row>
+ <cell>Path 2</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/UTDODRV:CLK</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst/INST_UJTAG_SYSRESET_FF_IP:UTDO</cell>
+ <cell>3.424</cell>
+ <cell>74.641</cell>
+ <cell>8.367</cell>
+ <cell>83.008</cell>
+ <cell>0.322</cell>
+ <cell>17.379</cell>
+ <cell>WORST</cell>
+</row>
+<row>
+ <cell>Path 3</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/dtm/MIV_RV32IMA_L1_AXI_JTAG_TAP_CONTROLLER/irReg/reg$[1]:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_1/q:EN</cell>
+ <cell>6.318</cell>
+ <cell>76.549</cell>
+ <cell>12.430</cell>
+ <cell>88.979</cell>
+ <cell>0.299</cell>
+ <cell>13.581</cell>
+ <cell>WORST</cell>
+</row>
+<row>
+ <cell>Path 4</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/dtm/MIV_RV32IMA_L1_AXI_JTAG_TAP_CONTROLLER/irReg/reg$[1]:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_0/q:D</cell>
+ <cell>6.044</cell>
+ <cell>76.849</cell>
+ <cell>12.156</cell>
+ <cell>89.005</cell>
+ <cell>0.298</cell>
+ <cell>12.981</cell>
+ <cell>WORST</cell>
+</row>
+<row>
+ <cell>Path 5</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/dtm/MIV_RV32IMA_L1_AXI_JTAG_TAP_CONTROLLER/irReg/reg$[2]:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_1/q:EN</cell>
+ <cell>6.027</cell>
+ <cell>76.857</cell>
+ <cell>12.122</cell>
+ <cell>88.979</cell>
+ <cell>0.299</cell>
+ <cell>12.965</cell>
+ <cell>WORST</cell>
+</row>
+</table>
+<text></text>
+<section><name>Expanded Path 1</name></section>
+<table>
+<header>
+ <cell>Pin Name</cell>
+ <cell>Type</cell>
+ <cell>Net Name</cell>
+ <cell>Cell Name</cell>
+ <cell>Op</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Total (ns)</cell>
+ <cell>Fanout</cell>
+ <cell>Edge</cell>
+</header>
+<row>
+ <cell>From: CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/UTDO:CLK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>To: CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst/INST_UJTAG_SYSRESET_FF_IP:UTDO</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>83.008</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>-</cell>
+ <cell></cell>
+ <cell>8.409</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>slack</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>74.599</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data arrival time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>TCK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>TCK</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst/INST_UJTAG_SYSRESET_FF_IP:TCK</cell>
+ <cell>net</cell>
+ <cell>TCK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst/INST_UJTAG_SYSRESET_FF_IP:UDRCK</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:UJTAG_SYSRESET_FF_IP</cell>
+ <cell>+</cell>
+ <cell>0.046</cell>
+ <cell>0.046</cell>
+ <cell>2</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UDRCK_inferred_clock_RNIFUN4:An</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UDRCK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>3.072</cell>
+ <cell>3.118</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UDRCK_inferred_clock_RNIFUN4:YEn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GBM</cell>
+ <cell>+</cell>
+ <cell>0.441</cell>
+ <cell>3.559</cell>
+ <cell>5</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UDRCK_inferred_clock_RNIFUN4/U0_RGB1_RGB0:An</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UDRCK_inferred_clock_RNIFUN4/U0_YWn_GEast</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.448</cell>
+ <cell>4.007</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UDRCK_inferred_clock_RNIFUN4/U0_RGB1_RGB0:YR</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.372</cell>
+ <cell>4.379</cell>
+ <cell>5</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/UTDO:CLK</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UDRCK_inferred_clock_RNIFUN4/U0_RGB1_RGB0_rgbr_net_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.564</cell>
+ <cell>4.943</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/UTDO:Q</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>+</cell>
+ <cell>0.127</cell>
+ <cell>5.070</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/UTDODriven[0]:B</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/UTDOInt[0]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.510</cell>
+ <cell>5.580</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/UTDODriven[0]:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG2</cell>
+ <cell>+</cell>
+ <cell>0.102</cell>
+ <cell>5.682</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst/IP_INTERFACE_0:A</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/UTDODriven[0]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.941</cell>
+ <cell>6.623</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst/IP_INTERFACE_0:IPA</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:IP_INTERFACE</cell>
+ <cell>+</cell>
+ <cell>0.234</cell>
+ <cell>6.857</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst/INST_UJTAG_SYSRESET_FF_IP:UTDO</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst/UTDO_net</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>1.552</cell>
+ <cell>8.409</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>8.409</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data required time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>TCK</cell>
+ <cell>Clock Constraint</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>83.330</cell>
+ <cell>83.330</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>TCK</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>83.330</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst/INST_UJTAG_SYSRESET_FF_IP:TCK</cell>
+ <cell>net</cell>
+ <cell>TCK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>83.330</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst/INST_UJTAG_SYSRESET_FF_IP:UTDO</cell>
+ <cell>Library setup time</cell>
+ <cell></cell>
+ <cell>ADLIB:UJTAG_SYSRESET_FF_IP</cell>
+ <cell>-</cell>
+ <cell>0.322</cell>
+ <cell>83.008</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>83.008</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Operating Conditions</cell>
+ <cell>WORST</cell>
+</row>
+</table>
+</section>
+<section>
+<name>SET External Setup</name>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+ <cell>Setup (ns)</cell>
+ <cell>External Setup (ns)</cell>
+ <cell>Operating Conditions</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>TCK</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/state[4]:D</cell>
+ <cell>4.304</cell>
+ <cell></cell>
+ <cell>4.304</cell>
+ <cell></cell>
+ <cell>0.237</cell>
+ <cell>1.721</cell>
+ <cell>BEST</cell>
+</row>
+<row>
+ <cell>Path 2</cell>
+ <cell>TRSTB</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/state[4]:D</cell>
+ <cell>4.304</cell>
+ <cell></cell>
+ <cell>4.304</cell>
+ <cell></cell>
+ <cell>0.237</cell>
+ <cell>1.721</cell>
+ <cell>BEST</cell>
+</row>
+<row>
+ <cell>Path 3</cell>
+ <cell>TCK</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/state[3]:D</cell>
+ <cell>3.948</cell>
+ <cell></cell>
+ <cell>3.948</cell>
+ <cell></cell>
+ <cell>0.237</cell>
+ <cell>1.365</cell>
+ <cell>BEST</cell>
+</row>
+<row>
+ <cell>Path 4</cell>
+ <cell>TRSTB</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/state[3]:D</cell>
+ <cell>3.948</cell>
+ <cell></cell>
+ <cell>3.948</cell>
+ <cell></cell>
+ <cell>0.237</cell>
+ <cell>1.365</cell>
+ <cell>BEST</cell>
+</row>
+<row>
+ <cell>Path 5</cell>
+ <cell>TCK</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/state[2]:D</cell>
+ <cell>3.615</cell>
+ <cell></cell>
+ <cell>3.615</cell>
+ <cell></cell>
+ <cell>0.237</cell>
+ <cell>1.026</cell>
+ <cell>BEST</cell>
+</row>
+</table>
+<text></text>
+<section><name>Expanded Path 1</name></section>
+<table>
+<header>
+ <cell>Pin Name</cell>
+ <cell>Type</cell>
+ <cell>Net Name</cell>
+ <cell>Cell Name</cell>
+ <cell>Op</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Total (ns)</cell>
+ <cell>Fanout</cell>
+ <cell>Edge</cell>
+</header>
+<row>
+ <cell>From: TCK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>To: CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/state[4]:D</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>-</cell>
+ <cell></cell>
+ <cell>4.304</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>slack</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data arrival time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>TCK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst/INST_UJTAG_SYSRESET_FF_IP:TCK</cell>
+ <cell>net</cell>
+ <cell>TCK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst/INST_UJTAG_SYSRESET_FF_IP:UIREG[6]</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:UJTAG_SYSRESET_FF_IP</cell>
+ <cell>+</cell>
+ <cell>0.027</cell>
+ <cell>0.027</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un2_UTDODRV_4:A</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/UIREGInt[6]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.516</cell>
+ <cell>0.543</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un2_UTDODRV_4:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG4</cell>
+ <cell>+</cell>
+ <cell>0.186</cell>
+ <cell>0.729</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un2_UTDODRV:C</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un2_UTDODRV_4_Z</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.211</cell>
+ <cell>0.940</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un2_UTDODRV:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG4</cell>
+ <cell>+</cell>
+ <cell>0.186</cell>
+ <cell>1.126</cell>
+ <cell>2</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/state6:A</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un2_UTDODRV_Z</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.438</cell>
+ <cell>1.564</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/state6:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG2</cell>
+ <cell>+</cell>
+ <cell>0.052</cell>
+ <cell>1.616</cell>
+ <cell>7</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_state_0_sqmuxa_1_1_tz:A</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/state6_Z</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.163</cell>
+ <cell>1.779</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_state_0_sqmuxa_1_1_tz:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG2</cell>
+ <cell>+</cell>
+ <cell>0.098</cell>
+ <cell>1.877</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_state_0_sqmuxa_1_1_tz_RNIFA3K:C</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_state_0_sqmuxa_1_0_0_tz</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.155</cell>
+ <cell>2.032</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_state_0_sqmuxa_1_1_tz_RNIFA3K:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG4</cell>
+ <cell>+</cell>
+ <cell>0.143</cell>
+ <cell>2.175</cell>
+ <cell>9</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_UDRUPD_RNIFV8U:A</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_state_0_sqmuxa_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.341</cell>
+ <cell>2.516</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_UDRUPD_RNIFV8U:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG2</cell>
+ <cell>+</cell>
+ <cell>0.153</cell>
+ <cell>2.669</cell>
+ <cell>2</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/state_24_1_iv_2_RNO[4]:D</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/N_1367</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.457</cell>
+ <cell>3.126</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/state_24_1_iv_2_RNO[4]:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG4</cell>
+ <cell>+</cell>
+ <cell>0.140</cell>
+ <cell>3.266</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/state_24_1_iv_2[4]:C</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/state_4_sqmuxa_2_s11</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.213</cell>
+ <cell>3.479</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/state_24_1_iv_2[4]:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG4</cell>
+ <cell>+</cell>
+ <cell>0.233</cell>
+ <cell>3.712</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/state_24_1_iv[4]:C</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/state_24_1_iv_2[4]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.354</cell>
+ <cell>4.066</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/state_24_1_iv[4]:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG4</cell>
+ <cell>+</cell>
+ <cell>0.186</cell>
+ <cell>4.252</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/state[4]:D</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/state_24[4]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.052</cell>
+ <cell>4.304</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>4.304</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data required time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>TCK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>TCK</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst/INST_UJTAG_SYSRESET_FF_IP:TCK</cell>
+ <cell>net</cell>
+ <cell>TCK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst/INST_UJTAG_SYSRESET_FF_IP:UDRCK</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:UJTAG_SYSRESET_FF_IP</cell>
+ <cell>+</cell>
+ <cell>0.027</cell>
+ <cell>N/C</cell>
+ <cell>2</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UDRCK_inferred_clock_RNIFUN4:An</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UDRCK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>1.750</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UDRCK_inferred_clock_RNIFUN4:YEn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GBM</cell>
+ <cell>+</cell>
+ <cell>0.250</cell>
+ <cell>N/C</cell>
+ <cell>5</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UDRCK_inferred_clock_RNIFUN4/U0_RGB1_RGB1:An</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UDRCK_inferred_clock_RNIFUN4/U0_YWn_GEast</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.254</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UDRCK_inferred_clock_RNIFUN4/U0_RGB1_RGB1:YR</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.212</cell>
+ <cell>N/C</cell>
+ <cell>5</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/state[4]:CLK</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UDRCK_inferred_clock_RNIFUN4/U0_RGB1_RGB1_rgbr_net_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.327</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/state[4]:D</cell>
+ <cell>Library setup time</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>-</cell>
+ <cell>0.237</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Operating Conditions</cell>
+ <cell>BEST</cell>
+</row>
+</table>
+</section>
+<section>
+<name>SET Clock to Output</name>
+<text>No Path</text>
+</section>
+<section>
+<name>SET Register to Asynchronous</name>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+ <cell>Recovery (ns)</cell>
+ <cell>Minimum Period (ns)</cell>
+ <cell>Skew (ns)</cell>
+ <cell>Operating Conditions</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_0/q:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AXI_ASYNC_VALID_SYNC/sink_valid/sync_2/reg_0/q:ALn</cell>
+ <cell>4.034</cell>
+ <cell>161.837</cell>
+ <cell>10.398</cell>
+ <cell>172.235</cell>
+ <cell>0.415</cell>
+ <cell>4.833</cell>
+ <cell>0.384</cell>
+ <cell>WORST</cell>
+</row>
+<row>
+ <cell>Path 2</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_0/q:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SOURCE/MIV_RV32IMA_L1_AXI_ASYNC_VALID_SYNC/source_valid/sync_0/reg_0/q:ALn</cell>
+ <cell>4.034</cell>
+ <cell>161.837</cell>
+ <cell>10.398</cell>
+ <cell>172.235</cell>
+ <cell>0.415</cell>
+ <cell>4.833</cell>
+ <cell>0.384</cell>
+ <cell>WORST</cell>
+</row>
+<row>
+ <cell>Path 3</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_0/q:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SOURCE/MIV_RV32IMA_L1_AXI_ASYNC_VALID_SYNC/source_valid/sync_2/reg_0/q:ALn</cell>
+ <cell>4.034</cell>
+ <cell>161.837</cell>
+ <cell>10.398</cell>
+ <cell>172.235</cell>
+ <cell>0.415</cell>
+ <cell>4.833</cell>
+ <cell>0.384</cell>
+ <cell>WORST</cell>
+</row>
+<row>
+ <cell>Path 4</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_0/q:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AXI_ASYNC_VALID_SYNC_1/source_extend/sync_0/reg_0/q:ALn</cell>
+ <cell>3.986</cell>
+ <cell>161.846</cell>
+ <cell>10.350</cell>
+ <cell>172.196</cell>
+ <cell>0.415</cell>
+ <cell>4.824</cell>
+ <cell>0.423</cell>
+ <cell>WORST</cell>
+</row>
+<row>
+ <cell>Path 5</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_0/q:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AXI_ASYNC_VALID_SYNC/sink_valid/sync_0/reg_0/q:ALn</cell>
+ <cell>4.034</cell>
+ <cell>161.848</cell>
+ <cell>10.398</cell>
+ <cell>172.246</cell>
+ <cell>0.415</cell>
+ <cell>4.822</cell>
+ <cell>0.373</cell>
+ <cell>WORST</cell>
+</row>
+</table>
+<text></text>
+<section><name>Expanded Path 1</name></section>
+<table>
+<header>
+ <cell>Pin Name</cell>
+ <cell>Type</cell>
+ <cell>Net Name</cell>
+ <cell>Cell Name</cell>
+ <cell>Op</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Total (ns)</cell>
+ <cell>Fanout</cell>
+ <cell>Edge</cell>
+</header>
+<row>
+ <cell>From: MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_0/q:CLK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>To: MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AXI_ASYNC_VALID_SYNC/sink_valid/sync_2/reg_0/q:ALn</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>172.235</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>-</cell>
+ <cell></cell>
+ <cell>10.398</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>slack</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>161.837</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data arrival time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>TCK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>TCK</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst/INST_UJTAG_SYSRESET_FF_IP:TCK</cell>
+ <cell>net</cell>
+ <cell>TCK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst/INST_UJTAG_SYSRESET_FF_IP:UDRSH</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:UJTAG_SYSRESET_FF_IP</cell>
+ <cell>+</cell>
+ <cell>0.046</cell>
+ <cell>0.046</cell>
+ <cell>32</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_0:D</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/UDRSHInt</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>1.905</cell>
+ <cell>1.951</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_0:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG4</cell>
+ <cell>+</cell>
+ <cell>0.395</cell>
+ <cell>2.346</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_inferred_clock_RNIJ683:An</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>2.231</cell>
+ <cell>4.577</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_inferred_clock_RNIJ683:YEn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GBM</cell>
+ <cell>+</cell>
+ <cell>0.452</cell>
+ <cell>5.029</cell>
+ <cell>13</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_inferred_clock_RNIJ683/U0_RGB1_RGB6:An</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_inferred_clock_RNIJ683/U0_YWn_GEast</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.437</cell>
+ <cell>5.466</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_inferred_clock_RNIJ683/U0_RGB1_RGB6:YL</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.292</cell>
+ <cell>5.758</cell>
+ <cell>9</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_0/q:CLK</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_inferred_clock_RNIJ683/U0_RGB1_RGB6_rgbl_net_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.606</cell>
+ <cell>6.364</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmOuter/DMCONTROL/reg_0/q:Q</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>+</cell>
+ <cell>0.102</cell>
+ <cell>6.466</cell>
+ <cell>23</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/un1_reset_debug:B</cell>
+ <cell>net</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/q_arst</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.383</cell>
+ <cell>6.849</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/un1_reset_debug:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG2</cell>
+ <cell>+</cell>
+ <cell>0.088</cell>
+ <cell>6.937</cell>
+ <cell>17</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/_T_49:B</cell>
+ <cell>net</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/un1_reset_debug_Z</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.123</cell>
+ <cell>7.060</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/_T_49:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG2</cell>
+ <cell>+</cell>
+ <cell>0.118</cell>
+ <cell>7.178</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/_T_49_RNI4PI:An</cell>
+ <cell>net</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/_T_49_Z</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>1.388</cell>
+ <cell>8.566</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/_T_49_RNI4PI:YEn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GBM</cell>
+ <cell>+</cell>
+ <cell>0.452</cell>
+ <cell>9.018</cell>
+ <cell>3</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/_T_49_RNI4PI/U0_RGB1_RGB1:An</cell>
+ <cell>net</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/_T_49_RNI4PI/U0_YWn_GEast</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.424</cell>
+ <cell>9.442</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/_T_49_RNI4PI/U0_RGB1_RGB1:YL</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.292</cell>
+ <cell>9.734</cell>
+ <cell>10</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AXI_ASYNC_VALID_SYNC/sink_valid/sync_2/reg_0/q:ALn</cell>
+ <cell>net</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/_T_49_RNI4PI/U0_RGB1_RGB1_rgbl_net_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.664</cell>
+ <cell>10.398</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>10.398</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data required time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>TCK</cell>
+ <cell>Clock Constraint</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>166.670</cell>
+ <cell>166.670</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>TCK</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>166.670</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst/INST_UJTAG_SYSRESET_FF_IP:TCK</cell>
+ <cell>net</cell>
+ <cell>TCK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>166.670</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst/INST_UJTAG_SYSRESET_FF_IP:UDRSH</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:UJTAG_SYSRESET_FF_IP</cell>
+ <cell>+</cell>
+ <cell>0.046</cell>
+ <cell>166.716</cell>
+ <cell>32</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_0:D</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/UDRSHInt</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>1.905</cell>
+ <cell>168.621</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_0:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG4</cell>
+ <cell>+</cell>
+ <cell>0.012</cell>
+ <cell>168.633</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_inferred_clock_RNIJ683:An</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>2.231</cell>
+ <cell>170.864</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_inferred_clock_RNIJ683:YEn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GBM</cell>
+ <cell>+</cell>
+ <cell>0.452</cell>
+ <cell>171.316</cell>
+ <cell>13</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_inferred_clock_RNIJ683/U0_RGB1_RGB6:An</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_inferred_clock_RNIJ683/U0_YWn_GEast</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.437</cell>
+ <cell>171.753</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_inferred_clock_RNIJ683/U0_RGB1_RGB6:YL</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.292</cell>
+ <cell>172.045</cell>
+ <cell>9</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AXI_ASYNC_VALID_SYNC/sink_valid/sync_2/reg_0/q:CLK</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_inferred_clock_RNIJ683/U0_RGB1_RGB6_rgbl_net_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.605</cell>
+ <cell>172.650</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AXI_ASYNC_VALID_SYNC/sink_valid/sync_2/reg_0/q:ALn</cell>
+ <cell>Library recovery time</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>-</cell>
+ <cell>0.415</cell>
+ <cell>172.235</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>172.235</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Operating Conditions</cell>
+ <cell>WORST</cell>
+</row>
+</table>
+</section>
+<section>
+<name>SET External Recovery</name>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+ <cell>Recovery (ns)</cell>
+ <cell>External Recovery (ns)</cell>
+ <cell>Operating Conditions</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>TCK</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/pauselow:ALn</cell>
+ <cell>3.025</cell>
+ <cell></cell>
+ <cell>3.025</cell>
+ <cell></cell>
+ <cell>0.330</cell>
+ <cell>0.551</cell>
+ <cell>BEST</cell>
+</row>
+<row>
+ <cell>Path 2</cell>
+ <cell>TRSTB</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/pauselow:ALn</cell>
+ <cell>3.025</cell>
+ <cell></cell>
+ <cell>3.025</cell>
+ <cell></cell>
+ <cell>0.330</cell>
+ <cell>0.551</cell>
+ <cell>BEST</cell>
+</row>
+<row>
+ <cell>Path 3</cell>
+ <cell>TCK</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/state[3]:ALn</cell>
+ <cell>3.031</cell>
+ <cell></cell>
+ <cell>3.031</cell>
+ <cell></cell>
+ <cell>0.330</cell>
+ <cell>0.541</cell>
+ <cell>BEST</cell>
+</row>
+<row>
+ <cell>Path 4</cell>
+ <cell>TCK</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/state[4]:ALn</cell>
+ <cell>3.031</cell>
+ <cell></cell>
+ <cell>3.031</cell>
+ <cell></cell>
+ <cell>0.330</cell>
+ <cell>0.541</cell>
+ <cell>BEST</cell>
+</row>
+<row>
+ <cell>Path 5</cell>
+ <cell>TRSTB</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/state[3]:ALn</cell>
+ <cell>3.031</cell>
+ <cell></cell>
+ <cell>3.031</cell>
+ <cell></cell>
+ <cell>0.330</cell>
+ <cell>0.541</cell>
+ <cell>BEST</cell>
+</row>
+</table>
+<text></text>
+<section><name>Expanded Path 1</name></section>
+<table>
+<header>
+ <cell>Pin Name</cell>
+ <cell>Type</cell>
+ <cell>Net Name</cell>
+ <cell>Cell Name</cell>
+ <cell>Op</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Total (ns)</cell>
+ <cell>Fanout</cell>
+ <cell>Edge</cell>
+</header>
+<row>
+ <cell>From: TCK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>To: CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/pauselow:ALn</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>-</cell>
+ <cell></cell>
+ <cell>3.025</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>slack</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data arrival time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>TCK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst/INST_UJTAG_SYSRESET_FF_IP:TCK</cell>
+ <cell>net</cell>
+ <cell>TCK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst/INST_UJTAG_SYSRESET_FF_IP:URSTB</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:UJTAG_SYSRESET_FF_IP</cell>
+ <cell>+</cell>
+ <cell>0.027</cell>
+ <cell>0.027</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst_RNILAHC:An</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst_URSTB</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>1.916</cell>
+ <cell>1.943</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst_RNILAHC:YEn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GBM</cell>
+ <cell>+</cell>
+ <cell>0.257</cell>
+ <cell>2.200</cell>
+ <cell>6</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst_RNILAHC/U0_RGB1_RGB0:An</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst_RNILAHC/U0_YWn_GEast</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.253</cell>
+ <cell>2.453</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst_RNILAHC/U0_RGB1_RGB0:YR</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.218</cell>
+ <cell>2.671</cell>
+ <cell>5</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/pauselow:ALn</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst_RNILAHC/U0_RGB1_RGB0_rgbr_net_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.354</cell>
+ <cell>3.025</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>3.025</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data required time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>TCK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>TCK</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst/INST_UJTAG_SYSRESET_FF_IP:TCK</cell>
+ <cell>net</cell>
+ <cell>TCK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst/INST_UJTAG_SYSRESET_FF_IP:UDRCK</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:UJTAG_SYSRESET_FF_IP</cell>
+ <cell>+</cell>
+ <cell>0.027</cell>
+ <cell>N/C</cell>
+ <cell>2</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UDRCK_inferred_clock_RNIFUN4:An</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UDRCK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>1.750</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UDRCK_inferred_clock_RNIFUN4:YEn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GBM</cell>
+ <cell>+</cell>
+ <cell>0.250</cell>
+ <cell>N/C</cell>
+ <cell>5</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UDRCK_inferred_clock_RNIFUN4/U0_RGB1:An</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UDRCK_inferred_clock_RNIFUN4/U0_YWn_GEast</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.248</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UDRCK_inferred_clock_RNIFUN4/U0_RGB1:YR</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.212</cell>
+ <cell>N/C</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/pauselow:CLK</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UDRCK_inferred_clock_RNIFUN4/U0_RGB1_YR</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.317</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/pauselow:ALn</cell>
+ <cell>Library recovery time</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>-</cell>
+ <cell>0.330</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Operating Conditions</cell>
+ <cell>BEST</cell>
+</row>
+</table>
+</section>
+<section>
+<name>SET Asynchronous to Register</name>
+<text>No Path</text>
+</section>
+<section>
+<name>SET FCCC_0_inst_0/FCCC_0_0/GL0 to TCK</name>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+ <cell>Setup (ns)</cell>
+ <cell>Operating Conditions</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>reset_synchronizer_0/sync_asert_reg[1]:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AXI_ASYNC_VALID_SYNC/sink_valid/sync_2/reg_0/q:ALn</cell>
+ <cell>4.270</cell>
+ <cell>2.273</cell>
+ <cell>9.962</cell>
+ <cell>12.235</cell>
+ <cell></cell>
+ <cell>WORST</cell>
+</row>
+<row>
+ <cell>Path 2</cell>
+ <cell>reset_synchronizer_0/sync_asert_reg[1]:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SOURCE/MIV_RV32IMA_L1_AXI_ASYNC_VALID_SYNC/source_valid/sync_0/reg_0/q:ALn</cell>
+ <cell>4.270</cell>
+ <cell>2.273</cell>
+ <cell>9.962</cell>
+ <cell>12.235</cell>
+ <cell></cell>
+ <cell>WORST</cell>
+</row>
+<row>
+ <cell>Path 3</cell>
+ <cell>reset_synchronizer_0/sync_asert_reg[1]:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SOURCE/MIV_RV32IMA_L1_AXI_ASYNC_VALID_SYNC/source_valid/sync_2/reg_0/q:ALn</cell>
+ <cell>4.270</cell>
+ <cell>2.273</cell>
+ <cell>9.962</cell>
+ <cell>12.235</cell>
+ <cell></cell>
+ <cell>WORST</cell>
+</row>
+<row>
+ <cell>Path 4</cell>
+ <cell>reset_synchronizer_0/sync_asert_reg[1]:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AXI_ASYNC_VALID_SYNC_1/source_extend/sync_0/reg_0/q:ALn</cell>
+ <cell>4.222</cell>
+ <cell>2.282</cell>
+ <cell>9.914</cell>
+ <cell>12.196</cell>
+ <cell></cell>
+ <cell>WORST</cell>
+</row>
+<row>
+ <cell>Path 5</cell>
+ <cell>reset_synchronizer_0/sync_asert_reg[1]:CLK</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AXI_ASYNC_VALID_SYNC/sink_valid/sync_0/reg_0/q:ALn</cell>
+ <cell>4.270</cell>
+ <cell>2.284</cell>
+ <cell>9.962</cell>
+ <cell>12.246</cell>
+ <cell></cell>
+ <cell>WORST</cell>
+</row>
+</table>
+<text></text>
+<section><name>Expanded Path 1</name></section>
+<table>
+<header>
+ <cell>Pin Name</cell>
+ <cell>Type</cell>
+ <cell>Net Name</cell>
+ <cell>Cell Name</cell>
+ <cell>Op</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Total (ns)</cell>
+ <cell>Fanout</cell>
+ <cell>Edge</cell>
+</header>
+<row>
+ <cell>From: reset_synchronizer_0/sync_asert_reg[1]:CLK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>To: MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AXI_ASYNC_VALID_SYNC/sink_valid/sync_2/reg_0/q:ALn</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>12.235</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>-</cell>
+ <cell></cell>
+ <cell>9.962</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>slack</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2.273</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data arrival time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/CCC_INST/INST_CCC_IP:GL0</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell></cell>
+ <cell>Clock generation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>3.797</cell>
+ <cell>3.797</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST:An</cell>
+ <cell>net</cell>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_net</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.291</cell>
+ <cell>4.088</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST:YEn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GBM</cell>
+ <cell>+</cell>
+ <cell>0.209</cell>
+ <cell>4.297</cell>
+ <cell>45</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST/U0_RGB1_RGB48:An</cell>
+ <cell>net</cell>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST/U0_YWn_GEast</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.447</cell>
+ <cell>4.744</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST/U0_RGB1_RGB48:YL</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.372</cell>
+ <cell>5.116</cell>
+ <cell>52</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>reset_synchronizer_0/sync_asert_reg[1]:CLK</cell>
+ <cell>net</cell>
+ <cell>FCCC_0_inst_0/FCCC_0_0/GL0_INST/U0_RGB1_RGB48_rgbl_net_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.576</cell>
+ <cell>5.692</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>reset_synchronizer_0/sync_asert_reg[1]:Q</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>+</cell>
+ <cell>0.102</cell>
+ <cell>5.794</cell>
+ <cell>3</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/un1_reset_debug:A</cell>
+ <cell>net</cell>
+ <cell>reset_synchronizer_0/sync_asert_reg[1]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.521</cell>
+ <cell>6.315</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/un1_reset_debug:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG2</cell>
+ <cell>+</cell>
+ <cell>0.186</cell>
+ <cell>6.501</cell>
+ <cell>17</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/_T_49:B</cell>
+ <cell>net</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/un1_reset_debug_Z</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.123</cell>
+ <cell>6.624</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/_T_49:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG2</cell>
+ <cell>+</cell>
+ <cell>0.118</cell>
+ <cell>6.742</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/_T_49_RNI4PI:An</cell>
+ <cell>net</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/_T_49_Z</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>1.388</cell>
+ <cell>8.130</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/_T_49_RNI4PI:YEn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GBM</cell>
+ <cell>+</cell>
+ <cell>0.452</cell>
+ <cell>8.582</cell>
+ <cell>3</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/_T_49_RNI4PI/U0_RGB1_RGB1:An</cell>
+ <cell>net</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/_T_49_RNI4PI/U0_YWn_GEast</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.424</cell>
+ <cell>9.006</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/_T_49_RNI4PI/U0_RGB1_RGB1:YL</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.292</cell>
+ <cell>9.298</cell>
+ <cell>10</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AXI_ASYNC_VALID_SYNC/sink_valid/sync_2/reg_0/q:ALn</cell>
+ <cell>net</cell>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmInner/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/_T_49_RNI4PI/U0_RGB1_RGB1_rgbl_net_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.664</cell>
+ <cell>9.962</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>9.962</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data required time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>TCK</cell>
+ <cell>Clock Constraint</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>6.670</cell>
+ <cell>6.670</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>TCK</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>6.670</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst/INST_UJTAG_SYSRESET_FF_IP:TCK</cell>
+ <cell>net</cell>
+ <cell>TCK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>6.670</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst/INST_UJTAG_SYSRESET_FF_IP:UDRSH</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:UJTAG_SYSRESET_FF_IP</cell>
+ <cell>+</cell>
+ <cell>0.046</cell>
+ <cell>6.716</cell>
+ <cell>32</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_0:D</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/UDRSHInt</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>1.905</cell>
+ <cell>8.621</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_0:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG4</cell>
+ <cell>+</cell>
+ <cell>0.012</cell>
+ <cell>8.633</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_inferred_clock_RNIJ683:An</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>2.231</cell>
+ <cell>10.864</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_inferred_clock_RNIJ683:YEn</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GBM</cell>
+ <cell>+</cell>
+ <cell>0.452</cell>
+ <cell>11.316</cell>
+ <cell>13</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_inferred_clock_RNIJ683/U0_RGB1_RGB6:An</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_inferred_clock_RNIJ683/U0_YWn_GEast</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.437</cell>
+ <cell>11.753</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_inferred_clock_RNIJ683/U0_RGB1_RGB6:YL</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.292</cell>
+ <cell>12.045</cell>
+ <cell>9</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AXI_ASYNC_VALID_SYNC/sink_valid/sync_2/reg_0/q:CLK</cell>
+ <cell>net</cell>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk3.genblk1.UJ_JTAG/un1_DUT_TCK_inferred_clock_RNIJ683/U0_RGB1_RGB6_rgbl_net_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.605</cell>
+ <cell>12.650</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>MiV_RV32IMA_L1_AXI_0_inst_0/MiV_RV32IMA_L1_AXI_0_0/ChiselTop0/debug_1/dmOuter/dmInner_TLAsyncCrossingSource/MIV_RV32IMA_L1_AXI_ASYNC_QUEUE_SINK/MIV_RV32IMA_L1_AXI_ASYNC_VALID_SYNC/sink_valid/sync_2/reg_0/q:ALn</cell>
+ <cell>Library recovery time</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>-</cell>
+ <cell>0.415</cell>
+ <cell>12.235</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>12.235</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Operating Conditions</cell>
+ <cell>WORST</cell>
+</row>
+</table>
+</section>
+</section>
+<section>
+<name>Path Set Pin to Pin</name>
+<section>
+<name>SET Input to Output</name>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+ <cell>Operating Conditions</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>TCK</cell>
+ <cell>TDO</cell>
+ <cell>0.027</cell>
+ <cell></cell>
+ <cell>0.027</cell>
+ <cell></cell>
+ <cell>BEST</cell>
+</row>
+</table>
+<text></text>
+<section><name>Expanded Path 1</name></section>
+<table>
+<header>
+ <cell>Pin Name</cell>
+ <cell>Type</cell>
+ <cell>Net Name</cell>
+ <cell>Cell Name</cell>
+ <cell>Op</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Total (ns)</cell>
+ <cell>Fanout</cell>
+ <cell>Edge</cell>
+</header>
+<row>
+ <cell>From: TCK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>To: TDO</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>-</cell>
+ <cell></cell>
+ <cell>0.027</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>slack</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data arrival time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>TCK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst/INST_UJTAG_SYSRESET_FF_IP:TCK</cell>
+ <cell>net</cell>
+ <cell>TCK</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>CoreJTAGDebug_0_inst_0/CoreJTAGDebug_0_0/genblk1.genblk1.genblk1.UJTAG_inst/UJTAG_inst/INST_UJTAG_SYSRESET_FF_IP:TDO</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:UJTAG_SYSRESET_FF_IP</cell>
+ <cell>+</cell>
+ <cell>0.027</cell>
+ <cell>0.027</cell>
+ <cell>0</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>TDO</cell>
+ <cell>net</cell>
+ <cell>TDO</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.027</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.027</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data required time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>TCK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>TCK</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>TDO</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Operating Conditions</cell>
+ <cell>BEST</cell>
+</row>
+</table>
+</section>
+</section>
+<section>
+<name>Path Set User Sets</name>
+</section>
+</doc>

@@ -1,0 +1,18 @@
+Microsemi Corporation - Microsemi Libero Software Release v12.3 (Version 12.800.0.16)
+
+Date      :  Wed Feb 26 18:02:37 2020
+Project   :  C:\GitHub-LSRAM-12.3\RISC-V-Creative-Board-1\Libero_Projects\MiV_AXI_IG2_Creative_TicTacToe
+Component :  CORESPI_0
+Family    :  IGLOO2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative_TicTacToe/component/Actel/DirectCore/CORESPI/5.2.104/rtl/vlog/core/corespi.v
+    C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative_TicTacToe/component/Actel/DirectCore/CORESPI/5.2.104/rtl/vlog/core/spi.v
+    C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative_TicTacToe/component/Actel/DirectCore/CORESPI/5.2.104/rtl/vlog/core/spi_chanctrl.v
+    C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative_TicTacToe/component/Actel/DirectCore/CORESPI/5.2.104/rtl/vlog/core/spi_clockmux.v
+    C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative_TicTacToe/component/Actel/DirectCore/CORESPI/5.2.104/rtl/vlog/core/spi_control.v
+    C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative_TicTacToe/component/Actel/DirectCore/CORESPI/5.2.104/rtl/vlog/core/spi_fifo.v
+    C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative_TicTacToe/component/Actel/DirectCore/CORESPI/5.2.104/rtl/vlog/core/spi_rf.v
+    C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative_TicTacToe/component/work/CORESPI_0/CORESPI_0.v
+

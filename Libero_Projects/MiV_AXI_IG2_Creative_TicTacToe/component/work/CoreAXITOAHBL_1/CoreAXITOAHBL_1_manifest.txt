@@ -1,0 +1,26 @@
+Microsemi Corporation - Microsemi Libero Software Release v12.3 (Version 12.800.0.16)
+
+Date      :  Wed Feb 26 18:02:36 2020
+Project   :  C:\GitHub-LSRAM-12.3\RISC-V-Creative-Board-1\Libero_Projects\MiV_AXI_IG2_Creative_TicTacToe
+Component :  CoreAXITOAHBL_1
+Family    :  IGLOO2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative_TicTacToe/component/Actel/DirectCore/COREAXITOAHBL/3.4.100/rtl/vlog/core/CoreAXItoAHBL_AHBMasterCtrl.v
+    C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative_TicTacToe/component/Actel/DirectCore/COREAXITOAHBL/3.4.100/rtl/vlog/core/CoreAXItoAHBL_AXIOutReg.v
+    C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative_TicTacToe/component/Actel/DirectCore/COREAXITOAHBL/3.4.100/rtl/vlog/core/CoreAXItoAHBL_AXISlaveCtrl.v
+    C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative_TicTacToe/component/Actel/DirectCore/COREAXITOAHBL/3.4.100/rtl/vlog/core/CoreAXItoAHBL_RAM_syncWrAsyncRd.v
+    C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative_TicTacToe/component/Actel/DirectCore/COREAXITOAHBL/3.4.100/rtl/vlog/core/CoreAXItoAHBL_WSTRBAddrOffset.v
+    C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative_TicTacToe/component/Actel/DirectCore/COREAXITOAHBL/3.4.100/rtl/vlog/core/CoreAXItoAHBL_WSTRBPopCntr.v
+    C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative_TicTacToe/component/Actel/DirectCore/COREAXITOAHBL/3.4.100/rtl/vlog/core/CoreAXItoAHBL_readByteCnt.v
+    C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative_TicTacToe/component/Actel/DirectCore/COREAXITOAHBL/3.4.100/rtl/vlog/core/CoreAXItoAHBL_synchronizer.v
+    C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative_TicTacToe/component/work/CoreAXITOAHBL_1/CoreAXITOAHBL_1.v
+    C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative_TicTacToe/component/work/CoreAXITOAHBL_1/CoreAXITOAHBL_1_0/rtl/vlog/core/CoreAXItoAHBL.v
+
+Stimulus files for all Simulation tools:
+    C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative_TicTacToe/component/Actel/DirectCore/COREAXITOAHBL/3.4.100/rtl/vlog/test/user/AHBL_Slave.v
+    C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative_TicTacToe/component/Actel/DirectCore/COREAXITOAHBL/3.4.100/rtl/vlog/test/user/AXI_Master.v
+    C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative_TicTacToe/component/work/CoreAXITOAHBL_1/CoreAXITOAHBL_1_0/coreparameters.v
+    C:/GitHub-LSRAM-12.3/RISC-V-Creative-Board-1/Libero_Projects/MiV_AXI_IG2_Creative_TicTacToe/component/work/CoreAXITOAHBL_1/CoreAXITOAHBL_1_0/rtl/vlog/test/user/testbench.v
+

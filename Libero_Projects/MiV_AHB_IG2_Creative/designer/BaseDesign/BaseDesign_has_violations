@@ -1,0 +1,13 @@
+_max_timing_slow_1.14V_85C not_run
+_min_timing_fast_1.26V_0C not_run
+_max_timing_fast_1.26V_0C not_run
+_min_timing_slow_1.14V_85C not_run
+_max_timing_violations_slow_1.14V_85C not_run
+_min_timing_violations_fast_1.26V_0C not_run
+_max_timing_violations_fast_1.26V_0C not_run
+_min_timing_violations_slow_1.14V_85C not_run
+_timing_constraints_coverage 99.69%
+_max_timing_violations_multi_corner met
+_max_timing_multi_corner met
+_min_timing_violations_multi_corner violated
+_min_timing_multi_corner violated

@@ -1,0 +1,81 @@
+
+Starting:    C:\Microsemi\Libero_SoC_v12.3\SynplifyPro\bin64\mbin\synbatch.exe
+Install:     C:\Microsemi\Libero_SoC_v12.3\SynplifyPro
+Hostname:    IRD-LT-M52413
+Date:        Wed Feb 26 16:44:40 2020
+Version:     O-2018.09M-SP1-1
+
+Arguments:   -product synplify_pro -licensetype synplifypro_actel -batch -log synplify.log TicTacToe_syn.tcl
+ProductType: synplify_pro
+
+License checkout: synplifypro_actel
+License: synplifypro_actel node-locked 
+Licensed Vendor: actel
+License Option: actel_oem
+
+Running in Vendor Mode
+
+"automatic_compile_point" is unrecognized option for current device
+Implementation not found: synthesis
+log file: "C:\GitHub-LSRAM-12.3\RISC-V-Creative-Board-1\Libero_Projects\MiV_AHB_IG2_Creative_TicTacToe\synthesis\TicTacToe.srr"
+Running: synthesis in foreground
+
+Running TicTacToe_syn|synthesis
+
+Running Flow: compile (Compile) on TicTacToe_syn|synthesis
+# Wed Feb 26 16:44:40 2020
+
+Running Flow: compile_flow (Compile Process) on TicTacToe_syn|synthesis
+# Wed Feb 26 16:44:40 2020
+
+Running: compiler (Compile Input) on TicTacToe_syn|synthesis
+# Wed Feb 26 16:44:40 2020
+Copied C:\GitHub-LSRAM-12.3\RISC-V-Creative-Board-1\Libero_Projects\MiV_AHB_IG2_Creative_TicTacToe\synthesis\synwork\TicTacToe_comp.srs to C:\GitHub-LSRAM-12.3\RISC-V-Creative-Board-1\Libero_Projects\MiV_AHB_IG2_Creative_TicTacToe\synthesis\TicTacToe.srs
+
+compiler completed
+# Wed Feb 26 16:44:54 2020
+
+Return Code: 0
+Run Time:00h:00m:14s
+
+Running: multi_srs_gen (Multi-srs Generator) on TicTacToe_syn|synthesis
+# Wed Feb 26 16:44:54 2020
+
+multi_srs_gen completed
+# Wed Feb 26 16:44:55 2020
+
+Return Code: 0
+Run Time:00h:00m:01s
+Copied C:\GitHub-LSRAM-12.3\RISC-V-Creative-Board-1\Libero_Projects\MiV_AHB_IG2_Creative_TicTacToe\synthesis\synwork\TicTacToe_mult.srs to C:\GitHub-LSRAM-12.3\RISC-V-Creative-Board-1\Libero_Projects\MiV_AHB_IG2_Creative_TicTacToe\synthesis\TicTacToe.srs
+Complete: Compile Process on TicTacToe_syn|synthesis
+
+Running: premap (Premap) on TicTacToe_syn|synthesis
+# Wed Feb 26 16:44:55 2020
+
+premap completed with warnings
+# Wed Feb 26 16:44:58 2020
+
+Return Code: 1
+Run Time:00h:00m:03s
+Complete: Compile on TicTacToe_syn|synthesis
+
+Running Flow: map (Map) on TicTacToe_syn|synthesis
+# Wed Feb 26 16:44:58 2020
+License granted for 4 parallel jobs
+
+Running: fpga_mapper (Map & Optimize) on TicTacToe_syn|synthesis
+# Wed Feb 26 16:44:58 2020
+Copied C:\GitHub-LSRAM-12.3\RISC-V-Creative-Board-1\Libero_Projects\MiV_AHB_IG2_Creative_TicTacToe\synthesis\synwork\TicTacToe_m.srm to C:\GitHub-LSRAM-12.3\RISC-V-Creative-Board-1\Libero_Projects\MiV_AHB_IG2_Creative_TicTacToe\synthesis\TicTacToe.srm
+
+fpga_mapper completed with warnings
+# Wed Feb 26 16:46:12 2020
+
+Return Code: 1
+Run Time:00h:01m:14s
+Complete: Map on TicTacToe_syn|synthesis
+Complete: Logic Synthesis on TicTacToe_syn|synthesis
+Copied C:\GitHub-LSRAM-12.3\RISC-V-Creative-Board-1\Libero_Projects\MiV_AHB_IG2_Creative_TicTacToe\synthesis\TicTacToe.srr to C:\GitHub-LSRAM-12.3\RISC-V-Creative-Board-1\Libero_Projects\MiV_AHB_IG2_Creative_TicTacToe\synthesis\backup\TicTacToe.srr
+TCL script complete: "TicTacToe_syn.tcl"
+exit status=0
+exit status=0
+License checkin: synplifypro_actel

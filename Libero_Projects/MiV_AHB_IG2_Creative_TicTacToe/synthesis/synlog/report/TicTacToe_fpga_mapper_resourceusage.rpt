@@ -1,0 +1,47 @@
+Resource Usage Report for TicTacToe 
+
+Mapping to part: m2gl025vf400std
+Cell usage:
+AND2            1 use
+CCC             1 use
+CLKINT          8 uses
+RCOSC_25_50MHZ  1 use
+SYSRESET        1 use
+UJTAG           1 use
+CFG1           24 uses
+CFG2           1392 uses
+CFG3           4005 uses
+CFG4           4894 uses
+
+Carry cells:
+ARI1            930 uses - used for arithmetic functions
+ARI1            384 uses - used for Wide-Mux implementation
+Total ARI1      1314 uses
+
+
+Sequential Cells: 
+SLE            5766 uses
+
+DSP Blocks:    2 of 34 (5%)
+ MACC:         1 MultAdd
+ MACC:         1 Mult
+
+I/O ports: 17
+I/O primitives: 11
+INBUF          4 uses
+OUTBUF         7 uses
+
+
+Global Clock Buffers: 8
+
+Total LUTs:    11629
+
+Extra resources required for RAM and MACC interface logic during P&R:
+
+RAM64x18 Interface Logic : SLEs = 360; LUTs = 360;
+RAM1K18  Interface Logic : SLEs = 864; LUTs = 864;
+MACC     Interface Logic : SLEs = 72; LUTs = 72;
+
+Total number of SLEs after P&R:  5766 + 360 + 864 + 72 = 7062;
+Total number of LUTs after P&R:  11629 + 360 + 864 + 72 = 12925;
+
