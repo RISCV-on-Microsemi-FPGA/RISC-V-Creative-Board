@@ -1,10 +1,10 @@
-set project_folder_name_axi MiV_AXI_IG2_Creative
+set project_folder_name_axi MiV_AXI_BD
 set project_dir_axi "./$project_folder_name_axi"
-set Libero_project_name_axi MiV_AXI_BaseDesign
+set Libero_project_name_axi IGL2_CREATIVE_MiV_AXI_BaseDesign
 
-set project_folder_name_ahb MiV_AHB_IG2_Creative
+set project_folder_name_ahb MiV_AHB_BD
 set project_dir_ahb "./$project_folder_name_ahb"
-set Libero_project_name_ahb MiV_AHB_BaseDesign
+set Libero_project_name_ahb IGL2_CREATIVE_MiV_AHB_BaseDesign
 
 set target [string toupper [lindex $argv 0]]
 set design_flow_stage [string toupper [lindex $argv 1]]
@@ -48,6 +48,13 @@ proc invalid_argument { }\
 	puts "---------------------------------------------------------------------------"
 }
 
+proc  base_design_built {}\
+{
+  puts "-------------------------------------------------------------------------"
+  puts "---------------------------BaseDesign Built-----------------------------"
+  puts "-------------------------------------------------------------------------"
+}
+
 
 if {"$target" == "AHB"} then {
 	if {[file exists $project_dir_ahb] == 1} then {
@@ -57,11 +64,7 @@ if {"$target" == "AHB"} then {
 		new_project -location $project_dir_ahb -name  $Libero_project_name_ahb -project_description {} -block_mode 0 -standalone_peripheral_initialization 0 -instantiate_in_smartdesign 1 -ondemand_build_dh 1 -hdl {VERILOG} -family {IGLOO2} -die {M2GL025} -package {256 VF} -speed {STD} -die_voltage {1.2} -part_range {COM} -adv_options {DSW_VCCA_VOLTAGE_RAMP_RATE:100_MS} -adv_options {IO_DEFT_STD:LVCMOS 2.5V} -adv_options {PLL_SUPPLY:PLL_SUPPLY_25} -adv_options {RESTRICTPROBEPINS:1} -adv_options {RESTRICTSPIPINS:0} -adv_options {SYSTEM_CONTROLLER_SUSPEND_MODE:0} -adv_options {TEMPR:COM} -adv_options {VCCI_1.2_VOLTR:COM} -adv_options {VCCI_1.5_VOLTR:COM} -adv_options {VCCI_1.8_VOLTR:COM} -adv_options {VCCI_2.5_VOLTR:COM} -adv_options {VCCI_3.3_VOLTR:COM} -adv_options {VOLTR:COM} 
 		source ./import/components/BaseDesign/AHB/import_component_and_constraints_ig2_creative_ahb.tcl
 		save_project
-		puts "-------------------------------------------------------------------------"
-		puts "-------------------------------SUCCESS!----------------------------------"
-		puts "-------------------------------------------------------------------------"
-		puts "-----------------------------Project Built-------------------------------"
-		puts "-------------------------------------------------------------------------"
+        base_design_built
 	}
 } elseif {"$target" == "AXI"} then {
 	if {[file exists $project_dir_axi] == 1} then {
@@ -71,11 +74,7 @@ if {"$target" == "AHB"} then {
 		new_project -location $project_dir_axi -name  $Libero_project_name_axi -project_description {} -block_mode 0 -standalone_peripheral_initialization 0 -instantiate_in_smartdesign 1 -ondemand_build_dh 1 -hdl {VERILOG} -family {IGLOO2} -die {M2GL025} -package {256 VF} -speed {STD} -die_voltage {1.2} -part_range {COM} -adv_options {DSW_VCCA_VOLTAGE_RAMP_RATE:100_MS} -adv_options {IO_DEFT_STD:LVCMOS 2.5V} -adv_options {PLL_SUPPLY:PLL_SUPPLY_25} -adv_options {RESTRICTPROBEPINS:1} -adv_options {RESTRICTSPIPINS:0} -adv_options {SYSTEM_CONTROLLER_SUSPEND_MODE:0} -adv_options {TEMPR:COM} -adv_options {VCCI_1.2_VOLTR:COM} -adv_options {VCCI_1.5_VOLTR:COM} -adv_options {VCCI_1.8_VOLTR:COM} -adv_options {VCCI_2.5_VOLTR:COM} -adv_options {VCCI_3.3_VOLTR:COM} -adv_options {VOLTR:COM} 
 		source ./import/components/BaseDesign/AXI/import_component_and_constraints_ig2_creative_axi.tcl
 		save_project
-		puts "-------------------------------------------------------------------------"
-		puts "-------------------------------SUCCESS!----------------------------------"
-		puts "-------------------------------------------------------------------------"
-		puts "-----------------------------Project Built-------------------------------"
-		puts "-------------------------------------------------------------------------"
+		base_design_built
 	}
 } elseif {"$target" == "SYNTHESIZE"} then {
 		invalid_argument
@@ -93,11 +92,7 @@ if {"$target" == "AHB"} then {
 		new_project -location $project_dir_ahb -name  $Libero_project_name_ahb -project_description {} -block_mode 0 -standalone_peripheral_initialization 0 -instantiate_in_smartdesign 1 -ondemand_build_dh 1 -hdl {VERILOG} -family {IGLOO2} -die {M2GL025} -package {256 VF} -speed {STD} -die_voltage {1.2} -part_range {COM} -adv_options {DSW_VCCA_VOLTAGE_RAMP_RATE:100_MS} -adv_options {IO_DEFT_STD:LVCMOS 2.5V} -adv_options {PLL_SUPPLY:PLL_SUPPLY_25} -adv_options {RESTRICTPROBEPINS:1} -adv_options {RESTRICTSPIPINS:0} -adv_options {SYSTEM_CONTROLLER_SUSPEND_MODE:0} -adv_options {TEMPR:COM} -adv_options {VCCI_1.2_VOLTR:COM} -adv_options {VCCI_1.5_VOLTR:COM} -adv_options {VCCI_1.8_VOLTR:COM} -adv_options {VCCI_2.5_VOLTR:COM} -adv_options {VCCI_3.3_VOLTR:COM} -adv_options {VOLTR:COM} 
 		source ./import/components/BaseDesign/AHB/import_component_and_constraints_ig2_creative_ahb.tcl
 		save_project
-		puts "-------------------------------------------------------------------------"
-		puts "-------------------------------SUCCESS!----------------------------------"
-		puts "-------------------------------------------------------------------------"
-		puts "-----------------------------Project Built-------------------------------"
-		puts "-------------------------------------------------------------------------"
+        base_design_built
 	}
 }
 
