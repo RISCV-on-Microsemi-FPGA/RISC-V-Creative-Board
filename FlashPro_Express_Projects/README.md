@@ -1,25 +1,39 @@
-## RISC-V Creative Development Board FlashPro Express Programming Files
+# RISC-V Creative Board FPGA Programming Files
 
-Sample Mi-V FlashPro Express files for FPGA designs for RISC-V Creative board. The RISC-V Creative Development Board includes a IGLOO2 M2GL025 FPGA.
+This folder contains FlashPro Express **(v12.3)** projects for the RISC-V Creative Board Mi-V sample designs.
 
-### FlashPro Express
-This folder contains default build, exported programming files, there is a choice to use an AXI or AHB Core based design. Each (.job) file is capapble of programming your target device using the standalone installer for FlashPro Express which can be found [here](https://www.microsemi.com/product-directory/programming/4977-flashpro#software).
-Please note that you only need to install this standalone version of FlashPro Express for Libero v12.3 if you do not have Libero tools installed. The programming procedure is as follows:
+## FlashPro Express
+The programming files contained under this folder were exported from the designs in the Libero_Projects folder in this repository. Select the desired programming file (.job) and program your device using FlashPro Express.
 
-### Programming the Device using FPExpress
----------------------------------------------
-1. Download or Clone this repository to get the contents of FlashPro_Express_Projects.
-2. Power-up your board and connect it to your programming device running FlashPro Express.
-3. Launch FPExpress v12.3 and wait for it to load.
-4. Click into Project from the top left bar and select "New Job Project from FlashPro Express Job"
-5. For "Programming job file:" navigate to your FlashPro_Express_Project/Programming_Files directory and select the (.job) programming file you want to program your board with.
-6. For "FlashPro Express job project location:" select the FlashPro_Express_Projects folder you have downloaded with this project.
-8. Click OK, wait for the new window to pop-up.
-7. From the bottom left drop-down menu select the PROGRAM option if it's not selected by default and click RUN. Wait for device to be programmed.
+## Programming the Device using FlashPro Express
+ Before running these steps, connect the FPGA board to the computer using FlashPro5 or Embedded FlashPro and power up the board.
 
-### Target Hardware
-The RISC-V Creative Development Board includes a IGLOO2 M2GL025 FPGA. Details of the features available for this development board are available [here](https://www.microsemi.com/products/fpga-soc/design-resources/dev-kits/risc-v-creative-board).
+    1. Open FlashPro Express
+    2. Select Project -> New Job Project from FlashPro Express Job   
+    3. Browse to the programming Job file (.job) using "Browse ...". The Job files are located
+       in the FlashPro_Express_Project/Programming_Files directory
+    4. Select the Job file, then select "Open"
+    5. Select the FlashPro_Express_Project folder (or any folder of your choice) as the project
+       location, then select "OK"
+    6. The FlashPro Express Job Project is created
+    7. Select the "RUN" button; the status bar will change from IDLE to the percentage complete
+    8. Once complete the status bar will display "1 PROGRAMMER(S) PASSED"
 
+## Design Features
+The Libero designs include the following features:
+* A MIV_RV32IMA_L1_AHB or MIV_RV32IMA_L1_AXI soft RISC-V processor.
+* RISC-V debug block allowing on-target debug using SoftConsole.
+* The operating frequency of the design is 50MHz.
+* Target memory is LSRAM.
+* User peripherals (GPIO, Timers, UART).
 
-### Target Mi-V CPU
-Details of the features of Mi-V CPUs are available [here](https://github.com/RISCV-on-Microsemi-FPGA/CPUs).
+The peripherals in this design are located at the following addresses.
+
+| Peripheral    | Address   |
+| ------------- |:-------------:|
+| CoreUARTapb   | 0x7000_1000   |
+| CoreGPIO_IN   | 0x7000_2000   |
+| CoreTimer_0   | 0x7000_3000   |
+| CoreTimer_1   | 0x7000_4000   |
+| CoreGPIO_OUT  | 0x7000_5000   |
+| LSRAM| 0x8000_0000|
