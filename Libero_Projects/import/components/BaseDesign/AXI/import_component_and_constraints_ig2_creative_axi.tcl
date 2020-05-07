@@ -1,7 +1,5 @@
-set project_folder_name MiV_AXI_IG2_Creative
+set project_folder_name MiV_AXI_BD
 set project_dir2 "./$project_folder_name"
-set Libero_project_name MiV_AXI_BaseDesign
-
 
 puts "-------------------------------------------------------------------------"
 puts "-----------------------IMPORTING COMPONENTS------------------------------"
